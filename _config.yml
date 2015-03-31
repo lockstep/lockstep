@@ -8,11 +8,12 @@ assets:
   cachebust: soft
 
 # Site settings
-title: Proteus
-description: Prototyping starter kit for Jekyll
+title: Lockstep Labs
+description: Custom web and mobile application development
 
 # Name of project on Github
-baseurl: /proteus-jekyll
+# baseurl: /proteus-jekyll
+baseurl: ""
 
 # Build settings
 markdown: kramdown
