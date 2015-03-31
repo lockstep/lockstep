@@ -1,13 +1,18 @@
+gems: [bourbon, neat]
+
+# Structure configuration
+source: source
+destination: build
+
+assets:
+  cachebust: soft
+
 # Site settings
-title: Lockstep Labs
-email: info@locksteplabs.com
-description: > # this means to ignore newlines until "baseurl:"
-  Welcome to Lockstep! We build high-impact, modern web and mobile applications.
-  Have an idea for a new technology? Need to scale your team? Look no further!
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://locksteplabs.com" # the base hostname & protocol for your site
-twitter_username: locksteplabs
-github_username:  lockstep
+title: Proteus
+description: Prototyping starter kit for Jekyll
+
+# Name of project on Github
+baseurl: /proteus-jekyll
 
 # Build settings
 markdown: kramdown
