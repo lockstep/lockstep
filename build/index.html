@@ -7,16 +7,1321 @@
     <meta name="description" content="Custom web and mobile application development">
     <title>Lockstep Labs</title>
     <link rel="canonical" href="/">
-    <link rel="stylesheet" href="/assets/application.css?cb=11cb4c3270cfbd52df69a91237c8cb50">
+    <link rel="stylesheet" href="/assets/application.css?cb=8f424bc59fe702e3037e7cd4cc4b028d">
+    <!--Google Font-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600italic,600,700' rel='stylesheet' type='text/css'>	
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="/assets/ico/favicon.png?cb=d119cd8eedd8a3078611d90dcadee9ee">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144-precomposed.png?cb=1fea32a43154baf331a3dfde99569571">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/ico/apple-touch-icon-114-precomposed.png?cb=8557189f985b4c7c9ad9c6a586d34ac6">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72-precomposed.png?cb=23896ff36e43ecd453e8ebcaedee8bfc">
+    <link rel="apple-touch-icon-precomposed" href="/assets/ico/apple-touch-icon-57-precomposed.png?cb=389f02564aa298fa953296c9ca70e881">
   </head>
   <body>
-    <div class='delete-me'>
-  <div class='container'>
-    <h1>Lockstep Labs</h1>
-    <p>Let's do this.</p>
+    <!-- Page Loader -->
+<div class='preloader'>
+  <div id='loaderImage'></div>
+</div>
+<div id='main-carousel'>
+  <div class='carousel slide carousel-fade' data-ride='carousel' id='home-carousel'>
+    <div class='carousel-inner'>
+      <div class='item active' style='background-image: url(/assets/home/1.jpg?cb=9256b61f30b88931851f32c7f87f57ac)'>
+        <div class='carousel-caption'>
+          <h1 class='animated fadeInUpBig'>
+            <strong>unique</strong>
+            and
+            <strong>Creative</strong>
+            Design
+          </h1>
+          <h2 class='animated zoomIn'>
+            I am
+            <span>octopus</span>
+          </h2>
+          <p class='animated fadeInDownBig'>For Creative Agency</p>
+        </div>
+      </div>
+      <div class='item' style='background-image: url(/assets/home/2.jpg?cb=dff5ce9da813600555e07939745552aa)'>
+        <div class='carousel-caption'>
+          <h1 class='animated fadeInUpBig'>
+            We
+            <strong>love</strong>
+            to
+            <strong>design</strong>
+          </h1>
+          <h2 class='animated zoomIn'>
+            Awesome
+            <span>themes</span>
+          </h2>
+          <p class='animated fadeInDownBig'>We are happy with you are !</p>
+        </div>
+      </div>
+      <div class='item' style='background-image: url(/assets/home/3.jpg?cb=5d829d63a1f3528bd29a0f97b3c20ff7)'>
+        <div class='carousel-caption'>
+          <h1 class='animated fadeInUpBig'>
+            We
+            <strong>think</strong>
+            to
+            <strong>create</strong>
+          </h1>
+          <h2 class='animated zoomIn'>
+            Something
+            <span>Special</span>
+          </h2>
+          <p class='animated fadeInDownBig'>Features For Your Business</p>
+        </div>
+      </div>
+      <div class='item' style='background-image: url(/assets/home/4.jpg?cb=265e594fbbf43debdb38eebac723b3e9)'>
+        <div class='carousel-caption'>
+          <h1 class='animated fadeInUpBig'>
+            We
+            <strong>enjoy</strong>
+            your
+            <strong>Smile</strong>
+          </h1>
+          <h2 class='animated zoomIn'>
+            We get
+            <span>speed</span>
+          </h2>
+          <p class='animated fadeInDownBig'>When you Encourage us</p>
+        </div>
+      </div>
+    </div>
+    <a class='main-carousel-left' data-slide='prev' href='#home-carousel'>
+      <i class='fa fa-angle-left'></i>
+    </a>
+    <a class='main-carousel-right' data-slide='next' href='#home-carousel'>
+      <i class='fa fa-angle-right'></i>
+    </a>
+  </div>
+  <a class='smooth-scroll' data-scroll='' href='#navigation'>
+    <div class='mouse-icon'>
+      <div class='wheel'></div>
+      <i class='fa fa-angle-down'></i>
+    </div>
+  </a>
+</div>
+<!-- /#main-carousel -->
+<div id='navigation'>
+  <div class='navbar' role='banner'>
+    <div class='container'>
+      <div class='navbar-header'>
+        <button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
+          <span class='sr-only'>Toggle navigation</span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+        </button>
+        <a class='navbar-brand' href='index.html'>
+          <h1>
+            <img alt='logo' class='img-responsive' src='/assets/logo.png?cb=d32779547dd9426a608bb0ec9855e0b5'>
+          </h1>
+        </a>
+      </div>
+      <div class='collapse navbar-collapse'>
+        <ul class='nav navbar-nav navbar-right'>
+          <li class='scroll active'>
+            <a href='#main-carousel'>Home</a>
+          </li>
+          <li class='scroll'>
+            <a href='#about-us'>About Us</a>
+          </li>
+          <li class='scroll'>
+            <a href='#why-us'>Why like Us</a>
+          </li>
+          <li class='scroll'>
+            <a href='#portfolio'>Portfolio</a>
+          </li>
+          <li class='scroll'>
+            <a href='#our-team'>Team</a>
+          </li>
+          <li class='scroll'>
+            <a href='#hot-octopus'>Hot Features</a>
+          </li>
+          <li class='scroll'>
+            <a href='#blog'>Blog</a>
+          </li>
+          <li class='scroll'>
+            <a href='#contact-us'>Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
+<!-- /#navigation -->
+<section class='padding-top off-white' id='about-us'>
+  <div class='container text-center'>
+    <div class='row section-title'>
+      <div class='col-sm-8 col-sm-offset-2'>
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+      </div>
+    </div>
+    <div class='bout-us-image'>
+      <img alt='' class='img-responsive' src='/assets/about-us/devices.png?cb=af3a40e1d6ca2dd13ad1e82eafac1e62'>
+    </div>
+    <div class='row'>
+      <div class='col-md-3 col-sm-6 about-content'>
+        <div class='about-icon'>
+          <i class='fa fa-users'></i>
+        </div>
+        <div class='about-text'>
+          <h3>Creative Team</h3>
+          <p>Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class='col-md-3 col-sm-6 about-content'>
+        <div class='about-icon'>
+          <i class='fa fa-rocket'></i>
+        </div>
+        <div class='about-text'>
+          <h3>Unique Design</h3>
+          <p>Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class='col-md-3 col-sm-6 about-content'>
+        <div class='about-icon'>
+          <i class='fa fa-envelope'></i>
+        </div>
+        <div class='about-text'>
+          <h3>24/7 Support</h3>
+          <p>Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class='col-md-3 col-sm-6 about-content'>
+        <div class='about-icon'>
+          <i class='fa fa-shield'></i>
+        </div>
+        <div class='about-text'>
+          <h3>Great Security</h3>
+          <p>Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /#about us -->
+<div class='parallax-section' id='promo-one'>
+  <div class='parallax-content'>
+    <div class='color-overlay'></div>
+    <div class='container text-center'>
+      <h2>Octopus has unique and modern design!</h2>
+      <p>Designed for Creative Agency</p>
+      <a class='btn btn-primary' href='#'>Buy Theme</a>
+    </div>
+  </div>
+</div>
+<!-- /parallax-section -->
+<section class='padding-top' id='why-us'>
+  <div class='container'>
+    <div class='row text-center section-title'>
+      <div class='col-sm-8 col-sm-offset-2'>
+        <h2>Why Like Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+      </div>
+    </div>
+    <div class='row text-center like-us'>
+      <div class='col-md-3 col-sm-6 about-content'>
+        <div class='about-icon'>
+          <i class='fa fa-bitbucket'></i>
+        </div>
+        <div class='about-text'>
+          <h3>Fresh Design</h3>
+          <p>Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class='col-md-3 col-sm-6 about-content'>
+        <div class='about-icon'>
+          <i class='fa fa-cloud'></i>
+        </div>
+        <div class='about-text'>
+          <h3>Useful features</h3>
+          <p>Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class='col-md-3 col-sm-6 about-content'>
+        <div class='about-icon'>
+          <i class='fa fa-cog'></i>
+        </div>
+        <div class='about-text'>
+          <h3>Easy Customization</h3>
+          <p>Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class='col-md-3 col-sm-6 about-content'>
+        <div class='about-icon'>
+          <i class='fa fa-coffee'></i>
+        </div>
+        <div class='about-text'>
+          <h3>Preset Style</h3>
+          <p>Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class='col-md-3 col-sm-6 about-content'>
+        <div class='about-icon'>
+          <i class='fa fa-laptop'></i>
+        </div>
+        <div class='about-text'>
+          <h3>Free Updates</h3>
+          <p>Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class='col-md-3 col-sm-6 about-content'>
+        <div class='about-icon'>
+          <i class='fa fa-paper-plane'></i>
+        </div>
+        <div class='about-text'>
+          <h3>Fully Responsive</h3>
+          <p>Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class='col-md-3 col-sm-6 about-content'>
+        <div class='about-icon'>
+          <i class='fa fa-leaf'></i>
+        </div>
+        <div class='about-text'>
+          <h3>Dropdown Menu</h3>
+          <p>Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class='col-md-3 col-sm-6 about-content'>
+        <div class='about-icon'>
+          <i class='(alias) fa fa-group'></i>
+        </div>
+        <div class='about-text'>
+          <h3>Typhography</h3>
+          <p>Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /why-us -->
+<div class='text-center parallax-section' id='promo-two'>
+  <div class='parallax-content'>
+    <div class='color-overlay'></div>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-sm-3'>
+          <i class='fa fa-clock-o'></i>
+          <h3 class='timer' data-from='0' data-speed='7000' data-to='2700'>hidden-time</h3>
+          <h4>Hours Of Work</h4>
+        </div>
+        <div class='col-sm-3'>
+          <i class='fa fa-heart'></i>
+          <h3 class='timer' data-from='0' data-speed='5000' data-to='32'>hidden-time</h3>
+          <h4>Clients Worked</h4>
+        </div>
+        <div class='col-sm-3'>
+          <i class='fa fa-paper-plane'></i>
+          <h3 class='timer' data-from='0' data-speed='5000' data-to='178'>hidden-time</h3>
+          <h4>Project Done</h4>
+        </div>
+        <div class='col-sm-3'>
+          <i class='fa fa-coffee'></i>
+          <h3 class='timer' data-from='0' data-speed='5000' data-to='45'>hidden-time</h3>
+          <h4>Cups of Coffee</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /parallax-section -->
+<section class='padding-top padding-bottom' id='why-octopus'>
+  <div class='container'>
+    <div class='row text-center section-title'>
+      <div class='col-sm-8 col-sm-offset-2'>
+        <h2>Why Octopus</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-sm-6'>
+        <div class='row octopus-tab'>
+          <div class='col-sm-3'>
+            <ul class='tab-list' role='tablist'>
+              <li class='active'>
+                <a data-toggle='tab' href='#html5' role='tab'>
+                  <i class='fa fa-html5'></i>
+                  HTML5
+                </a>
+              </li>
+              <li>
+                <a data-toggle='tab' href='#css3' role='tab'>
+                  <i class='fa fa-css3'></i>
+                  CSS3
+                </a>
+              </li>
+              <li>
+                <a data-toggle='tab' href='#web-design' role='tab'>
+                  <i class='fa fa-paper-plane'></i>
+                  Design
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class='col-sm-9'>
+            <div class='tab-content'>
+              <div class='tab-pane fade in active off-white' id='html5'>
+                <h2>We love to work with HTML5</h2>
+                <img alt='accordion' class='img-responsive' src='/assets/accordion/accordion1.jpg?cb=e80cc3e39a2648b58d66f793329e57d5'>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+              </div>
+              <div class='tab-pane fade off-white' id='css3'>
+                <h2>We love to work with CSS3</h2>
+                <img alt='accordion' class='img-responsive' src='/assets/accordion/accordion2.jpg?cb=daa159bd827f5a0018dd5a4199367be7'>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+              </div>
+              <div class='tab-pane fade off-white' id='web-design'>
+                <h2>We love to Design</h2>
+                <img alt='accordion' class='img-responsive' src='/assets/accordion/accordion3.jpg?cb=af5924a84afac838ef638f7843b73e1f'>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='col-sm-6'>
+        <div class='panel-group' id='accordion-two'>
+          <div class='panel panel-default'>
+            <div class='panel-heading active'>
+              <h4 class='panel-title'>
+                <a data-parent='#accordion-two' data-toggle='collapse' href='#professional'>
+                  <i class='fa fa-magic'></i>
+                  Professional Design
+                </a>
+              </h4>
+            </div>
+            <div class='panel-collapse collapse in' id='professional'>
+              <div class='panel-body'>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+              </div>
+            </div>
+          </div>
+          <div class='panel panel-default'>
+            <div class='panel-heading'>
+              <h4 class='panel-title'>
+                <a data-parent='#accordion-two' data-toggle='collapse' href='#customization'>
+                  <i class='fa fa-cogs'></i>
+                  Easy Customization
+                </a>
+              </h4>
+            </div>
+            <div class='panel-collapse collapse' id='customization'>
+              <div class='panel-body'>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+              </div>
+            </div>
+          </div>
+          <div class='panel panel-default'>
+            <div class='panel-heading'>
+              <h4 class='panel-title'>
+                <a data-parent='#accordion-two' data-toggle='collapse' href='#support'>
+                  <i class='fa fa-envelope'></i>
+                  24/7 Support
+                </a>
+              </h4>
+            </div>
+            <div class='panel-collapse collapse' id='support'>
+              <div class='panel-body'>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+              </div>
+            </div>
+          </div>
+          <div class='panel panel-default'>
+            <div class='panel-heading'>
+              <h4 class='panel-title'>
+                <a data-parent='#accordion-two' data-toggle='collapse' href='#help-desk'>
+                  <i class='fa fa-bitbucket'></i>
+                  Live Help Desk
+                </a>
+              </h4>
+            </div>
+            <div class='panel-collapse collapse' id='help-desk'>
+              <div class='panel-body'>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /#why-octopus -->
+<section class='padding-top padding-bottom off-white' id='portfolio'>
+  <div class='container'>
+    <div class='row text-center section-title'>
+      <div class='col-sm-8 col-sm-offset-2'>
+        <h2>Portfolio</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+      </div>
+    </div>
+    <div class='portfolio-wrapper'>
+      <ul class='portfolio-filter text-center'>
+        <li>
+          <a class='active' data-filter='*' href='#'>All</a>
+        </li>
+        <li>
+          <a data-filter='.photography' href='#'>Photography</a>
+        </li>
+        <li>
+          <a data-filter='.video' href='#'>Video</a>
+        </li>
+        <li>
+          <a data-filter='.print-design' href='#'>Print Design</a>
+        </li>
+        <li>
+          <a data-filter='.graphic' href='#'>Graphic</a>
+        </li>
+        <li>
+          <a data-filter='.art' href='#'>Art</a>
+        </li>
+      </ul>
+      <!-- /#portfolio-filter -->
+      <div class='row portfolio-items'>
+        <div class='col-sm-4 col-md-3 portfolio-item print-design video'>
+          <div class='portfolio-content'>
+            <img alt='' class='img-responsive' src='/assets/portfolio/1.jpg?cb=a55354552270dd220a8ee31fbed37b78'>
+              <div class='folio-overlay'>
+                <a class='folio-link' href='#'>
+                  <i class='fa fa-link'></i>
+                </a>
+                <a class='folio-detail' data-gallery='prettyPhoto' href='/assets/portfolio/port-full.jpg?cb=d34f4ed7dab74be2a9e2db098f1909ba'>
+                  <i class='fa fa-plus'></i>
+                </a>
+              </div>
+            </img>
+          </div>
+        </div>
+        <div class='col-sm-4 col-md-3 portfolio-item graphic video'>
+          <div class='portfolio-content'>
+            <img alt='' class='img-responsive' src='/assets/portfolio/2.jpg?cb=15ee2e21ff06f882b6b08c2ec0e38165'>
+              <div class='folio-overlay'>
+                <a class='folio-link' href='#'>
+                  <i class='fa fa-link'></i>
+                </a>
+                <a class='folio-detail' data-gallery='prettyPhoto' href='/assets/portfolio/port-full.jpg?cb=d34f4ed7dab74be2a9e2db098f1909ba'>
+                  <i class='fa fa-plus'></i>
+                </a>
+              </div>
+            </img>
+          </div>
+        </div>
+        <div class='col-sm-4 col-md-3 portfolio-item print-design art'>
+          <div class='portfolio-content'>
+            <img alt='' class='img-responsive' src='/assets/portfolio/3.jpg?cb=ed2577a1dfdc68379c1277e002861ac8'>
+              <div class='folio-overlay'>
+                <a class='folio-link' href='#'>
+                  <i class='fa fa-link'></i>
+                </a>
+                <a class='folio-detail' data-gallery='prettyPhoto' href='/assets/portfolio/port-full.jpg?cb=d34f4ed7dab74be2a9e2db098f1909ba'>
+                  <i class='fa fa-plus'></i>
+                </a>
+              </div>
+            </img>
+          </div>
+        </div>
+        <div class='col-sm-4 col-md-3 portfolio-item video art photography'>
+          <div class='portfolio-content'>
+            <img alt='' class='img-responsive' src='/assets/portfolio/4.jpg?cb=ad8a90df2167294d6a405a34d9adc062'>
+              <div class='folio-overlay'>
+                <a class='folio-link' href='#'>
+                  <i class='fa fa-link'></i>
+                </a>
+                <a class='folio-detail' data-gallery='prettyPhoto' href='/assets/portfolio/port-full.jpg?cb=d34f4ed7dab74be2a9e2db098f1909ba'>
+                  <i class='fa fa-plus'></i>
+                </a>
+              </div>
+            </img>
+          </div>
+        </div>
+        <div class='col-sm-4 col-md-3 portfolio-item video art'>
+          <div class='portfolio-content'>
+            <img alt='' class='img-responsive' src='/assets/portfolio/5.jpg?cb=85ad96cace5b5d0e75ee2d9b266dd8cb'>
+              <div class='folio-overlay'>
+                <a class='folio-link' href='#'>
+                  <i class='fa fa-link'></i>
+                </a>
+                <a class='folio-detail' data-gallery='prettyPhoto' href='/assets/portfolio/port-full.jpg?cb=d34f4ed7dab74be2a9e2db098f1909ba'>
+                  <i class='fa fa-plus'></i>
+                </a>
+              </div>
+            </img>
+          </div>
+        </div>
+        <div class='col-sm-4 col-md-3 portfolio-item photography graphic'>
+          <div class='portfolio-content'>
+            <img alt='' class='img-responsive' src='/assets/portfolio/6.jpg?cb=d4640c2cb1e7bb8882c5c64c664b592f'>
+              <div class='folio-overlay'>
+                <a class='folio-link' href='#'>
+                  <i class='fa fa-link'></i>
+                </a>
+                <a class='folio-detail' data-gallery='prettyPhoto' href='/assets/portfolio/port-full.jpg?cb=d34f4ed7dab74be2a9e2db098f1909ba'>
+                  <i class='fa fa-plus'></i>
+                </a>
+              </div>
+            </img>
+          </div>
+        </div>
+        <div class='col-sm-4 col-md-3 portfolio-item video art'>
+          <div class='portfolio-content'>
+            <img alt='' class='img-responsive' src='/assets/portfolio/7.jpg?cb=f88e0226e706131c653d14740152a0de'>
+              <div class='folio-overlay'>
+                <a class='folio-link' href='#'>
+                  <i class='fa fa-link'></i>
+                </a>
+                <a class='folio-detail' data-gallery='prettyPhoto' href='/assets/portfolio/port-full.jpg?cb=d34f4ed7dab74be2a9e2db098f1909ba'>
+                  <i class='fa fa-plus'></i>
+                </a>
+              </div>
+            </img>
+          </div>
+        </div>
+        <div class='col-sm-4 col-md-3 portfolio-item photography graphic print-design'>
+          <div class='portfolio-content'>
+            <img alt='' class='img-responsive' src='/assets/portfolio/8.jpg?cb=22b30acdaa917345d4e2a6cf53fa8227'>
+              <div class='folio-overlay'>
+                <a class='folio-link' href='#'>
+                  <i class='fa fa-link'></i>
+                </a>
+                <a class='folio-detail' data-gallery='prettyPhoto' href='/assets/portfolio/port-full.jpg?cb=d34f4ed7dab74be2a9e2db098f1909ba'>
+                  <i class='fa fa-plus'></i>
+                </a>
+              </div>
+            </img>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /#portfolio -->
+<div class='parallax-section' id='testimonial'>
+  <div class='parallax-content'>
+    <div class='color-overlay'></div>
+    <a class='testimony-left' data-slide='prev' href='#testimonial-carousel'>
+      <i class='fa fa-angle-left'></i>
+    </a>
+    <a class='testimony-right' data-slide='next' href='#testimonial-carousel'>
+      <i class='fa fa-angle-right'></i>
+    </a>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-sm-8 col-sm-offset-2'>
+          <div class='carousel slide' data-ride='carousel' id='testimonial-carousel'>
+            <div class='carousel-inner text-center'>
+              <div class='item active'>
+                <img alt='' class='img-responsive img-circle' src='/assets/testimonial/client1.jpg?cb=a27764cc24755ed42c57f824895c3abb'>
+                <p>
+                  Octopus is a Unique, Creative and Awesome One Page Template. Designer and the Developers did well with this template and i am happy to using it. Thanks to Team Octopus.
+                  <span>CEO, Google</span>
+                </p>
+              </div>
+              <div class='item'>
+                <img alt='' class='img-responsive img-circle' src='/assets/testimonial/client2.jpg?cb=ad0367533d56cc25f08c451444f08065'>
+                <p>
+                  Octopus is a Unique, Creative and Awesome One Page Template. Designer and the Developers did well with this template and i am happy to using it. Thanks to Team Octopus.
+                  <span>CEO, Google</span>
+                </p>
+              </div>
+              <div class='item'>
+                <img alt='' class='img-responsive img-circle' src='/assets/testimonial/client3.jpg?cb=d199b6567c88a8c546c4d85996dc5c25'>
+                <p>
+                  Octopus is a Unique, Creative and Awesome One Page Template. Designer and the Developers did well with this template and i am happy to using it. Thanks to Team Octopus.
+                  <span>CEO, Google</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /#testimonial -->
+<section class='padding-top padding-bottom' id='our-team'>
+  <div class='container'>
+    <div class='row text-center section-title'>
+      <div class='col-sm-8 col-sm-offset-2'>
+        <h2>Our Team</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+      </div>
+    </div>
+    <div class='team-members text-center'>
+      <div class='row'>
+        <div class='col-sm-6 col-md-3'>
+          <div class='member'>
+            <div class='member-image'>
+              <img alt='' class='img-responsive' src='/assets/team/member1.jpg?cb=3d0885bda4a849185cb687e08bba4854'>
+                <div class='member-overlay'>
+                  <a href='#'>
+                    <i class='fa fa-plus'></i>
+                  </a>
+                </div>
+              </img>
+            </div>
+            <div class='member-info'>
+              <h4>Marsha Burns</h4>
+              <p>UI/UX DESIGNER</p>
+            </div>
+            <ul class='member-social'>
+              <li>
+                <a class='facebook' href='#'>
+                  <i class='fa fa-facebook'></i>
+                </a>
+              </li>
+              <li>
+                <a class='twitter' href='#'>
+                  <i class='fa fa-twitter'></i>
+                </a>
+              </li>
+              <li>
+                <a class='linkedin' href='#'>
+                  <i class='fa fa-linkedin'></i>
+                </a>
+              </li>
+              <li>
+                <a class='dribbble' href='#'>
+                  <i class='fa fa-dribbble'></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class='col-sm-6 col-md-3'>
+          <div class='member'>
+            <div class='member-image'>
+              <img alt='' class='img-responsive' src='/assets/team/member2.jpg?cb=cdbc7d11bd06a3481f9fc69a4079b5ef'>
+                <div class='member-overlay'>
+                  <a href='#'>
+                    <i class='fa fa-plus'></i>
+                  </a>
+                </div>
+              </img>
+            </div>
+            <div class='member-info'>
+              <h4>Ronald Cook</h4>
+              <p>WEB DEVELOPER</p>
+            </div>
+            <ul class='member-social'>
+              <li>
+                <a class='facebook' href='#'>
+                  <i class='fa fa-facebook'></i>
+                </a>
+              </li>
+              <li>
+                <a class='twitter' href='#'>
+                  <i class='fa fa-twitter'></i>
+                </a>
+              </li>
+              <li>
+                <a class='linkedin' href='#'>
+                  <i class='fa fa-linkedin'></i>
+                </a>
+              </li>
+              <li>
+                <a class='dribbble' href='#'>
+                  <i class='fa fa-dribbble'></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class='col-sm-6 col-md-3'>
+          <div class='member'>
+            <div class='member-image'>
+              <img alt='' class='img-responsive' src='/assets/team/member3.jpg?cb=c0afcc53edcdfad1f10040d82c267604'>
+                <div class='member-overlay'>
+                  <a href='#'>
+                    <i class='fa fa-plus'></i>
+                  </a>
+                </div>
+              </img>
+            </div>
+            <div class='member-info'>
+              <h4>Darlene D. Lyons</h4>
+              <p>MANAGER SUPPORT</p>
+            </div>
+            <ul class='member-social'>
+              <li>
+                <a class='facebook' href='#'>
+                  <i class='fa fa-facebook'></i>
+                </a>
+              </li>
+              <li>
+                <a class='twitter' href='#'>
+                  <i class='fa fa-twitter'></i>
+                </a>
+              </li>
+              <li>
+                <a class='linkedin' href='#'>
+                  <i class='fa fa-linkedin'></i>
+                </a>
+              </li>
+              <li>
+                <a class='dribbble' href='#'>
+                  <i class='fa fa-dribbble'></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class='col-sm-6 col-md-3'>
+          <div class='member'>
+            <div class='member-image'>
+              <img alt='' class='img-responsive' src='/assets/team/member4.jpg?cb=ff05de134896c26739fe76c846d880f2'>
+                <div class='member-overlay'>
+                  <a href='#'>
+                    <i class='fa fa-plus'></i>
+                  </a>
+                </div>
+              </img>
+            </div>
+            <div class='member-info'>
+              <h4>Martin Black</h4>
+              <p>Web Developer</p>
+            </div>
+            <ul class='member-social'>
+              <li>
+                <a class='facebook' href='#'>
+                  <i class='fa fa-facebook'></i>
+                </a>
+              </li>
+              <li>
+                <a class='twitter' href='#'>
+                  <i class='fa fa-twitter'></i>
+                </a>
+              </li>
+              <li>
+                <a class='linkedin' href='#'>
+                  <i class='fa fa-linkedin'></i>
+                </a>
+              </li>
+              <li>
+                <a class='dribbble' href='#'>
+                  <i class='fa fa-dribbble'></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /#Our team -->
+<section class='padding-top off-white' id='hot-octopus'>
+  <div class='container'>
+    <div class='row text-center section-title'>
+      <div class='col-sm-8 col-sm-offset-2'>
+        <h2>Hot with Octopus</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+      </div>
+    </div>
+    <div class='hot-features'>
+      <div class='row'>
+        <div class='col-sm-6 col-md-4'>
+          <div class='hot-feature'>
+            <div class='icon'>
+              <i class='fa fa-globe'></i>
+            </div>
+            <div class='feature'>
+              <h3>Web Design</h3>
+              <p>Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class='hot-feature'>
+            <div class='icon'>
+              <i class='fa fa-paper-plane'></i>
+            </div>
+            <div class='feature'>
+              <h3>Bootstrap</h3>
+              <p>Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+        <div class='col-sm-6 col-md-4'>
+          <img alt='' class='img-responsive' src='/assets/hot-features/hot-features-bg.png?cb=b2628cdbad6abdd6b7dc51e50e663ec5'>
+        </div>
+        <div class='col-sm-6 col-md-4'>
+          <div class='hot-feature'>
+            <div class='icon'>
+              <i class='fa fa-camera'></i>
+            </div>
+            <div class='feature'>
+              <h3>Photography</h3>
+              <p>Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class='hot-feature'>
+            <div class='icon'>
+              <i class='fa fa-cog'></i>
+            </div>
+            <div class='feature'>
+              <h3>Wordpress</h3>
+              <p>Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /#hot-octopus -->
+<div class='text-center parallax-section' id='twitter'>
+  <div class='parallax-content'>
+    <div class='color-overlay'></div>
+    <a class='twitter-left-control' data-slide='prev' href='#twitter-slide' role='button'>
+      <i class='fa fa-angle-left'></i>
+    </a>
+    <a class='twitter-right-control' data-slide='next' href='#twitter-slide' role='button'>
+      <i class='fa fa-angle-right'></i>
+    </a>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-sm-8 col-sm-offset-2'>
+          <div class='twitter-icon'>
+            <i class='fa fa-twitter'></i>
+          </div>
+          <div class='carousel slide' data-ride='carousel' id='twitter-slide'>
+            <div class='carousel-inner'>
+              <div class='item active'>
+                <a href='#'>
+                  Octopus is a Unique, Creative and Awesome One Page Template. Designer and the Developers did well with this template and i am happy to using it.
+                  <span>5 hours ago</span>
+                </a>
+              </div>
+              <div class='item'>
+                <a href='#'>
+                  Octopus is a Unique, Creative and Awesome One Page Template. Designer and the Developers did well with this template and i am happy to using it.
+                  <span>9 hours ago</span>
+                </a>
+              </div>
+              <div class='item'>
+                <a href='#'>
+                  Octopus is a Unique, Creative and Awesome One Page Template. Designer and the Developers did well with this template and i am happy to using it.
+                  <span>2 hours ago</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /#twitter -->
+<section class='padding-top bottom60' id='blog'>
+  <div class='container'>
+    <div class='row text-center section-title'>
+      <div class='col-sm-8 col-sm-offset-2'>
+        <h2>Latest Blog</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-sm-6'>
+        <div class='blog-content'>
+          <div class='entry-header'>
+            <div class='blog-image'>
+              <img alt='' class='img-responsive' src='/assets/blog/post1.jpg?cb=85109344f93e9c580ef2c12feb58e69d'>
+              <div class='more-link'>
+                <a href='#'>
+                  <i class='fa fa-plus'></i>
+                </a>
+              </div>
+            </div>
+            <div class='post-date'>
+              <h2>
+                21
+                <span>June</span>
+              </h2>
+            </div>
+          </div>
+          <div class='entry-content'>
+            <h3 class='entry-title'>
+              <a href='#'>Adipisicing elit, sed do eiusmod tempor</a>
+            </h3>
+            <ul class='entry-meta'>
+              <li>
+                <a href='#'>
+                  <i class='fa fa-user'></i>
+                  By: Admin
+                  <span>/</span>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i class='fa fa-tags'></i>
+                  Photograph
+                  <span>/</span>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i class='fa fa-comments'></i>
+                  3 Comments
+                </a>
+              </li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+      <div class='col-sm-6'>
+        <div class='blog-content'>
+          <div class='entry-header'>
+            <div class='blog-image'>
+              <img alt='' class='img-responsive' src='/assets/blog/post2.jpg?cb=8f4f9b7d9646753faf2f9c6315c3140f'>
+              <div class='more-link'>
+                <a href='#'>
+                  <i class='fa fa-plus'></i>
+                </a>
+              </div>
+            </div>
+            <div class='post-date'>
+              <h2>
+                21
+                <span>June</span>
+              </h2>
+            </div>
+          </div>
+          <div class='entry-content'>
+            <h3 class='entry-title'>
+              <a href='#'>Adipisicing elit, sed do eiusmod tempor</a>
+            </h3>
+            <ul class='entry-meta'>
+              <li>
+                <a href='#'>
+                  <i class='fa fa-user'></i>
+                  By: Admin
+                  <span>/</span>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i class='fa fa-tags'></i>
+                  Photograph
+                  <span>/</span>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i class='fa fa-comments'></i>
+                  3 Comments
+                </a>
+              </li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+      <div class='col-sm-6'>
+        <div class='blog-content'>
+          <div class='entry-header'>
+            <div class='blog-image'>
+              <img alt='' class='img-responsive' src='/assets/blog/post3.jpg?cb=25984ffb5f3d0e193507d7a7224305fa'>
+              <div class='more-link'>
+                <a href='#'>
+                  <i class='fa fa-plus'></i>
+                </a>
+              </div>
+            </div>
+            <div class='post-date'>
+              <h2>
+                21
+                <span>June</span>
+              </h2>
+            </div>
+          </div>
+          <div class='entry-content'>
+            <h3 class='entry-title'>
+              <a href='#'>Adipisicing elit, sed do eiusmod tempor</a>
+            </h3>
+            <ul class='entry-meta'>
+              <li>
+                <a href='#'>
+                  <i class='fa fa-user'></i>
+                  By: Admin
+                  <span>/</span>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i class='fa fa-tags'></i>
+                  Photograph
+                  <span>/</span>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i class='fa fa-comments'></i>
+                  3 Comments
+                </a>
+              </li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+      <div class='col-sm-6'>
+        <div class='blog-content'>
+          <div class='entry-header'>
+            <div class='blog-image'>
+              <img alt='' class='img-responsive' src='/assets/blog/post4.jpg?cb=bc71b198ca735b319b91ef0379b049d0'>
+              <div class='more-link'>
+                <a href='#'>
+                  <i class='fa fa-plus'></i>
+                </a>
+              </div>
+            </div>
+            <div class='post-date'>
+              <h2>
+                21
+                <span>June</span>
+              </h2>
+            </div>
+          </div>
+          <div class='entry-content'>
+            <h3 class='entry-title'>
+              <a href='#'>Adipisicing elit, sed do eiusmod tempor</a>
+            </h3>
+            <ul class='entry-meta'>
+              <li>
+                <a href='#'>
+                  <i class='fa fa-user'></i>
+                  By: Admin
+                  <span>/</span>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i class='fa fa-tags'></i>
+                  Photograph
+                  <span>/</span>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i class='fa fa-comments'></i>
+                  3 Comments
+                </a>
+              </li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /#blog -->
+<section class='padding-top padding-bottom off-white' id='pricing-tables'>
+  <div class='container'>
+    <div class='row text-center section-title'>
+      <div class='col-sm-8 col-sm-offset-2'>
+        <h2>Pricing Table</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+      </div>
+    </div>
+    <div class='pricing-table text-center'>
+      <div class='row'>
+        <div class='col-sm-6 col-md-3'>
+          <div class='single-table'>
+            <h4>Starter</h4>
+            <div class='price-icon'>
+              <i class='fa fa-bitbucket'></i>
+            </div>
+            <span class='price'>
+              $19/
+              <small>m</small>
+            </span>
+            <ul>
+              <li>Up to 5 Users</li>
+              <li>Max 100 items</li>
+              <li>Unlimited QueriesFull</li>
+              <li>Statistics</li>
+              <li>Great Support</li>
+            </ul>
+            <a class='btn btn-primary' href=''>Get This Plan</a>
+          </div>
+        </div>
+        <div class='col-sm-6 col-md-3'>
+          <div class='single-table'>
+            <h4>Medium</h4>
+            <div class='price-icon'>
+              <i class='fa fa-paper-plane'></i>
+            </div>
+            <span class='price'>
+              $49/
+              <small>m</small>
+            </span>
+            <ul>
+              <li>Up to 5 Users</li>
+              <li>Max 100 items</li>
+              <li>Unlimited QueriesFull</li>
+              <li>Statistics</li>
+              <li>Great Support</li>
+            </ul>
+            <a class='btn btn-primary' href=''>Get This Plan</a>
+          </div>
+        </div>
+        <div class='col-sm-6 col-md-3'>
+          <div class='single-table featured'>
+            <h4>Business</h4>
+            <div class='price-icon'>
+              <i class='fa fa-rocket'></i>
+            </div>
+            <span class='price'>
+              $59/
+              <small>m</small>
+            </span>
+            <ul>
+              <li>Up to 5 Users</li>
+              <li>Max 100 items</li>
+              <li>Unlimited QueriesFull</li>
+              <li>Statistics</li>
+              <li>Great Support</li>
+            </ul>
+            <a class='btn btn-primary' href=''>Get This Plan</a>
+          </div>
+        </div>
+        <div class='col-sm-6 col-md-3'>
+          <div class='single-table'>
+            <h4>Professional</h4>
+            <div class='price-icon'>
+              <i class='fa fa-road'></i>
+            </div>
+            <span class='price'>
+              $99/
+              <small>m</small>
+            </span>
+            <ul>
+              <li>Up to 5 Users</li>
+              <li>Max 100 items</li>
+              <li>Unlimited QueriesFull</li>
+              <li>Statistics</li>
+              <li>Great Support</li>
+            </ul>
+            <a class='btn btn-primary' href=''>Get This Plan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /#pricing -->
+<section class='parallax-section' id='contact-us'>
+  <div class='parallax-content'>
+    <div class='color-overlay'></div>
+    <div class='container'>
+      <div class='row text-center section-title'>
+        <div class='col-sm-8 col-sm-offset-2'>
+          <h2>Contact Us</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+        </div>
+      </div>
+      <div class='col-sm-6'>
+        <form action='sendemail.php' id='contact-form' method='post' name='contact-form'>
+          <div class='row'>
+            <div class='col-sm-6'>
+              <div class='form-group'>
+                <input class='form-control' name='name' placeholder='Name' required='required' type='text'>
+              </div>
+            </div>
+            <div class='col-sm-6'>
+              <div class='form-group'>
+                <input class='form-control' name='email' placeholder='Email' required='required' type='email'>
+              </div>
+            </div>
+          </div>
+          <div class='form-group'>
+            <input class='form-control' name='subject' placeholder='Subject' required='required' type='text'>
+          </div>
+          <div class='form-group'>
+            <textarea class='form-control' id='message' name='message' placeholder='Message' required='required' rows='4'></textarea>
+          </div>
+          <div class='form-group'>
+            <button class='btn btn-submit' type='submit'>Send Message</button>
+          </div>
+        </form>
+      </div>
+      <div class='col-sm-6'>
+        <div class='contact-info'>
+          <h3>Contact Info</h3>
+          <ul>
+            <li>
+              <i class='fa fa-phone'></i>
+              Phone: 262 695 2601
+            </li>
+            <li>
+              <i class='fa fa-map-marker'></i>
+              1967 Fairfield Road Pewaukee, WI 53072
+            </li>
+            <li>
+              <i class='fa fa-envelope'></i>
+              <a href='#'>support@octopus-theme.com</a>
+            </li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <div class='social-icons'>
+            <h3>Get in Touch</h3>
+            <ul>
+              <li>
+                <a href='#'>
+                  <i class='fa fa-facebook'></i>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i class='fa fa-twitter'></i>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i class='fa fa-linkedin'></i>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i class='fa fa-dribbble'></i>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i class='fa fa-youtube'></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /#contact-us -->
+<div id='gmap'></div>
+<!-- /#gmap -->
+<footer id='footer'>
+  <div class='container text-center'>
+    <p>
+      &copy; 2014
+      <a href='#'>OctopusTheme</a>
+      All rights reserved.
+    </p>
+  </div>
+  <a class='to-top' data-scroll='' href='#main-carousel'>
+    <i class='fa fa-angle-up'></i>
+  </a>
+</footer>
 
-    <script type="text/javascript" src="/assets/application.js?cb=1d0a6f4b71234d1a3fbaaa58636d8fc6"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="/assets/application.js?cb=34528e594a9a21a93da9d9678f3b3561"></script>
   </body>
 </html>

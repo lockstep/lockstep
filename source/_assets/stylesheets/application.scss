@@ -1,7 +1,6 @@
-@import "vendor/normalize";
-
-@import "bourbon";
-@import "neat";
-@import "base/base";
-
-@import "global";
+@import "bootstrap.min";
+@import "animate";
+@import "font-awesome.min";
+@import "prettyPhoto";
+@import "main";
+@import "responsive";
