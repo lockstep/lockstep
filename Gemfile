@@ -8,3 +8,8 @@ gem 'jekyll-haml'
 gem 'neat'
 gem 'sass'
 gem 'uglifier'
+
+gem 'rspec'
+gem 'capybara'
+gem 'poltergeist'
+
