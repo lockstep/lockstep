@@ -198,12 +198,12 @@ h1, h2, h3, h4, h5, h6 {
 .carousel-caption {
 	left:15px;
 	right:15px;
-	top:50%;
+	top:40%;
 	margin-top:-150px;
 	text-align:center;
 	text-transform: uppercase;
 	font-size:24px;
-	color:#fff;
+	color:#000;
 	text-shadow:none;
 }
 
@@ -214,15 +214,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .carousel-caption h2 {
-	font-size:92px;
+	font-size:54px;
 	font-weight:700;
 	letter-spacing:0;
-	margin-top:12px;
+	margin-top:20px;
+}
+
+.carousel-caption h3 {
+  text-transform: capitalize;
+  margin-top: 70px;
 }
 
 .carousel-caption > p {
-	letter-spacing: 8px;
+	letter-spacing: 5px;
 	text-shadow: inherit;
+  font-size: 18px;
+  margin-top: 60px;
+  text-transform: capitalize;
+  line-height: 30px;
 }
 
 .carousel-caption h2 span {
@@ -281,7 +290,7 @@ h1, h2, h3, h4, h5, h6 {
 	width: 30px;
 	bottom: 10%;
 	left: 50%;
-	border: 2px solid #fff;
+	border: 2px solid #000;
 	border-radius: 15px;  
 	cursor: pointer;
 	display: block;
@@ -290,44 +299,45 @@ h1, h2, h3, h4, h5, h6 {
 	-webkit-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
 	-ie-transform: translateX(-50%);
-	z-index:15;
+  z-index:15;
 }
 
 .mouse-icon .wheel {
-	position: relative;
-	width: 4px;
-	height: 10px;
-	top: 5px;
-	background-color: #fff;
-	margin-left: auto;
-	margin-right: auto;
+  position: relative;
+  width: 4px;
+  height: 10px;
+  top: 5px;
+  background-color: #000;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mouse-icon .fa-angle-down {
 	font-size: 24px;
 	margin-left: 6px;
 	margin-top: 38px;  
+  color: #df392e;
 }
 
 .mouse-icon .wheel, 
 .mouse-icon .fa-angle-down {	
-	-webkit-animation-name:drop;
-	-webkit-animation-duration:1s;
-	-webkit-animation-timing-function:linear;
-	-webkit-animation-delay:0s;
-	-webkit-animation-iteration-count:infinite;	
-	-webkit-animation-play-state:running;	
-	animation-name:drop;
-	animation-duration:1s;
-	animation-timing-function:linear;
-	animation-delay:0s;
-	animation-iteration-count:infinite;	
-	animation-play-state:running;
+  -webkit-animation-name:drop;
+  -webkit-animation-duration:1s;
+  -webkit-animation-timing-function:linear;
+  -webkit-animation-delay:0s;
+  -webkit-animation-iteration-count:infinite;	
+  -webkit-animation-play-state:running;	
+  animation-name:drop;
+  animation-duration:1s;
+  animation-timing-function:linear;
+  animation-delay:0s;
+  animation-iteration-count:infinite;	
+  animation-play-state:running;
 }
-	
+
 @-webkit-keyframes drop	{
-	0%   { top:5px;opacity: 0;}
-	30% { top:10px;opacity: 1;}
+  0%   { top:5px;opacity: 0;}
+  30% { top:10px;opacity: 1;}
 	100% { top:25px;opacity: 0;}
 }
 	

@@ -3038,7 +3038,7 @@ jQuery(function($) {'use strict',
 		
 	// Navigation Scroll	
 	$(window).on('scroll', function(){
-		if( $(window).scrollTop()>600 ){
+		if( $(window).scrollTop() > window.innerHeight){
 			$('#navigation .navbar').addClass('navbar-fixed-top');
 		} else {
 			$('#navigation .navbar').removeClass('navbar-fixed-top');

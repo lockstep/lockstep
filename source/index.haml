@@ -7,54 +7,20 @@ layout: default
 #main-carousel
   #home-carousel.carousel.slide.carousel-fade{"data-ride" => "carousel"}
     .carousel-inner
-      .item.active{:style => "background-image: url({% asset_path home/1.jpg %})"}
+      .item.active
         .carousel-caption
-          %h1.animated.fadeInUpBig
-            %strong unique
-            and
-            %strong Creative
-            Design
+          .text-center
+            %img{:alt => "logo", :src => "{% asset_path logo.png %}"}
+          %h3 We build
           %h2.animated.zoomIn
-            I am
-            %span octopus
-          %p.animated.fadeInDownBig For Creative Agency
-      .item{:style => "background-image: url({% asset_path home/2.jpg %})"}
-        .carousel-caption
-          %h1.animated.fadeInUpBig
-            We
-            %strong love
-            to
-            %strong design
-          %h2.animated.zoomIn
-            Awesome
-            %span themes
-          %p.animated.fadeInDownBig We are happy with you are !
-      .item{:style => "background-image: url({% asset_path home/3.jpg %})"}
-        .carousel-caption
-          %h1.animated.fadeInUpBig
-            We
-            %strong think
-            to
-            %strong create
-          %h2.animated.zoomIn
-            Something
-            %span Special
-          %p.animated.fadeInDownBig Features For Your Business
-      .item{:style => "background-image: url({% asset_path home/4.jpg %})"}
-        .carousel-caption
-          %h1.animated.fadeInUpBig
-            We
-            %strong enjoy
-            your
-            %strong Smile
-          %h2.animated.zoomIn
-            We get
-            %span speed
-          %p.animated.fadeInDownBig When you Encourage us
-    %a.main-carousel-left{"data-slide" => "prev", :href => "#home-carousel"}
-      %i.fa.fa-angle-left
-    %a.main-carousel-right{"data-slide" => "next", :href => "#home-carousel"}
-      %i.fa.fa-angle-right
+            %span Custom Web Applications
+          %p.animated.fadeInDownBig
+            You have a brilliant idea.
+            <br />
+            We take pride in crafting fast and 
+            beautiful applications.
+            <br />
+            Let's build something great together.
   %a.smooth-scroll{"data-scroll" => "", :href => "#navigation"}
     .mouse-icon
       .wheel
@@ -698,76 +664,7 @@ layout: default
                   %i.fa.fa-comments
                   3 Comments
             %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-/ /#blog
-%section#pricing-tables.padding-top.padding-bottom.off-white
-  .container
-    .row.text-center.section-title
-      .col-sm-8.col-sm-offset-2
-        %h2 Pricing Table
-        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam
-    .pricing-table.text-center
-      .row
-        .col-sm-6.col-md-3
-          .single-table
-            %h4 Starter
-            .price-icon
-              %i.fa.fa-bitbucket
-            %span.price
-              $19/
-              %small m
-            %ul
-              %li Up to 5 Users
-              %li Max 100 items
-              %li Unlimited QueriesFull
-              %li Statistics
-              %li Great Support
-            %a.btn.btn-primary{:href => ""} Get This Plan
-        .col-sm-6.col-md-3
-          .single-table
-            %h4 Medium
-            .price-icon
-              %i.fa.fa-paper-plane
-            %span.price
-              $49/
-              %small m
-            %ul
-              %li Up to 5 Users
-              %li Max 100 items
-              %li Unlimited QueriesFull
-              %li Statistics
-              %li Great Support
-            %a.btn.btn-primary{:href => ""} Get This Plan
-        .col-sm-6.col-md-3
-          .single-table.featured
-            %h4 Business
-            .price-icon
-              %i.fa.fa-rocket
-            %span.price
-              $59/
-              %small m
-            %ul
-              %li Up to 5 Users
-              %li Max 100 items
-              %li Unlimited QueriesFull
-              %li Statistics
-              %li Great Support
-            %a.btn.btn-primary{:href => ""} Get This Plan
-        .col-sm-6.col-md-3
-          .single-table
-            %h4 Professional
-            .price-icon
-              %i.fa.fa-road
-            %span.price
-              $99/
-              %small m
-            %ul
-              %li Up to 5 Users
-              %li Max 100 items
-              %li Unlimited QueriesFull
-              %li Statistics
-              %li Great Support
-            %a.btn.btn-primary{:href => ""} Get This Plan
-/ /#pricing
+
 %section#contact-us.parallax-section
   .parallax-content
     .color-overlay
