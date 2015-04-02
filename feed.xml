@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lockstep Labs</title>
+    <title>Lockstep Labs | Custom Web Applications</title>
     <description>Custom web and mobile application development</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 02 Apr 2015 11:29:16 +0700</pubDate>
-    <lastBuildDate>Thu, 02 Apr 2015 11:29:16 +0700</lastBuildDate>
+    <pubDate>Thu, 02 Apr 2015 11:34:17 +0700</pubDate>
+    <lastBuildDate>Thu, 02 Apr 2015 11:34:17 +0700</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
