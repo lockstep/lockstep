@@ -3013,9 +3013,9 @@ jQuery(function($) {'use strict',
 
   $(window).scroll(function(event) {
     Scroll();
-  });	
+  });
 
-  $('.navbar-collapse ul li a').click(function() {  
+  $('.navbar-collapse ul li a').click(function() {
     $('html, body').animate({scrollTop: $(this.hash).offset().top -10}, 1000);
     return false;
   });
@@ -3035,11 +3035,11 @@ jQuery(function($) {'use strict',
       if ( winTop > contentTop[i] - rangeTop ){
         $('.navbar-collapse li.scroll')
           .removeClass('active')
-          .eq(i).addClass('active');			
+          .eq(i).addClass('active');
       }
     })
 
-  };	
+  };
 
   // Slider Height
   var slideHeight = $(window).height();
@@ -3049,7 +3049,7 @@ jQuery(function($) {'use strict',
     $('#home-carousel .item').css('height',slideHeight);
   });
 
-  //accordion 
+  //accordion
   $('#accordion-two .panel-default .panel-heading').on('click',function(){'use strict',
     $('.panel-heading').removeClass('active');
     $(this).addClass('active');
@@ -3122,7 +3122,7 @@ jQuery(function($) {'use strict',
     });
 
 
-    var styles = [ 
+    var styles = [
 
     {
       "featureType": "road",
@@ -3163,12 +3163,46 @@ jQuery(function($) {'use strict',
     map.addStyle({
       styledMapName:"Styled Map",
       styles: styles,
-      mapTypeId: "map_style"  
+      mapTypeId: "map_style"
     });
 
     map.setStyle("map_style");
-  }());		
+  }());
 
+  // Send message
+  $('#send-message').click(function(evt) {
+    evt.preventDefault();
+    var mailResult = $('#mail-result');
+    mailResult.addClass('hidden');
+    var name = $('#message-name').val();
+    var email = $('#message-email').val();
+    var subject = $('#message-subject').val();
+    var message = $('#message-content').val();
+
+    Parse.initialize("2o9NghZoiPZpSKodLml3VNn4lHFJWNO8KvXFGhZR", "HEAoZeztGbvI3Kruk0dufrqR20kyNaaujYWT9r79");
+
+    var data = {
+      name: name,
+      email: email,
+      subject: subject,
+      message: message
+    }
+
+    Parse.Cloud.run('sendEmail', data, {
+      success: function(object) {
+        mailResult.text('Message was sent. Thank you.');
+        mailResult.addClass('alert-succes');
+        mailResult.removeClass('alert-danger');
+        mailResult.removeClass('hidden');
+      },
+      error: function(object, error) {
+        mailResult.text('There was an error. Please try again');
+        mailResult.removeClass('alert-succes');
+        mailResult.addClass('alert-danger');
+        mailResult.removeClass('hidden');
+      }
+    });
+  });
 
 });
 

@@ -48,7 +48,7 @@ layout: default
           %p
             You have a brilliant idea.
             <br />
-            We take pride in crafting fast and 
+            We take pride in crafting fast and
             beautiful applications.
             <br />
             Let's build something great together.
@@ -656,20 +656,21 @@ layout: default
           %h2 Contact Us
           %p Let's talk about how we can help your next project succeed.
       .col-sm-6
-        %form#contact-form{:action => "sendemail.php", :method => "post", :name => "contact-form"}
+        %form#contact-form{:name => "contact-form"}
+          #mail-result.alert.alert-success.hidden message
           .row
             .col-sm-6
               .form-group
-                %input.form-control{:name => "name", :placeholder => "Name", :required => "required", :type => "text"}
+                %input#message-name.form-control{:name => "name", :placeholder => "Name", :required => "required", :type => "text"}
             .col-sm-6
               .form-group
-                %input.form-control{:name => "email", :placeholder => "Email", :required => "required", :type => "email"}
+                %input#message-email.form-control{:name => "email", :placeholder => "Email", :required => "required", :type => "email"}
           .form-group
-            %input.form-control{:name => "subject", :placeholder => "Subject", :required => "required", :type => "text"}
+            %input#message-subject.form-control{:name => "subject", :placeholder => "Subject", :required => "required", :type => "text"}
           .form-group
-            %textarea#message.form-control{:name => "message", :placeholder => "Message", :required => "required", :rows => "4"}
+            %textarea#message-content.form-control{:name => "message", :placeholder => "Message", :required => "required", :rows => "4"}
           .form-group
-            %button.btn.btn-submit{:type => "submit"} Send Message
+            %button.btn.btn-submit{id: 'send-message', :type => "submit"} Send Message
       .col-sm-6
         .contact-info
           %h3 Contact Info
