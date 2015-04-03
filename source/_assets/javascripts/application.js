@@ -7,5 +7,4 @@
 #= require jquery.countTo
 #= require smooth-scroll
 #= require canvas
-#= require preloader
 #= require main

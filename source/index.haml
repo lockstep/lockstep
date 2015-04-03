@@ -3,7 +3,10 @@ layout: default
 ---
 / Page Loader
 .preloader
-  #loaderImage
+  .spinner
+    .bounce1
+    .bounce2
+    .bounce3
 #main-carousel
   #home-carousel.carousel.slide.carousel-fade{"data-ride" => "carousel"}
     .carousel-inner
@@ -12,9 +15,9 @@ layout: default
           .text-center
             %img{:alt => "logo", :src => "{% asset_path logo.png %}"}
           %h3 We build
-          %h2.animated.zoomIn
+          %h2
             %span Custom Web Applications
-          %p.animated.fadeInDownBig
+          %p
             You have a brilliant idea.
             <br />
             We take pride in crafting fast and 
