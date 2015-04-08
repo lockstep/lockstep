@@ -9,6 +9,8 @@ gem 'neat'
 gem 'sass'
 gem 'uglifier'
 
+gem 'guard'
+gem 'guard-livereload'
 gem 'rspec'
 gem 'capybara'
 gem 'poltergeist'

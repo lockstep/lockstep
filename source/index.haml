@@ -17,8 +17,8 @@ layout: default
           %span.icon-bar
           %span.icon-bar
         %a.navbar-brand{:href => "index.html"}
-          %h1
-            %img.img-responsive{:alt => "logo", :src => "{% asset_path logo.png %}"}
+          %img.img-responsive{:alt => "logo", :src => "{% asset_path logo_icon.png %}"}
+          %h1 LOCKSTEP
       .collapse.navbar-collapse
         %ul.nav.navbar-nav.navbar-right
           %li.scroll.active
@@ -37,25 +37,34 @@ layout: default
           -#   %a{:href => "#blog"} Blog
           %li.scroll
             %a{:href => "#contact-us"} Contact
-#main-carousel
-  #home-carousel.carousel.slide.carousel-fade{"data-ride" => "carousel"}
-    .carousel-inner
-      .item.active
-        .carousel-caption
-          %h3 We build
-          %h2
-            %span Custom Web Applications
-          %p
-            You have a brilliant idea.
-            <br />
-            We take pride in crafting fast and
-            beautiful applications.
-            <br />
-            Let's build something great together.
+#main-home-section
+  %div.logo-pieces
+    %img(src="{% asset_path logo_icon_top.png %}" class="top-piece")
+    %img(src="{% asset_path logo_icon_bottom.png %}" class="bottom-piece")
+  %h1.main-logo-text
+    %span.lockstep LOCKSTEP
+    %span.labs LABS
+
   %a.smooth-scroll{"data-scroll" => "", :href => "#portfolio"}
     .mouse-icon
       .wheel
       %i.fa.fa-angle-down
+
+-# #main-carousel
+-#   #home-carousel.carousel.slide.carousel-fade{"data-ride" => "carousel"}
+-#     .carousel-inner
+-#       .item.active
+-#         .carousel-caption
+          -# %h3 We build
+          -# %h2
+          -#   %span Custom Web Applications
+          -# %p
+          -#   You have a brilliant idea.
+          -#   <br />
+          -#   We take pride in crafting fast and
+          -#   beautiful applications.
+          -#   <br />
+          -#   Let's build something great together.
 / /#main-carousel
 -# %section#about-us.padding-top.off-white
 -#   .container.text-center
