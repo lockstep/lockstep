@@ -1,0 +1,14 @@
+{
+  "global": {
+    "parseVersion": "1.4.0"
+  },
+  "applications": {
+    "_default": {
+      "link": "lockstep_marketing"
+    },
+    "lockstep_marketing": {
+      "applicationId": "2o9NghZoiPZpSKodLml3VNn4lHFJWNO8KvXFGhZR",
+      "masterKey": "5pyBoOMyZKyhlSkFTkpGnM4zMXRZWILPQSOy2Hv9"
+    }
+  }
+}
