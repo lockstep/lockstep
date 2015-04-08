@@ -15,7 +15,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight:300;
-  color: $primary-blue;
+  color: $dark-blue;
   background-color: #fff;
 }
 
@@ -174,12 +174,12 @@ h1.main-logo-text {
   margin-top: 220px;
   font-size: 50px;
   span.lockstep {
-    color: $primary-blue;
+    color: $dark-blue;
     position: relative;
     right: -7px;
   }
   span.labs {
-    color: $primary-red;
+    color: $light-green;
     font-weight: 300;
     position: relative;
     left: -7px;
@@ -235,7 +235,7 @@ h1.main-logo-text {
 	text-align:center;
 	text-transform: uppercase;
 	font-size:24px;
-	color: $primary-blue;
+	color: $dark-blue;
 	text-shadow:none;
 }
 
@@ -322,7 +322,7 @@ h1.main-logo-text {
 	width: 30px;
 	bottom: 10%;
 	left: 50%;
-	border: 2px solid $primary-blue;
+	border: 2px solid $dark-blue;
 	border-radius: 15px;  
 	cursor: pointer;
 	display: block;
@@ -339,7 +339,7 @@ h1.main-logo-text {
   width: 4px;
   height: 10px;
   top: 5px;
-  background-color: $primary-blue;
+  background-color: $dark-blue;
   margin-left: auto;
   margin-right: auto;
 }
@@ -348,7 +348,7 @@ h1.main-logo-text {
 	font-size: 24px;
 	margin-left: 6px;
 	margin-top: 38px;  
-  color: #df392e;
+  color: $dark-green;
 }
 
 .mouse-icon .wheel, 
@@ -394,7 +394,7 @@ h1.main-logo-text {
   position: relative;
   padding-left: 40px;
   h1 {
-    color: $primary-blue;
+    color: $dark-blue;
     font-weight: 600;
     padding: 0px;
     margin: 0px;
@@ -411,7 +411,7 @@ h1.main-logo-text {
 }
 
 #navigation .navbar-right li a {
-	color:$primary-blue;
+	color:$dark-blue;
 	font-size:14px;
 	font-weight:600;
 	line-height:68px;
@@ -428,7 +428,7 @@ h1.main-logo-text {
 #navigation .navbar-right li a:hover, 
 #navigation .navbar-right li a:focus, 
 #navigation .navbar-right li.active a  {
-  color: $primary-red;
+  color: $light-green;
 }
 
 
@@ -493,7 +493,7 @@ h1.main-logo-text {
 
 .about-text h3 {
 	font-size:24px;
-	color:$primary-blue;
+	color:$dark-blue;
 	margin-bottom:18px;
 }
 
@@ -695,7 +695,7 @@ h1.main-logo-text {
 	text-transform:uppercase;
 	font-size:14px;
 	font-weight:400;
-	color:$primary-blue;
+	color:$dark-blue;
 	border:1px solid #e6e6e6;
 }
 
@@ -873,7 +873,7 @@ h1.main-logo-text {
 ===========================*/
 .member-info {
 	font-size:12px;
-	color:$primary-blue;
+	color:$dark-blue;
 	font-weight:300;
 }
 
@@ -895,7 +895,7 @@ h1.main-logo-text {
 
 .member-social li a {
 	border: 1px solid #e5e5e5;
-	color: $primary-blue;
+	color: $dark-blue;
 	display: block;
 	font-size: 12px;
 	height: 30px;
@@ -1288,7 +1288,7 @@ h1.main-logo-text {
 }
 
 .entry-title a {
-	color:$primary-blue;	
+	color:$dark-blue;	
 }
 
 .entry-title a:hover {
@@ -1308,7 +1308,7 @@ h1.main-logo-text {
 }
 
 .entry-meta li a:hover {
-	color:$primary-blue;
+	color:$dark-blue;
 }
 
 .entry-meta span {
@@ -1543,7 +1543,7 @@ transform: scale(1.2);
 }
 
 #footer {
-	background-color:$primary-blue;
+	background-color: $dark-blue;
 	color:#fff;
 	padding-top:30px;
 	padding-bottom:20px;
@@ -1606,7 +1606,7 @@ transform: scale(1.2);
 .preloader .spinner > div {
   width: 18px;
   height: 18px;
-  background-color: #2b2d35;
+  background-color: $light-blue;
   border-radius: 100%;
   display: inline-block;
   -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
