@@ -2982,7 +2982,11 @@ jQuery(function($) {'use strict',
   //Preloader
   $(window).load(function(){
     $('.preloader').fadeOut('fast',function(){$(this).remove();});
-    $('.carousel-caption').addClass('animated fadeInDown');
+    // $('.carousel-caption').addClass('animated fadeInDown');
+    $('.lockstep').addClass('animated fadeInLeft');
+    $('.labs').addClass('animated fadeInRight');
+    $('.logo-pieces .bottom-piece').addClass('animated fadeInRight');
+    $('.logo-pieces .top-piece').addClass('animated rollIn');
   });
 
   //Parallax Scrolling
@@ -3028,6 +3032,7 @@ jQuery(function($) {'use strict',
     var rangeTop    =   200;
     var rangeBottom =   500;
     $('.navbar-collapse').find('.scroll a').each(function(){
+      console.log(this);
       contentTop.push( $( $(this).attr('href') ).offset().top);
       contentBottom.push( $( $(this).attr('href') ).offset().top + $( $(this).attr('href') ).height() );
     })
@@ -3043,10 +3048,14 @@ jQuery(function($) {'use strict',
 
   // Slider Height
   var slideHeight = $(window).height();
-  $('#home-carousel .item').css('height',slideHeight);
+  // $('#home-carousel .item').css('height',slideHeight);
 
+  // $(window).resize(function(){'use strict',
+  //   $('#home-carousel .item').css('height',slideHeight);
+  // });
+  $('#main-home-section').css('height',slideHeight);
   $(window).resize(function(){'use strict',
-    $('#home-carousel .item').css('height',slideHeight);
+    $('#main-home-section').css('height',slideHeight);
   });
 
   //accordion
