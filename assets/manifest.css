@@ -9858,7 +9858,7 @@ h1.main-logo-text {
     position: relative;
     right: -7px; }
   h1.main-logo-text span.labs {
-    color: #D32427;
+    color: #70B862;
     font-weight: 300;
     position: relative;
     left: -7px; }
@@ -9998,7 +9998,7 @@ h1.main-logo-text {
   font-size: 24px;
   margin-left: 6px;
   margin-top: 38px;
-  color: #df392e; }
+  color: #2D5E31; }
 
 .mouse-icon .wheel,
 .mouse-icon .fa-angle-down {
@@ -10078,7 +10078,7 @@ h1.main-logo-text {
 #navigation .navbar-right li a:hover,
 #navigation .navbar-right li a:focus,
 #navigation .navbar-right li.active a {
-  color: #D32427; }
+  color: #70B862; }
 
 /*=========================
 ========About Us CSS========
@@ -11067,7 +11067,7 @@ textarea.form-control {
 .preloader .spinner > div {
   width: 18px;
   height: 18px;
-  background-color: #2b2d35;
+  background-color: #008EB0;
   border-radius: 100%;
   display: inline-block;
   -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
