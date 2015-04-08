@@ -1431,6 +1431,10 @@ textarea.form-control {
 	border-radius:5px;
 }
 
+.contact-info .icon {
+  width: 55px;
+}
+
 .social-icons {
 	margin-top:35px;
 }

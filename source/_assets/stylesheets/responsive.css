@@ -1,6 +1,9 @@
 /* lg */ 
 @media (min-width: 1200px) {
-
+  .folio-overlay a.folio-detail {
+    margin-bottom: -15px;
+    right: 107px;
+  }
 }
 
 /* md */
@@ -21,7 +24,7 @@
 	}
 	.folio-overlay a.folio-detail {
 		margin-bottom: -15px;
-		right: 65px;
+		right: 90px;
 	}
 	.about-text h3 {
 		font-size:22px;
@@ -61,7 +64,7 @@
 	}
 	.folio-overlay a.folio-detail {
 		margin-bottom: -15px;
-		right: 65px;
+		right: 90px;
 	}
 	.member-social li {
 		margin-right:5px;
@@ -219,7 +222,7 @@
 	}
 	.folio-overlay a.folio-detail {
 		margin-bottom: -15px;
-		right: 65px;
+		right: 150px;
 	}
 	/*Testimonial*/
 	.testimony-left, .testimony-right, 

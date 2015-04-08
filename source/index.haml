@@ -7,30 +7,8 @@ layout: default
     .bounce1
     .bounce2
     .bounce3
-#main-carousel
-  #home-carousel.carousel.slide.carousel-fade{"data-ride" => "carousel"}
-    .carousel-inner
-      .item.active
-        .carousel-caption
-          .text-center
-            %img{:alt => "logo", :src => "{% asset_path logo.png %}"}
-          %h3 We build
-          %h2
-            %span Custom Web Applications
-          %p
-            You have a brilliant idea.
-            <br />
-            We take pride in crafting fast and 
-            beautiful applications.
-            <br />
-            Let's build something great together.
-  %a.smooth-scroll{"data-scroll" => "", :href => "#navigation"}
-    .mouse-icon
-      .wheel
-      %i.fa.fa-angle-down
-/ /#main-carousel
 #navigation
-  .navbar{:role => "banner"}
+  .navbar.navbar-fixed-top{:role => "banner"}
     .container
       .navbar-header
         %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
@@ -45,629 +23,630 @@ layout: default
         %ul.nav.navbar-nav.navbar-right
           %li.scroll.active
             %a{:href => "#main-carousel"} Home
+          -# %li.scroll
+          -#   %a{:href => "#about-us"} About Us
+          -# %li.scroll
+          -#   %a{:href => "#why-us"} Why like Us
           %li.scroll
-            %a{:href => "#about-us"} About Us
-          %li.scroll
-            %a{:href => "#why-us"} Why like Us
-          %li.scroll
-            %a{:href => "#portfolio"} Portfolio
-          %li.scroll
-            %a{:href => "#our-team"} Team
-          %li.scroll
-            %a{:href => "#hot-octopus"} Hot Features
-          %li.scroll
-            %a{:href => "#blog"} Blog
+            %a{:href => "#portfolio"} Our Work
+          -# %li.scroll
+          -#   %a{:href => "#our-team"} Team
+          -# %li.scroll
+          -#   %a{:href => "#hot-octopus"} Hot Features
+          -# %li.scroll
+          -#   %a{:href => "#blog"} Blog
           %li.scroll
             %a{:href => "#contact-us"} Contact
-/ /#navigation
-%section#about-us.padding-top.off-white
-  .container.text-center
-    .row.section-title
-      .col-sm-8.col-sm-offset-2
-        %h2 About Us
-        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam
-    .bout-us-image
-      %img.img-responsive{:alt => "", :src => "{% asset_path about-us/devices.png %}"}
-    .row
-      .col-md-3.col-sm-6.about-content
-        .about-icon
-          %i.fa.fa-users
-        .about-text
-          %h3 Creative Team
-          %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
-      .col-md-3.col-sm-6.about-content
-        .about-icon
-          %i.fa.fa-rocket
-        .about-text
-          %h3 Unique Design
-          %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
-      .col-md-3.col-sm-6.about-content
-        .about-icon
-          %i.fa.fa-envelope
-        .about-text
-          %h3 24/7 Support
-          %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
-      .col-md-3.col-sm-6.about-content
-        .about-icon
-          %i.fa.fa-shield
-        .about-text
-          %h3 Great Security
-          %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
-/ /#about us
-#promo-one.parallax-section
-  .parallax-content
-    .color-overlay
-    .container.text-center
-      %h2 Octopus has unique and modern design!
-      %p Designed for Creative Agency
-      %a.btn.btn-primary{:href => "#"} Buy Theme
-/ /parallax-section
-%section#why-us.padding-top
-  .container
-    .row.text-center.section-title
-      .col-sm-8.col-sm-offset-2
-        %h2 Why Like Us
-        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam
-    .row.text-center.like-us
-      .col-md-3.col-sm-6.about-content
-        .about-icon
-          %i.fa.fa-bitbucket
-        .about-text
-          %h3 Fresh Design
-          %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
-      .col-md-3.col-sm-6.about-content
-        .about-icon
-          %i.fa.fa-cloud
-        .about-text
-          %h3 Useful features
-          %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
-      .col-md-3.col-sm-6.about-content
-        .about-icon
-          %i.fa.fa-cog
-        .about-text
-          %h3 Easy Customization
-          %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
-      .col-md-3.col-sm-6.about-content
-        .about-icon
-          %i.fa.fa-coffee
-        .about-text
-          %h3 Preset Style
-          %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
-      .col-md-3.col-sm-6.about-content
-        .about-icon
-          %i.fa.fa-laptop
-        .about-text
-          %h3 Free Updates
-          %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
-      .col-md-3.col-sm-6.about-content
-        .about-icon
-          %i.fa.fa-paper-plane
-        .about-text
-          %h3 Fully Responsive
-          %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
-      .col-md-3.col-sm-6.about-content
-        .about-icon
-          %i.fa.fa-leaf
-        .about-text
-          %h3 Dropdown Menu
-          %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
-      .col-md-3.col-sm-6.about-content
-        .about-icon
-          %i.fa.fa-group{:class => "(alias)"}
-        .about-text
-          %h3 Typhography
-          %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
-/ /why-us
-#promo-two.text-center.parallax-section
-  .parallax-content
-    .color-overlay
-    .container
-      .row
-        .col-sm-3
-          %i.fa.fa-clock-o
-          %h3.timer{"data-from" => "0", "data-speed" => "7000", "data-to" => "2700"} hidden-time
-          %h4 Hours Of Work
-        .col-sm-3
-          %i.fa.fa-heart
-          %h3.timer{"data-from" => "0", "data-speed" => "5000", "data-to" => "32"} hidden-time
-          %h4 Clients Worked
-        .col-sm-3
-          %i.fa.fa-paper-plane
-          %h3.timer{"data-from" => "0", "data-speed" => "5000", "data-to" => "178"} hidden-time
-          %h4 Project Done
-        .col-sm-3
-          %i.fa.fa-coffee
-          %h3.timer{"data-from" => "0", "data-speed" => "5000", "data-to" => "45"} hidden-time
-          %h4 Cups of Coffee
-/ /parallax-section
-%section#why-octopus.padding-top.padding-bottom
-  .container
-    .row.text-center.section-title
-      .col-sm-8.col-sm-offset-2
-        %h2 Why Octopus
-        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam
-    .row
-      .col-sm-6
-        .row.octopus-tab
-          .col-sm-3
-            %ul.tab-list{:role => "tablist"}
-              %li.active
-                %a{"data-toggle" => "tab", :href => "#html5", :role => "tab"}
-                  %i.fa.fa-html5
-                  HTML5
-              %li
-                %a{"data-toggle" => "tab", :href => "#css3", :role => "tab"}
-                  %i.fa.fa-css3
-                  CSS3
-              %li
-                %a{"data-toggle" => "tab", :href => "#web-design", :role => "tab"}
-                  %i.fa.fa-paper-plane
-                  Design
-          .col-sm-9
-            .tab-content
-              #html5.tab-pane.fade.in.active.off-white
-                %h2 We love to work with HTML5
-                %img.img-responsive{:alt => "accordion", :src => "{% asset_path accordion/accordion1.jpg %}"}
-                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              #css3.tab-pane.fade.off-white
-                %h2 We love to work with CSS3
-                %img.img-responsive{:alt => "accordion", :src => "{% asset_path accordion/accordion2.jpg %}"}
-                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              #web-design.tab-pane.fade.off-white
-                %h2 We love to Design
-                %img.img-responsive{:alt => "accordion", :src => "{% asset_path accordion/accordion3.jpg %}"}
-                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      .col-sm-6
-        #accordion-two.panel-group
-          .panel.panel-default
-            .panel-heading.active
-              %h4.panel-title
-                %a{"data-parent" => "#accordion-two", "data-toggle" => "collapse", :href => "#professional"}
-                  %i.fa.fa-magic
-                  Professional Design
-            #professional.panel-collapse.collapse.in
-              .panel-body
-                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-          .panel.panel-default
-            .panel-heading
-              %h4.panel-title
-                %a{"data-parent" => "#accordion-two", "data-toggle" => "collapse", :href => "#customization"}
-                  %i.fa.fa-cogs
-                  Easy Customization
-            #customization.panel-collapse.collapse
-              .panel-body
-                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-          .panel.panel-default
-            .panel-heading
-              %h4.panel-title
-                %a{"data-parent" => "#accordion-two", "data-toggle" => "collapse", :href => "#support"}
-                  %i.fa.fa-envelope
-                  24/7 Support
-            #support.panel-collapse.collapse
-              .panel-body
-                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-          .panel.panel-default
-            .panel-heading
-              %h4.panel-title
-                %a{"data-parent" => "#accordion-two", "data-toggle" => "collapse", :href => "#help-desk"}
-                  %i.fa.fa-bitbucket
-                  Live Help Desk
-            #help-desk.panel-collapse.collapse
-              .panel-body
-                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-/ /#why-octopus
+#main-carousel
+  #home-carousel.carousel.slide.carousel-fade{"data-ride" => "carousel"}
+    .carousel-inner
+      .item.active
+        .carousel-caption
+          %h3 We build
+          %h2
+            %span Custom Web Applications
+          %p
+            You have a brilliant idea.
+            <br />
+            We take pride in crafting fast and 
+            beautiful applications.
+            <br />
+            Let's build something great together.
+  %a.smooth-scroll{"data-scroll" => "", :href => "#portfolio"}
+    .mouse-icon
+      .wheel
+      %i.fa.fa-angle-down
+/ /#main-carousel
+-# %section#about-us.padding-top.off-white
+-#   .container.text-center
+-#     .row.section-title
+-#       .col-sm-8.col-sm-offset-2
+-#         %h2 About Us
+-#         %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam
+-#     .bout-us-image
+-#       %img.img-responsive{:alt => "", :src => "{% asset_path about-us/devices.png %}"}
+-#     .row
+-#       .col-md-3.col-sm-6.about-content
+-#         .about-icon
+-#           %i.fa.fa-users
+-#         .about-text
+-#           %h3 Creative Team
+-#           %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
+-#       .col-md-3.col-sm-6.about-content
+-#         .about-icon
+-#           %i.fa.fa-rocket
+-#         .about-text
+-#           %h3 Unique Design
+-#           %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
+-#       .col-md-3.col-sm-6.about-content
+-#         .about-icon
+-#           %i.fa.fa-envelope
+-#         .about-text
+-#           %h3 24/7 Support
+-#           %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
+-#       .col-md-3.col-sm-6.about-content
+-#         .about-icon
+-#           %i.fa.fa-shield
+-#         .about-text
+-#           %h3 Great Security
+-#           %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
+-# / /#about us
+-# #promo-one.parallax-section
+-#   .parallax-content
+-#     .color-overlay
+-#     .container.text-center
+-#       %h2 Octopus has unique and modern design!
+-#       %p Designed for Creative Agency
+-#       %a.btn.btn-primary{:href => "#"} Buy Theme
+-# / /parallax-section
+-# %section#why-us.padding-top
+-#   .container
+-#     .row.text-center.section-title
+-#       .col-sm-8.col-sm-offset-2
+-#         %h2 Why Like Us
+-#         %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam
+-#     .row.text-center.like-us
+-#       .col-md-3.col-sm-6.about-content
+-#         .about-icon
+-#           %i.fa.fa-bitbucket
+-#         .about-text
+-#           %h3 Fresh Design
+-#           %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
+-#       .col-md-3.col-sm-6.about-content
+-#         .about-icon
+-#           %i.fa.fa-cloud
+-#         .about-text
+-#           %h3 Useful features
+-#           %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
+-#       .col-md-3.col-sm-6.about-content
+-#         .about-icon
+-#           %i.fa.fa-cog
+-#         .about-text
+-#           %h3 Easy Customization
+-#           %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
+-#       .col-md-3.col-sm-6.about-content
+-#         .about-icon
+-#           %i.fa.fa-coffee
+-#         .about-text
+-#           %h3 Preset Style
+-#           %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
+-#       .col-md-3.col-sm-6.about-content
+-#         .about-icon
+-#           %i.fa.fa-laptop
+-#         .about-text
+-#           %h3 Free Updates
+-#           %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
+-#       .col-md-3.col-sm-6.about-content
+-#         .about-icon
+-#           %i.fa.fa-paper-plane
+-#         .about-text
+-#           %h3 Fully Responsive
+-#           %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
+-#       .col-md-3.col-sm-6.about-content
+-#         .about-icon
+-#           %i.fa.fa-leaf
+-#         .about-text
+-#           %h3 Dropdown Menu
+-#           %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
+-#       .col-md-3.col-sm-6.about-content
+-#         .about-icon
+-#           %i.fa.fa-group{:class => "(alias)"}
+-#         .about-text
+-#           %h3 Typhography
+-#           %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
+-# / /why-us
+-# #promo-two.text-center.parallax-section
+-#   .parallax-content
+-#     .color-overlay
+-#     .container
+-#       .row
+-#         .col-sm-3
+-#           %i.fa.fa-clock-o
+-#           %h3.timer{"data-from" => "0", "data-speed" => "7000", "data-to" => "2700"} hidden-time
+-#           %h4 Hours Of Work
+-#         .col-sm-3
+-#           %i.fa.fa-heart
+-#           %h3.timer{"data-from" => "0", "data-speed" => "5000", "data-to" => "32"} hidden-time
+-#           %h4 Clients Worked
+-#         .col-sm-3
+-#           %i.fa.fa-paper-plane
+-#           %h3.timer{"data-from" => "0", "data-speed" => "5000", "data-to" => "178"} hidden-time
+-#           %h4 Project Done
+-#         .col-sm-3
+-#           %i.fa.fa-coffee
+-#           %h3.timer{"data-from" => "0", "data-speed" => "5000", "data-to" => "45"} hidden-time
+-#           %h4 Cups of Coffee
+-# / /parallax-section
+-# %section#why-octopus.padding-top.padding-bottom
+-#   .container
+-#     .row.text-center.section-title
+-#       .col-sm-8.col-sm-offset-2
+-#         %h2 Why Octopus
+-#         %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam
+-#     .row
+-#       .col-sm-6
+-#         .row.octopus-tab
+-#           .col-sm-3
+-#             %ul.tab-list{:role => "tablist"}
+-#               %li.active
+-#                 %a{"data-toggle" => "tab", :href => "#html5", :role => "tab"}
+-#                   %i.fa.fa-html5
+-#                   HTML5
+-#               %li
+-#                 %a{"data-toggle" => "tab", :href => "#css3", :role => "tab"}
+-#                   %i.fa.fa-css3
+-#                   CSS3
+-#               %li
+-#                 %a{"data-toggle" => "tab", :href => "#web-design", :role => "tab"}
+-#                   %i.fa.fa-paper-plane
+-#                   Design
+-#           .col-sm-9
+-#             .tab-content
+-#               #html5.tab-pane.fade.in.active.off-white
+-#                 %h2 We love to work with HTML5
+-#                 %img.img-responsive{:alt => "accordion", :src => "{% asset_path accordion/accordion1.jpg %}"}
+-#                 %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+-#               #css3.tab-pane.fade.off-white
+-#                 %h2 We love to work with CSS3
+-#                 %img.img-responsive{:alt => "accordion", :src => "{% asset_path accordion/accordion2.jpg %}"}
+-#                 %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+-#               #web-design.tab-pane.fade.off-white
+-#                 %h2 We love to Design
+-#                 %img.img-responsive{:alt => "accordion", :src => "{% asset_path accordion/accordion3.jpg %}"}
+-#                 %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+-#       .col-sm-6
+-#         #accordion-two.panel-group
+-#           .panel.panel-default
+-#             .panel-heading.active
+-#               %h4.panel-title
+-#                 %a{"data-parent" => "#accordion-two", "data-toggle" => "collapse", :href => "#professional"}
+-#                   %i.fa.fa-magic
+-#                   Professional Design
+-#             #professional.panel-collapse.collapse.in
+-#               .panel-body
+-#                 %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+-#           .panel.panel-default
+-#             .panel-heading
+-#               %h4.panel-title
+-#                 %a{"data-parent" => "#accordion-two", "data-toggle" => "collapse", :href => "#customization"}
+-#                   %i.fa.fa-cogs
+-#                   Easy Customization
+-#             #customization.panel-collapse.collapse
+-#               .panel-body
+-#                 %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+-#           .panel.panel-default
+-#             .panel-heading
+-#               %h4.panel-title
+-#                 %a{"data-parent" => "#accordion-two", "data-toggle" => "collapse", :href => "#support"}
+-#                   %i.fa.fa-envelope
+-#                   24/7 Support
+-#             #support.panel-collapse.collapse
+-#               .panel-body
+-#                 %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+-#           .panel.panel-default
+-#             .panel-heading
+-#               %h4.panel-title
+-#                 %a{"data-parent" => "#accordion-two", "data-toggle" => "collapse", :href => "#help-desk"}
+-#                   %i.fa.fa-bitbucket
+-#                   Live Help Desk
+-#             #help-desk.panel-collapse.collapse
+-#               .panel-body
+-#                 %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+-# / /#why-octopus
 %section#portfolio.padding-top.padding-bottom.off-white
   .container
     .row.text-center.section-title
       .col-sm-8.col-sm-offset-2
-        %h2 Portfolio
-        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam
+        %h2 Our Work
+        %p 
     .portfolio-wrapper
       %ul.portfolio-filter.text-center
         %li
-          %a.active{"data-filter" => "*", :href => "#"} All
+          %a.active{"data-filter" => "*", :href => "#"} Show All
         %li
-          %a{"data-filter" => ".photography", :href => "#"} Photography
+          %a{"data-filter" => ".full", :href => "#"} Full Stack
         %li
-          %a{"data-filter" => ".video", :href => "#"} Video
+          %a{"data-filter" => ".open-source", :href => "#"} Open Source
         %li
-          %a{"data-filter" => ".print-design", :href => "#"} Print Design
+          %a{"data-filter" => ".design", :href => "#"} Design
         %li
-          %a{"data-filter" => ".graphic", :href => "#"} Graphic
-        %li
-          %a{"data-filter" => ".art", :href => "#"} Art
+          %a{"data-filter" => ".other", :href => "#"} Other
       / /#portfolio-filter
       .row.portfolio-items
-        .col-sm-4.col-md-3.portfolio-item.print-design.video
+        .col-sm-4.col-md-3.portfolio-item.full
           .portfolio-content
-            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/1.jpg %}"}
+            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/infohounds.jpg %}"}
               .folio-overlay
-                %a.folio-link{:href => "#"}
-                  %i.fa.fa-link
-                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/port-full.jpg %}"}
+                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/infohounds.jpg %}", :title => "We have designed and built a fully customized data analytics platform from scratch in Ruby on Rails. You can see the final product at InfoHounds.com, but the real power of our solution is all under the hood."}
                   %i.fa.fa-plus
-        .col-sm-4.col-md-3.portfolio-item.graphic.video
+        .col-sm-4.col-md-3.portfolio-item.full
           .portfolio-content
-            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/2.jpg %}"}
+            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/cisco-thumb.jpg %}"}
               .folio-overlay
-                %a.folio-link{:href => "#"}
-                  %i.fa.fa-link
-                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/port-full.jpg %}"}
+                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/cisco.png %}", :title => "One of Cisco's latest web products is an interface that allows users to set up various configurations of Cisco hardware (routers, switches, etc) in a drag-and-drop GUI, then run and interface with real hardware that spins up according to the user's design. This lets the user test (and teach) various configurations without having to purchase the actual devices. We helped build the drag-and-drop GUI, increased their test coverage and built performance optimization tools into the deployment process."}
                   %i.fa.fa-plus
-        .col-sm-4.col-md-3.portfolio-item.print-design.art
+        .col-sm-4.col-md-3.portfolio-item.full
           .portfolio-content
-            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/3.jpg %}"}
+            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/upshare-thumb.png %}"}
               .folio-overlay
-                %a.folio-link{:href => "#"}
-                  %i.fa.fa-link
-                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/port-full.jpg %}"}
+                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/upshare.png %}", :title => "Upshare is an innovative social sharing rewards platform. They process a TON of data for their content partners, so we dropped into their existing team to help them query and display key metrics on a highly interactive dashboard. We also helped them tackle scalability issues in their API and improved their test coverage."}
                   %i.fa.fa-plus
-        .col-sm-4.col-md-3.portfolio-item.video.art.photography
+        .col-sm-4.col-md-3.portfolio-item.full
           .portfolio-content
-            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/4.jpg %}"}
+            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/pacethis-thumb.jpg %}"}
               .folio-overlay
-                %a.folio-link{:href => "#"}
-                  %i.fa.fa-link
-                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/port-full.jpg %}"}
+                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/pacethis.png %}", :title => "PaceThis is a running analytics platform that enables serious athletes to track, analyze, and plan their workouts in preparation for events (e.g. marathons). Runners with Garmin GPS watches can import their workouts directly into the site, and are instantly provided with a map of their run as well as charts/graphs analyzing their performance."}
                   %i.fa.fa-plus
-        .col-sm-4.col-md-3.portfolio-item.video.art
+        .col-sm-4.col-md-3.portfolio-item.full.open-source
           .portfolio-content
-            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/5.jpg %}"}
+            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/stackchat-thumb.jpg %}"}
               .folio-overlay
-                %a.folio-link{:href => "#"}
-                  %i.fa.fa-link
-                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/port-full.jpg %}"}
+                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/stackchat.png %}", :title => "We built this fully real-time chat extension as a fun side project. Stack Overflow is the largest community Q&A site for developers, and this extension allows SO users to chat about the questions and answers via a slide-out panel in their Chrome browser. The front end is built entirely in AngularJS."}
                   %i.fa.fa-plus
-        .col-sm-4.col-md-3.portfolio-item.photography.graphic
+        .col-sm-4.col-md-3.portfolio-item.full.open-source
           .portfolio-content
-            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/6.jpg %}"}
+            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/node_boilerplate.jpg %}"}
               .folio-overlay
-                %a.folio-link{:href => "#"}
-                  %i.fa.fa-link
-                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/port-full.jpg %}"}
+                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/node_boilerplate.jpg %}", :title => "Many developers have used our Node boilerplate code as a starting point for their Node.js projects."}
                   %i.fa.fa-plus
-        .col-sm-4.col-md-3.portfolio-item.video.art
+        .col-sm-4.col-md-3.portfolio-item.other
           .portfolio-content
-            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/7.jpg %}"}
+            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/imanifold-thumb.jpg %}"}
               .folio-overlay
-                %a.folio-link{:href => "#"}
-                  %i.fa.fa-link
-                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/port-full.jpg %}"}
+                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/imanifold.png %}", :title => "This client needed a custom server that receives JSON data from a mobile application, converts the information into a nicely designed PDF report, and emails the report to the end customer. The web stack we used is Rails 4, and the PDF generation was accomplished with Prawn. Note: We were not responsible for the design of the template. Image used with permission."}
                   %i.fa.fa-plus
-        .col-sm-4.col-md-3.portfolio-item.photography.graphic.print-design
+        .col-sm-4.col-md-3.portfolio-item.design
           .portfolio-content
-            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/8.jpg %}"}
+            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/ih_infographic-thumb.png %}"}
               .folio-overlay
-                %a.folio-link{:href => "#"}
-                  %i.fa.fa-link
-                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/port-full.jpg %}"}
+                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/ih_infographic.png %}", :title => "We designed this infographic for InfoHounds in order to explain the service as part of a broader a marketing campaign effort."}
                   %i.fa.fa-plus
 / /#portfolio
-#testimonial.parallax-section
-  .parallax-content
-    .color-overlay
-    %a.testimony-left{"data-slide" => "prev", :href => "#testimonial-carousel"}
-      %i.fa.fa-angle-left
-    %a.testimony-right{"data-slide" => "next", :href => "#testimonial-carousel"}
-      %i.fa.fa-angle-right
-    .container
-      .row
-        .col-sm-8.col-sm-offset-2
-          #testimonial-carousel.carousel.slide{"data-ride" => "carousel"}
-            .carousel-inner.text-center
-              .item.active
-                %img.img-responsive.img-circle{:alt => "", :src => "{% asset_path testimonial/client1.jpg %}"}
-                %p
-                  Octopus is a Unique, Creative and Awesome One Page Template. Designer and the Developers did well with this template and i am happy to using it. Thanks to Team Octopus.
-                  %span CEO, Google
-              .item
-                %img.img-responsive.img-circle{:alt => "", :src => "{% asset_path testimonial/client2.jpg %}"}
-                %p
-                  Octopus is a Unique, Creative and Awesome One Page Template. Designer and the Developers did well with this template and i am happy to using it. Thanks to Team Octopus.
-                  %span CEO, Google
-              .item
-                %img.img-responsive.img-circle{:alt => "", :src => "{% asset_path testimonial/client3.jpg %}"}
-                %p
-                  Octopus is a Unique, Creative and Awesome One Page Template. Designer and the Developers did well with this template and i am happy to using it. Thanks to Team Octopus.
-                  %span CEO, Google
-/ /#testimonial
-%section#our-team.padding-top.padding-bottom
-  .container
-    .row.text-center.section-title
-      .col-sm-8.col-sm-offset-2
-        %h2 Our Team
-        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam
-    .team-members.text-center
-      .row
-        .col-sm-6.col-md-3
-          .member
-            .member-image
-              %img.img-responsive{:alt => "", :src => "{% asset_path team/member1.jpg %}"}
-                .member-overlay
-                  %a{:href => "#"}
-                    %i.fa.fa-plus
-            .member-info
-              %h4 Marsha Burns
-              %p UI/UX DESIGNER
-            %ul.member-social
-              %li
-                %a.facebook{:href => "#"}
-                  %i.fa.fa-facebook
-              %li
-                %a.twitter{:href => "#"}
-                  %i.fa.fa-twitter
-              %li
-                %a.linkedin{:href => "#"}
-                  %i.fa.fa-linkedin
-              %li
-                %a.dribbble{:href => "#"}
-                  %i.fa.fa-dribbble
-        .col-sm-6.col-md-3
-          .member
-            .member-image
-              %img.img-responsive{:alt => "", :src => "{% asset_path team/member2.jpg %}"}
-                .member-overlay
-                  %a{:href => "#"}
-                    %i.fa.fa-plus
-            .member-info
-              %h4 Ronald Cook
-              %p WEB DEVELOPER
-            %ul.member-social
-              %li
-                %a.facebook{:href => "#"}
-                  %i.fa.fa-facebook
-              %li
-                %a.twitter{:href => "#"}
-                  %i.fa.fa-twitter
-              %li
-                %a.linkedin{:href => "#"}
-                  %i.fa.fa-linkedin
-              %li
-                %a.dribbble{:href => "#"}
-                  %i.fa.fa-dribbble
-        .col-sm-6.col-md-3
-          .member
-            .member-image
-              %img.img-responsive{:alt => "", :src => "{% asset_path team/member3.jpg %}"}
-                .member-overlay
-                  %a{:href => "#"}
-                    %i.fa.fa-plus
-            .member-info
-              %h4 Darlene D. Lyons
-              %p MANAGER SUPPORT
-            %ul.member-social
-              %li
-                %a.facebook{:href => "#"}
-                  %i.fa.fa-facebook
-              %li
-                %a.twitter{:href => "#"}
-                  %i.fa.fa-twitter
-              %li
-                %a.linkedin{:href => "#"}
-                  %i.fa.fa-linkedin
-              %li
-                %a.dribbble{:href => "#"}
-                  %i.fa.fa-dribbble
-        .col-sm-6.col-md-3
-          .member
-            .member-image
-              %img.img-responsive{:alt => "", :src => "{% asset_path team/member4.jpg %}"}
-                .member-overlay
-                  %a{:href => "#"}
-                    %i.fa.fa-plus
-            .member-info
-              %h4 Martin Black
-              %p Web Developer
-            %ul.member-social
-              %li
-                %a.facebook{:href => "#"}
-                  %i.fa.fa-facebook
-              %li
-                %a.twitter{:href => "#"}
-                  %i.fa.fa-twitter
-              %li
-                %a.linkedin{:href => "#"}
-                  %i.fa.fa-linkedin
-              %li
-                %a.dribbble{:href => "#"}
-                  %i.fa.fa-dribbble
-/ /#Our team
-%section#hot-octopus.padding-top.off-white
-  .container
-    .row.text-center.section-title
-      .col-sm-8.col-sm-offset-2
-        %h2 Hot with Octopus
-        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam
-    .hot-features
-      .row
-        .col-sm-6.col-md-4
-          .hot-feature
-            .icon
-              %i.fa.fa-globe
-            .feature
-              %h3 Web Design
-              %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
-          .hot-feature
-            .icon
-              %i.fa.fa-paper-plane
-            .feature
-              %h3 Bootstrap
-              %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
-        .col-sm-6.col-md-4
-          %img.img-responsive{:alt => "", :src => "{% asset_path hot-features/hot-features-bg.png %}"}
-        .col-sm-6.col-md-4
-          .hot-feature
-            .icon
-              %i.fa.fa-camera
-            .feature
-              %h3 Photography
-              %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
-          .hot-feature
-            .icon
-              %i.fa.fa-cog
-            .feature
-              %h3 Wordpress
-              %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
-/ /#hot-octopus
-#twitter.text-center.parallax-section
-  .parallax-content
-    .color-overlay
-    %a.twitter-left-control{"data-slide" => "prev", :href => "#twitter-slide", :role => "button"}
-      %i.fa.fa-angle-left
-    %a.twitter-right-control{"data-slide" => "next", :href => "#twitter-slide", :role => "button"}
-      %i.fa.fa-angle-right
-    .container
-      .row
-        .col-sm-8.col-sm-offset-2
-          .twitter-icon
-            %i.fa.fa-twitter
-          #twitter-slide.carousel.slide{"data-ride" => "carousel"}
-            .carousel-inner
-              .item.active
-                %a{:href => "#"}
-                  Octopus is a Unique, Creative and Awesome One Page Template. Designer and the Developers did well with this template and i am happy to using it.
-                  %span 5 hours ago
-              .item
-                %a{:href => "#"}
-                  Octopus is a Unique, Creative and Awesome One Page Template. Designer and the Developers did well with this template and i am happy to using it.
-                  %span 9 hours ago
-              .item
-                %a{:href => "#"}
-                  Octopus is a Unique, Creative and Awesome One Page Template. Designer and the Developers did well with this template and i am happy to using it.
-                  %span 2 hours ago
-/ /#twitter
-%section#blog.padding-top.bottom60
-  .container
-    .row.text-center.section-title
-      .col-sm-8.col-sm-offset-2
-        %h2 Latest Blog
-        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam
-    .row
-      .col-sm-6
-        .blog-content
-          .entry-header
-            .blog-image
-              %img.img-responsive{:alt => "", :src => "{% asset_path blog/post1.jpg %}"}
-              .more-link
-                %a{:href => "#"}
-                  %i.fa.fa-plus
-            .post-date
-              %h2
-                21
-                %span June
-          .entry-content
-            %h3.entry-title
-              %a{:href => "#"} Adipisicing elit, sed do eiusmod tempor
-            %ul.entry-meta
-              %li
-                %a{:href => "#"}
-                  %i.fa.fa-user
-                  By: Admin
-                  %span /
-              %li
-                %a{:href => "#"}
-                  %i.fa.fa-tags
-                  Photograph
-                  %span /
-              %li
-                %a{:href => "#"}
-                  %i.fa.fa-comments
-                  3 Comments
-            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      .col-sm-6
-        .blog-content
-          .entry-header
-            .blog-image
-              %img.img-responsive{:alt => "", :src => "{% asset_path blog/post2.jpg %}"}
-              .more-link
-                %a{:href => "#"}
-                  %i.fa.fa-plus
-            .post-date
-              %h2
-                21
-                %span June
-          .entry-content
-            %h3.entry-title
-              %a{:href => "#"} Adipisicing elit, sed do eiusmod tempor
-            %ul.entry-meta
-              %li
-                %a{:href => "#"}
-                  %i.fa.fa-user
-                  By: Admin
-                  %span /
-              %li
-                %a{:href => "#"}
-                  %i.fa.fa-tags
-                  Photograph
-                  %span /
-              %li
-                %a{:href => "#"}
-                  %i.fa.fa-comments
-                  3 Comments
-            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      .col-sm-6
-        .blog-content
-          .entry-header
-            .blog-image
-              %img.img-responsive{:alt => "", :src => "{% asset_path blog/post3.jpg %}"}
-              .more-link
-                %a{:href => "#"}
-                  %i.fa.fa-plus
-            .post-date
-              %h2
-                21
-                %span June
-          .entry-content
-            %h3.entry-title
-              %a{:href => "#"} Adipisicing elit, sed do eiusmod tempor
-            %ul.entry-meta
-              %li
-                %a{:href => "#"}
-                  %i.fa.fa-user
-                  By: Admin
-                  %span /
-              %li
-                %a{:href => "#"}
-                  %i.fa.fa-tags
-                  Photograph
-                  %span /
-              %li
-                %a{:href => "#"}
-                  %i.fa.fa-comments
-                  3 Comments
-            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      .col-sm-6
-        .blog-content
-          .entry-header
-            .blog-image
-              %img.img-responsive{:alt => "", :src => "{% asset_path blog/post4.jpg %}"}
-              .more-link
-                %a{:href => "#"}
-                  %i.fa.fa-plus
-            .post-date
-              %h2
-                21
-                %span June
-          .entry-content
-            %h3.entry-title
-              %a{:href => "#"} Adipisicing elit, sed do eiusmod tempor
-            %ul.entry-meta
-              %li
-                %a{:href => "#"}
-                  %i.fa.fa-user
-                  By: Admin
-                  %span /
-              %li
-                %a{:href => "#"}
-                  %i.fa.fa-tags
-                  Photograph
-                  %span /
-              %li
-                %a{:href => "#"}
-                  %i.fa.fa-comments
-                  3 Comments
-            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
+-# #testimonial.parallax-section
+-#   .parallax-content
+-#     .color-overlay
+-#     %a.testimony-left{"data-slide" => "prev", :href => "#testimonial-carousel"}
+-#       %i.fa.fa-angle-left
+-#     %a.testimony-right{"data-slide" => "next", :href => "#testimonial-carousel"}
+-#       %i.fa.fa-angle-right
+-#     .container
+-#       .row
+-#         .col-sm-8.col-sm-offset-2
+-#           #testimonial-carousel.carousel.slide{"data-ride" => "carousel"}
+-#             .carousel-inner.text-center
+-#               .item.active
+-#                 %img.img-responsive.img-circle{:alt => "", :src => "{% asset_path testimonial/client1.jpg %}"}
+-#                 %p
+-#                   Octopus is a Unique, Creative and Awesome One Page Template. Designer and the Developers did well with this template and i am happy to using it. Thanks to Team Octopus.
+-#                   %span CEO, Google
+-#               .item
+-#                 %img.img-responsive.img-circle{:alt => "", :src => "{% asset_path testimonial/client2.jpg %}"}
+-#                 %p
+-#                   Octopus is a Unique, Creative and Awesome One Page Template. Designer and the Developers did well with this template and i am happy to using it. Thanks to Team Octopus.
+-#                   %span CEO, Google
+-#               .item
+-#                 %img.img-responsive.img-circle{:alt => "", :src => "{% asset_path testimonial/client3.jpg %}"}
+-#                 %p
+-#                   Octopus is a Unique, Creative and Awesome One Page Template. Designer and the Developers did well with this template and i am happy to using it. Thanks to Team Octopus.
+-#                   %span CEO, Google
+-# / /#testimonial
+-# %section#our-team.padding-top.padding-bottom
+-#   .container
+-#     .row.text-center.section-title
+-#       .col-sm-8.col-sm-offset-2
+-#         %h2 Our Team
+-#         %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam
+-#     .team-members.text-center
+-#       .row
+-#         .col-sm-6.col-md-3
+-#           .member
+-#             .member-image
+-#               %img.img-responsive{:alt => "", :src => "{% asset_path team/member1.jpg %}"}
+-#                 .member-overlay
+-#                   %a{:href => "#"}
+-#                     %i.fa.fa-plus
+-#             .member-info
+-#               %h4 Marsha Burns
+-#               %p UI/UX DESIGNER
+-#             %ul.member-social
+-#               %li
+-#                 %a.facebook{:href => "#"}
+-#                   %i.fa.fa-facebook
+-#               %li
+-#                 %a.twitter{:href => "#"}
+-#                   %i.fa.fa-twitter
+-#               %li
+-#                 %a.linkedin{:href => "#"}
+-#                   %i.fa.fa-linkedin
+-#               %li
+-#                 %a.dribbble{:href => "#"}
+-#                   %i.fa.fa-dribbble
+-#         .col-sm-6.col-md-3
+-#           .member
+-#             .member-image
+-#               %img.img-responsive{:alt => "", :src => "{% asset_path team/member2.jpg %}"}
+-#                 .member-overlay
+-#                   %a{:href => "#"}
+-#                     %i.fa.fa-plus
+-#             .member-info
+-#               %h4 Ronald Cook
+-#               %p WEB DEVELOPER
+-#             %ul.member-social
+-#               %li
+-#                 %a.facebook{:href => "#"}
+-#                   %i.fa.fa-facebook
+-#               %li
+-#                 %a.twitter{:href => "#"}
+-#                   %i.fa.fa-twitter
+-#               %li
+-#                 %a.linkedin{:href => "#"}
+-#                   %i.fa.fa-linkedin
+-#               %li
+-#                 %a.dribbble{:href => "#"}
+-#                   %i.fa.fa-dribbble
+-#         .col-sm-6.col-md-3
+-#           .member
+-#             .member-image
+-#               %img.img-responsive{:alt => "", :src => "{% asset_path team/member3.jpg %}"}
+-#                 .member-overlay
+-#                   %a{:href => "#"}
+-#                     %i.fa.fa-plus
+-#             .member-info
+-#               %h4 Darlene D. Lyons
+-#               %p MANAGER SUPPORT
+-#             %ul.member-social
+-#               %li
+-#                 %a.facebook{:href => "#"}
+-#                   %i.fa.fa-facebook
+-#               %li
+-#                 %a.twitter{:href => "#"}
+-#                   %i.fa.fa-twitter
+-#               %li
+-#                 %a.linkedin{:href => "#"}
+-#                   %i.fa.fa-linkedin
+-#               %li
+-#                 %a.dribbble{:href => "#"}
+-#                   %i.fa.fa-dribbble
+-#         .col-sm-6.col-md-3
+-#           .member
+-#             .member-image
+-#               %img.img-responsive{:alt => "", :src => "{% asset_path team/member4.jpg %}"}
+-#                 .member-overlay
+-#                   %a{:href => "#"}
+-#                     %i.fa.fa-plus
+-#             .member-info
+-#               %h4 Martin Black
+-#               %p Web Developer
+-#             %ul.member-social
+-#               %li
+-#                 %a.facebook{:href => "#"}
+-#                   %i.fa.fa-facebook
+-#               %li
+-#                 %a.twitter{:href => "#"}
+-#                   %i.fa.fa-twitter
+-#               %li
+-#                 %a.linkedin{:href => "#"}
+-#                   %i.fa.fa-linkedin
+-#               %li
+-#                 %a.dribbble{:href => "#"}
+-#                   %i.fa.fa-dribbble
+-# / /#Our team
+-# %section#hot-octopus.padding-top.off-white
+-#   .container
+-#     .row.text-center.section-title
+-#       .col-sm-8.col-sm-offset-2
+-#         %h2 Hot with Octopus
+-#         %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam
+-#     .hot-features
+-#       .row
+-#         .col-sm-6.col-md-4
+-#           .hot-feature
+-#             .icon
+-#               %i.fa.fa-globe
+-#             .feature
+-#               %h3 Web Design
+-#               %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
+-#           .hot-feature
+-#             .icon
+-#               %i.fa.fa-paper-plane
+-#             .feature
+-#               %h3 Bootstrap
+-#               %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
+-#         .col-sm-6.col-md-4
+-#           %img.img-responsive{:alt => "", :src => "{% asset_path hot-features/hot-features-bg.png %}"}
+-#         .col-sm-6.col-md-4
+-#           .hot-feature
+-#             .icon
+-#               %i.fa.fa-camera
+-#             .feature
+-#               %h3 Photography
+-#               %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
+-#           .hot-feature
+-#             .icon
+-#               %i.fa.fa-cog
+-#             .feature
+-#               %h3 Wordpress
+-#               %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
+-# / /#hot-octopus
+-# #twitter.text-center.parallax-section
+-#   .parallax-content
+-#     .color-overlay
+-#     %a.twitter-left-control{"data-slide" => "prev", :href => "#twitter-slide", :role => "button"}
+-#       %i.fa.fa-angle-left
+-#     %a.twitter-right-control{"data-slide" => "next", :href => "#twitter-slide", :role => "button"}
+-#       %i.fa.fa-angle-right
+-#     .container
+-#       .row
+-#         .col-sm-8.col-sm-offset-2
+-#           .twitter-icon
+-#             %i.fa.fa-twitter
+-#           #twitter-slide.carousel.slide{"data-ride" => "carousel"}
+-#             .carousel-inner
+-#               .item.active
+-#                 %a{:href => "#"}
+-#                   Octopus is a Unique, Creative and Awesome One Page Template. Designer and the Developers did well with this template and i am happy to using it.
+-#                   %span 5 hours ago
+-#               .item
+-#                 %a{:href => "#"}
+-#                   Octopus is a Unique, Creative and Awesome One Page Template. Designer and the Developers did well with this template and i am happy to using it.
+-#                   %span 9 hours ago
+-#               .item
+-#                 %a{:href => "#"}
+-#                   Octopus is a Unique, Creative and Awesome One Page Template. Designer and the Developers did well with this template and i am happy to using it.
+-#                   %span 2 hours ago
+-# / /#twitter
+-# %section#blog.padding-top.bottom60
+-#   .container
+-#     .row.text-center.section-title
+-#       .col-sm-8.col-sm-offset-2
+-#         %h2 Latest Blog
+-#         %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam
+-#     .row
+-#       .col-sm-6
+-#         .blog-content
+-#           .entry-header
+-#             .blog-image
+-#               %img.img-responsive{:alt => "", :src => "{% asset_path blog/post1.jpg %}"}
+-#               .more-link
+-#                 %a{:href => "#"}
+-#                   %i.fa.fa-plus
+-#             .post-date
+-#               %h2
+-#                 21
+-#                 %span June
+-#           .entry-content
+-#             %h3.entry-title
+-#               %a{:href => "#"} Adipisicing elit, sed do eiusmod tempor
+-#             %ul.entry-meta
+-#               %li
+-#                 %a{:href => "#"}
+-#                   %i.fa.fa-user
+-#                   By: Admin
+-#                   %span /
+-#               %li
+-#                 %a{:href => "#"}
+-#                   %i.fa.fa-tags
+-#                   Photograph
+-#                   %span /
+-#               %li
+-#                 %a{:href => "#"}
+-#                   %i.fa.fa-comments
+-#                   3 Comments
+-#             %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+-#       .col-sm-6
+-#         .blog-content
+-#           .entry-header
+-#             .blog-image
+-#               %img.img-responsive{:alt => "", :src => "{% asset_path blog/post2.jpg %}"}
+-#               .more-link
+-#                 %a{:href => "#"}
+-#                   %i.fa.fa-plus
+-#             .post-date
+-#               %h2
+-#                 21
+-#                 %span June
+-#           .entry-content
+-#             %h3.entry-title
+-#               %a{:href => "#"} Adipisicing elit, sed do eiusmod tempor
+-#             %ul.entry-meta
+-#               %li
+-#                 %a{:href => "#"}
+-#                   %i.fa.fa-user
+-#                   By: Admin
+-#                   %span /
+-#               %li
+-#                 %a{:href => "#"}
+-#                   %i.fa.fa-tags
+-#                   Photograph
+-#                   %span /
+-#               %li
+-#                 %a{:href => "#"}
+-#                   %i.fa.fa-comments
+-#                   3 Comments
+-#             %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+-#       .col-sm-6
+-#         .blog-content
+-#           .entry-header
+-#             .blog-image
+-#               %img.img-responsive{:alt => "", :src => "{% asset_path blog/post3.jpg %}"}
+-#               .more-link
+-#                 %a{:href => "#"}
+-#                   %i.fa.fa-plus
+-#             .post-date
+-#               %h2
+-#                 21
+-#                 %span June
+-#           .entry-content
+-#             %h3.entry-title
+-#               %a{:href => "#"} Adipisicing elit, sed do eiusmod tempor
+-#             %ul.entry-meta
+-#               %li
+-#                 %a{:href => "#"}
+-#                   %i.fa.fa-user
+-#                   By: Admin
+-#                   %span /
+-#               %li
+-#                 %a{:href => "#"}
+-#                   %i.fa.fa-tags
+-#                   Photograph
+-#                   %span /
+-#               %li
+-#                 %a{:href => "#"}
+-#                   %i.fa.fa-comments
+-#                   3 Comments
+-#             %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+-#       .col-sm-6
+-#         .blog-content
+-#           .entry-header
+-#             .blog-image
+-#               %img.img-responsive{:alt => "", :src => "{% asset_path blog/post4.jpg %}"}
+-#               .more-link
+-#                 %a{:href => "#"}
+-#                   %i.fa.fa-plus
+-#             .post-date
+-#               %h2
+-#                 21
+-#                 %span June
+-#           .entry-content
+-#             %h3.entry-title
+-#               %a{:href => "#"} Adipisicing elit, sed do eiusmod tempor
+-#             %ul.entry-meta
+-#               %li
+-#                 %a{:href => "#"}
+-#                   %i.fa.fa-user
+-#                   By: Admin
+-#                   %span /
+-#               %li
+-#                 %a{:href => "#"}
+-#                   %i.fa.fa-tags
+-#                   Photograph
+-#                   %span /
+-#               %li
+-#                 %a{:href => "#"}
+-#                   %i.fa.fa-comments
+-#                   3 Comments
+-#             %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+-#
 %section#contact-us.parallax-section
   .parallax-content
     .color-overlay
@@ -675,7 +654,7 @@ layout: default
       .row.text-center.section-title
         .col-sm-8.col-sm-offset-2
           %h2 Contact Us
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam
+          %p Let's talk about how we can help your next project succeed.
       .col-sm-6
         %form#contact-form{:action => "sendemail.php", :method => "post", :name => "contact-form"}
           .row
@@ -696,41 +675,34 @@ layout: default
           %h3 Contact Info
           %ul
             %li
-              %i.fa.fa-phone
-              Phone: 262 695 2601
+              .row
+                .col-xs-2.icon
+                  %i.fa.fa-phone
+                .col-xs-10.data
+                  Phone: 908 442 8875
             %li
-              %i.fa.fa-map-marker
-              1967 Fairfield Road Pewaukee, WI 53072
+              .row
+                .col-xs-2.icon
+                  %i.fa.fa-map-marker
+                .col-xs-10
+                  219 Asoke Towers <br />
+                  Sukhumvit 21 (Soi Asoke) <br />
+                  Khlongtoey Nua, Wattana <br />
+                  Bangkok 10110 Thailand <br />
             %li
-              %i.fa.fa-envelope
-              %a{:href => "#"} support@octopus-theme.com
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-          .social-icons
-            %h3 Get in Touch
-            %ul
-              %li
-                %a{:href => "#"}
-                  %i.fa.fa-facebook
-              %li
-                %a{:href => "#"}
-                  %i.fa.fa-twitter
-              %li
-                %a{:href => "#"}
-                  %i.fa.fa-linkedin
-              %li
-                %a{:href => "#"}
-                  %i.fa.fa-dribbble
-              %li
-                %a{:href => "#"}
-                  %i.fa.fa-youtube
+              .row
+                .col-xs-2.icon
+                  %i.fa.fa-envelope
+                .col-xs-10
+                  %a{:href => "#"} info@locksteplabs.com
 / /#contact-us
 #gmap
 / /#gmap
 %footer#footer
   .container.text-center
     %p
-      &copy; 2014
-      %a{:href => "#"} OctopusTheme
+      &copy; 2015
+      %a{:href => "/"} Lockstep Labs Ltd.
       All rights reserved.
   %a.to-top{"data-scroll" => "", :href => "#main-carousel"}
     %i.fa.fa-angle-up

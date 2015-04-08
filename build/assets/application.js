@@ -3003,13 +3003,13 @@ jQuery(function($) {'use strict',
   parallaxInit();
 
   // Navigation Scroll	
-  $(window).on('scroll', function(){
-    if( $(window).scrollTop() > window.innerHeight){
-      $('#navigation .navbar').addClass('navbar-fixed-top');
-    } else {
-      $('#navigation .navbar').removeClass('navbar-fixed-top');
-    }
-  });
+  // $(window).on('scroll', function(){
+  //   if( $(window).scrollTop() > window.innerHeight){
+  //     $('#navigation .navbar').addClass('navbar-fixed-top');
+  //   } else {
+  //     $('#navigation .navbar').removeClass('navbar-fixed-top');
+  //   }
+  // });
 
   $(window).scroll(function(event) {
     Scroll();
