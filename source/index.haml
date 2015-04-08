@@ -37,18 +37,22 @@ layout: default
           -#   %a{:href => "#blog"} Blog
           %li.scroll
             %a{:href => "#contact-us"} Contact
-#main-home-section
-  %div.logo-pieces
-    %img(src="{% asset_path logo_icon_top.png %}" class="top-piece")
-    %img(src="{% asset_path logo_icon_bottom.png %}" class="bottom-piece")
-  %h1.main-logo-text
-    %span.lockstep LOCKSTEP
-    %span.labs LABS
+.container
+  #main-home-section
+    -# %div.logo-pieces
+    -#   %img(src="{% asset_path logo_icon_top.png %}" class="top-piece")
+    -#   %img(src="{% asset_path logo_icon_bottom.png %}" class="bottom-piece")
+    %h1.main-logo-text
+      %span.lockstep LOCKSTEP
+      %span.labs LABS
 
-  %a.smooth-scroll{"data-scroll" => "", :href => "#portfolio"}
-    .mouse-icon
-      .wheel
-      %i.fa.fa-angle-down
+    %h2.tagline-title
+    %h2.tagline
+      We build custom web applications.
+    %a.smooth-scroll{"data-scroll" => "", :href => "#portfolio"}
+      .mouse-icon
+        .wheel
+        %i.fa.fa-angle-down
 
 -# #main-carousel
 -#   #home-carousel.carousel.slide.carousel-fade{"data-ride" => "carousel"}

@@ -185,6 +185,11 @@ h1.main-logo-text {
     left: -7px;
   }
 }
+
+h2.tagline {
+  text-align: center;
+}
+
 /*Main Carousel CSS*/
 #main-carousel {
 	overflow:hidden;
@@ -389,11 +394,11 @@ h1.main-logo-text {
 }
 
 .navbar-brand {
-  display: none;
   margin-top:0px;
   position: relative;
-  padding-left: 40px;
+  padding-left: 30px;
   h1 {
+    display: none;
     color: $dark-blue;
     font-weight: 600;
     padding: 0px;
@@ -401,7 +406,7 @@ h1.main-logo-text {
     font-size: 25px;
     position: relative;
     top: 7px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
   }
   img {
     height: 40px;
