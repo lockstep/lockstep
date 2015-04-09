@@ -7495,23 +7495,23 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: scale(1);
     -webkit-transform: scale(1); } }
 /*!
- *  Font Awesome 4.1.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("/assets/fontawesome-webfont.eot?cb=7c94c5b27f9493bb38a9fafd9d986655?v=4.1.0");
-  src: url("/assets/fontawesome-webfont.eot?cb=7c94c5b27f9493bb38a9fafd9d986655?#iefix&v=4.1.0") format("embedded-opentype"), url("/assets/fontawesome-webfont.woff?cb=6b10c22b63a80882a3ee61f08e48f1ba?v=4.1.0") format("woff"), url("/assets/fontawesome-webfont.ttf?cb=a58bc153a4907f3580ce3beeb77d0750?v=4.1.0") format("truetype"), url("/assets/fontawesome-webfont.svg?cb=878e04d7f0eb7fc99fbee76366443c32?v=4.1.0#fontawesomeregular") format("svg");
+  src: url("/assets/fontawesome-webfont.eot?cb=5f00ed80a4c96f07df72a7ca5a2f2c8e?v=4.3.0");
+  src: url("/assets/fontawesome-webfont.eot?cb=5f00ed80a4c96f07df72a7ca5a2f2c8e?#iefix&v=4.3.0") format("embedded-opentype"), url("/assets/fontawesome-webfont.woff2?cb=d337dfc782b393c746475b3aa5bec4f3?v=4.3.0") format("woff2"), url("/assets/fontawesome-webfont.woff?cb=8a40dc70402775437aeeaf635ffafb6c?v=4.3.0") format("woff"), url("/assets/fontawesome-webfont.ttf?cb=aa7b685d66c7ccfe5db0546b1483ab78?v=4.3.0") format("truetype"), url("/assets/fontawesome-webfont.svg?cb=0ae2bb09f2f0fa77d6b78117111bf0a1?v=4.3.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 .fa {
   display: inline-block;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0); }
 
 .fa-lg {
   font-size: 1.33333333em;
@@ -7570,27 +7570,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   margin-left: .3em; }
 
 .fa-spin {
-  -webkit-animation: spin 2s infinite linear;
-  -moz-animation: spin 2s infinite linear;
-  -o-animation: spin 2s infinite linear;
-  animation: spin 2s infinite linear; }
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear; }
 
-@-moz-keyframes spin {
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8); }
+
+@-webkit-keyframes fa-spin {
   0% {
-    -moz-transform: rotate(0deg); }
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
   100% {
-    -moz-transform: rotate(359deg); } }
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(359deg); } }
-@-o-keyframes spin {
-  0% {
-    -o-transform: rotate(0deg); }
-  100% {
-    -o-transform: rotate(359deg); } }
-@keyframes spin {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+@keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
@@ -7600,42 +7594,35 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
   transform: rotate(90deg); }
 
 .fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 .fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -webkit-transform: rotate(270deg);
-  -moz-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
-  -o-transform: rotate(270deg);
   transform: rotate(270deg); }
 
 .fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
   -webkit-transform: scale(-1, 1);
-  -moz-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
-  -o-transform: scale(-1, 1);
   transform: scale(-1, 1); }
 
 .fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
   -webkit-transform: scale(1, -1);
-  -moz-transform: scale(1, -1);
   -ms-transform: scale(1, -1);
-  -o-transform: scale(1, -1);
   transform: scale(1, -1); }
+
+:root .fa-rotate-90, :root .fa-rotate-180, :root .fa-rotate-270, :root .fa-flip-horizontal, :root .fa-flip-vertical {
+  filter: none; }
 
 .fa-stack {
   position: relative;
@@ -7699,7 +7686,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .fa-check:before {
   content: "\f00c"; }
 
-.fa-times:before {
+.fa-remove:before, .fa-close:before, .fa-times:before {
   content: "\f00d"; }
 
 .fa-search-plus:before {
@@ -8020,7 +8007,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .fa-arrows-h:before {
   content: "\f07e"; }
 
-.fa-bar-chart-o:before {
+.fa-bar-chart-o:before, .fa-bar-chart:before {
   content: "\f080"; }
 
 .fa-twitter-square:before {
@@ -8095,7 +8082,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .fa-twitter:before {
   content: "\f099"; }
 
-.fa-facebook:before {
+.fa-facebook-f:before, .fa-facebook:before {
   content: "\f09a"; }
 
 .fa-github:before {
@@ -8710,7 +8697,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .fa-male:before {
   content: "\f183"; }
 
-.fa-gittip:before {
+.fa-gittip:before, .fa-gratipay:before {
   content: "\f184"; }
 
 .fa-sun-o:before {
@@ -8809,7 +8796,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .fa-digg:before {
   content: "\f1a6"; }
 
-.fa-pied-piper-square:before, .fa-pied-piper:before {
+.fa-pied-piper:before {
   content: "\f1a7"; }
 
 .fa-pied-piper-alt:before {
@@ -8917,7 +8904,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .fa-jsfiddle:before {
   content: "\f1cc"; }
 
-.fa-life-bouy:before, .fa-life-saver:before, .fa-support:before, .fa-life-ring:before {
+.fa-life-bouy:before, .fa-life-buoy:before, .fa-life-saver:before, .fa-support:before, .fa-life-ring:before {
   content: "\f1cd"; }
 
 .fa-circle-o-notch:before {
@@ -8956,7 +8943,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .fa-history:before {
   content: "\f1da"; }
 
-.fa-circle-thin:before {
+.fa-genderless:before, .fa-circle-thin:before {
   content: "\f1db"; }
 
 .fa-header:before {
@@ -8976,6 +8963,246 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .fa-bomb:before {
   content: "\f1e2"; }
+
+.fa-soccer-ball-o:before, .fa-futbol-o:before {
+  content: "\f1e3"; }
+
+.fa-tty:before {
+  content: "\f1e4"; }
+
+.fa-binoculars:before {
+  content: "\f1e5"; }
+
+.fa-plug:before {
+  content: "\f1e6"; }
+
+.fa-slideshare:before {
+  content: "\f1e7"; }
+
+.fa-twitch:before {
+  content: "\f1e8"; }
+
+.fa-yelp:before {
+  content: "\f1e9"; }
+
+.fa-newspaper-o:before {
+  content: "\f1ea"; }
+
+.fa-wifi:before {
+  content: "\f1eb"; }
+
+.fa-calculator:before {
+  content: "\f1ec"; }
+
+.fa-paypal:before {
+  content: "\f1ed"; }
+
+.fa-google-wallet:before {
+  content: "\f1ee"; }
+
+.fa-cc-visa:before {
+  content: "\f1f0"; }
+
+.fa-cc-mastercard:before {
+  content: "\f1f1"; }
+
+.fa-cc-discover:before {
+  content: "\f1f2"; }
+
+.fa-cc-amex:before {
+  content: "\f1f3"; }
+
+.fa-cc-paypal:before {
+  content: "\f1f4"; }
+
+.fa-cc-stripe:before {
+  content: "\f1f5"; }
+
+.fa-bell-slash:before {
+  content: "\f1f6"; }
+
+.fa-bell-slash-o:before {
+  content: "\f1f7"; }
+
+.fa-trash:before {
+  content: "\f1f8"; }
+
+.fa-copyright:before {
+  content: "\f1f9"; }
+
+.fa-at:before {
+  content: "\f1fa"; }
+
+.fa-eyedropper:before {
+  content: "\f1fb"; }
+
+.fa-paint-brush:before {
+  content: "\f1fc"; }
+
+.fa-birthday-cake:before {
+  content: "\f1fd"; }
+
+.fa-area-chart:before {
+  content: "\f1fe"; }
+
+.fa-pie-chart:before {
+  content: "\f200"; }
+
+.fa-line-chart:before {
+  content: "\f201"; }
+
+.fa-lastfm:before {
+  content: "\f202"; }
+
+.fa-lastfm-square:before {
+  content: "\f203"; }
+
+.fa-toggle-off:before {
+  content: "\f204"; }
+
+.fa-toggle-on:before {
+  content: "\f205"; }
+
+.fa-bicycle:before {
+  content: "\f206"; }
+
+.fa-bus:before {
+  content: "\f207"; }
+
+.fa-ioxhost:before {
+  content: "\f208"; }
+
+.fa-angellist:before {
+  content: "\f209"; }
+
+.fa-cc:before {
+  content: "\f20a"; }
+
+.fa-shekel:before, .fa-sheqel:before, .fa-ils:before {
+  content: "\f20b"; }
+
+.fa-meanpath:before {
+  content: "\f20c"; }
+
+.fa-buysellads:before {
+  content: "\f20d"; }
+
+.fa-connectdevelop:before {
+  content: "\f20e"; }
+
+.fa-dashcube:before {
+  content: "\f210"; }
+
+.fa-forumbee:before {
+  content: "\f211"; }
+
+.fa-leanpub:before {
+  content: "\f212"; }
+
+.fa-sellsy:before {
+  content: "\f213"; }
+
+.fa-shirtsinbulk:before {
+  content: "\f214"; }
+
+.fa-simplybuilt:before {
+  content: "\f215"; }
+
+.fa-skyatlas:before {
+  content: "\f216"; }
+
+.fa-cart-plus:before {
+  content: "\f217"; }
+
+.fa-cart-arrow-down:before {
+  content: "\f218"; }
+
+.fa-diamond:before {
+  content: "\f219"; }
+
+.fa-ship:before {
+  content: "\f21a"; }
+
+.fa-user-secret:before {
+  content: "\f21b"; }
+
+.fa-motorcycle:before {
+  content: "\f21c"; }
+
+.fa-street-view:before {
+  content: "\f21d"; }
+
+.fa-heartbeat:before {
+  content: "\f21e"; }
+
+.fa-venus:before {
+  content: "\f221"; }
+
+.fa-mars:before {
+  content: "\f222"; }
+
+.fa-mercury:before {
+  content: "\f223"; }
+
+.fa-transgender:before {
+  content: "\f224"; }
+
+.fa-transgender-alt:before {
+  content: "\f225"; }
+
+.fa-venus-double:before {
+  content: "\f226"; }
+
+.fa-mars-double:before {
+  content: "\f227"; }
+
+.fa-venus-mars:before {
+  content: "\f228"; }
+
+.fa-mars-stroke:before {
+  content: "\f229"; }
+
+.fa-mars-stroke-v:before {
+  content: "\f22a"; }
+
+.fa-mars-stroke-h:before {
+  content: "\f22b"; }
+
+.fa-neuter:before {
+  content: "\f22c"; }
+
+.fa-facebook-official:before {
+  content: "\f230"; }
+
+.fa-pinterest-p:before {
+  content: "\f231"; }
+
+.fa-whatsapp:before {
+  content: "\f232"; }
+
+.fa-server:before {
+  content: "\f233"; }
+
+.fa-user-plus:before {
+  content: "\f234"; }
+
+.fa-user-times:before {
+  content: "\f235"; }
+
+.fa-hotel:before, .fa-bed:before {
+  content: "\f236"; }
+
+.fa-viacoin:before {
+  content: "\f237"; }
+
+.fa-train:before {
+  content: "\f238"; }
+
+.fa-subway:before {
+  content: "\f239"; }
+
+.fa-medium:before {
+  content: "\f23a"; }
 
 div.pp_default .pp_top, div.pp_default .pp_top .pp_middle, div.pp_default .pp_top .pp_left, div.pp_default .pp_top .pp_right, div.pp_default .pp_bottom, div.pp_default .pp_bottom .pp_left, div.pp_default .pp_bottom .pp_middle, div.pp_default .pp_bottom .pp_right {
   height: 13px; }
@@ -9706,13 +9933,13 @@ div.dark_rounded #pp_full_res .pp_inline, div.dark_square #pp_full_res .pp_inlin
   display: none; }
 
 /*
-  Theme Name: Octopus
-  Theme URL: http://www.themeregion.com
-  Author: ThemeRegion
-  Author URI: http://www.themeregion.com
-  Description: Onepage Responsive HTML Parallax Template
-  Version: 1.0
-*/
+Theme Name: Octopus
+Theme URL: http://www.themeregion.com
+Author: ThemeRegion
+Author URI: http://www.themeregion.com
+Description: Onepage Responsive HTML Parallax Template
+Version: 1.0
+ */
 /*========================
 =======Typography=========
 ==========================*/
@@ -9753,8 +9980,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600; }
 
-.padding-top {
-  padding-top: 90px; }
+.text-green {
+  color: #70B862; }
+
+.text-blue {
+  color: #008EB0; }
+
+.text-thin {
+  font-weight: 300; }
 
 .padding-bottom {
   padding-bottom: 110px; }
@@ -9763,25 +9996,13 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 60px; }
 
 .section-title {
-  margin-bottom: 80px;
   overflow: hidden;
   padding-bottom: 32px;
   position: relative; }
 
-.section-title:after {
-  position: absolute;
-  content: "";
-  left: 50%;
-  bottom: 0;
-  height: 2px;
-  width: 56px;
-  background-color: #d9d9d9;
-  margin-left: -28px; }
-
 .section-title h2 {
   font-size: 36px;
-  margin-bottom: 27px;
-  text-transform: uppercase; }
+  margin-top: 50px; }
 
 .color-overlay {
   position: absolute;
@@ -9839,32 +10060,60 @@ h1, h2, h3, h4, h5, h6 {
 #main-home-section {
   width: 100%;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  background-color: white; }
 
-.logo-pieces {
+.home-section-text {
+  padding-top: 180px;
   text-align: center; }
-  .logo-pieces img {
-    position: absolute;
-    top: 100px;
-    height: 100px;
-    margin-left: -30px; }
+  .home-section-text h1 {
+    line-height: 1.5em; }
 
-h1.main-logo-text {
+#brief-about-section {
+  width: 100%;
+  background-color: #70B862;
   text-align: center;
-  margin-top: 220px;
-  font-size: 50px; }
-  h1.main-logo-text span.lockstep {
-    color: #2B3B41;
-    position: relative;
-    right: -7px; }
-  h1.main-logo-text span.labs {
-    color: #70B862;
-    font-weight: 300;
-    position: relative;
-    left: -7px; }
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  #brief-about-section p {
+    font-size: 26px; }
+  #brief-about-section img {
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    height: 40px; }
 
-h2.tagline {
-  text-align: center; }
+#handcrafted {
+  width: 100%;
+  position: relative;
+  padding-top: 225px;
+  padding-bottom: 100px;
+  color: white; }
+  #handcrafted h1 {
+    padding: 0px; }
+  #handcrafted p {
+    font-size: 1.3em; }
+
+#backdrop {
+  background: url("/assets/features/handwritten.jpg?cb=45ba0232d92fd51f79111bf5c8e9ae4c") center center no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -2; }
+
+#overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+  opacity: 0.0; }
 
 /*Main Carousel CSS*/
 #main-carousel {
@@ -10001,7 +10250,7 @@ h2.tagline {
   font-size: 24px;
   margin-left: 6px;
   margin-top: 38px;
-  color: #2D5E31; }
+  color: #70B862; }
 
 .mouse-icon .wheel,
 .mouse-icon .fa-angle-down {
@@ -10050,15 +10299,19 @@ h2.tagline {
   position: relative;
   padding-left: 30px; }
   .navbar-brand h1 {
-    display: none;
     color: #2B3B41;
     font-weight: 600;
     padding: 0px;
     margin: 0px;
     font-size: 25px;
     position: relative;
-    top: 7px;
-    letter-spacing: 2px; }
+    top: 7px; }
+    .navbar-brand h1 .labs {
+      color: #008EB0;
+      font-weight: 300;
+      position: relative;
+      position: relative;
+      left: -5px; }
   .navbar-brand img {
     height: 40px;
     position: absolute;
@@ -10081,20 +10334,13 @@ h2.tagline {
 #navigation .navbar-right li a:hover,
 #navigation .navbar-right li a:focus,
 #navigation .navbar-right li.active a {
-  color: #70B862; }
+  color: #008EB0; }
 
 /*=========================
 ========About Us CSS========
 ===========================*/
 #about-us {
   padding-bottom: 40px; }
-
-.bout-us-image {
-  display: inline-block;
-  margin-bottom: 80px; }
-
-.bout-us-image img {
-  width: 100%; }
 
 .about-content {
   margin-bottom: 70px; }
@@ -10285,9 +10531,68 @@ h2.tagline {
 /*=========================
 =======Portfolio CSS=======
 ===========================*/
+#portfolio {
+  background-color: white; }
+
 .portfolio-filter {
   overflow: hidden;
   margin-bottom: 65px; }
+
+.casestudy {
+  margin-top: 0px; }
+
+.casestudy-title {
+  margin-top: 0px;
+  padding-top: 0px;
+  font-weight: 300; }
+
+.casestudy-image {
+  display: inline-block;
+  margin-top: 30px;
+  width: 100%; }
+  .casestudy-image img {
+    margin: auto;
+    position: relative;
+    width: 750px; }
+
+ul.tech-stack {
+  margin-top: 20px; }
+  ul.tech-stack li {
+    display: inline-block;
+    padding: 10px 20px;
+    padding-right: 16px;
+    margin-right: 7px;
+    font-weight: 500;
+    color: white; }
+    ul.tech-stack li i {
+      margin-left: -9px;
+      margin-right: 3px; }
+
+.ruby-on-rails {
+  background-color: #c22b2b; }
+
+.grape-api {
+  background-color: #501f77; }
+
+.postgresql {
+  background-color: #316192; }
+
+.angularjs {
+  background-color: #e62a39; }
+
+.fa-angularjs {
+  background: url("/assets/angular-icon.png?cb=8d7e85c55b55df8df9e6aba9843c5746");
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
+  margin-bottom: -3px;
+  position: relative;
+  top: 2px; }
+
+.braces {
+  position: relative;
+  top: -1px;
+  font-weight: 700; }
 
 .portfolio-filter li {
   display: inline-block;
@@ -10311,7 +10616,7 @@ h2.tagline {
 .portfolio-filter li a:focus,
 .portfolio-filter li a.active {
   color: #fff;
-  background-color: #db2429; }
+  background-color: #008EB0; }
 
 .portfolio-content {
   position: relative;
@@ -10354,8 +10659,8 @@ h2.tagline {
   transition: all 0.3s ease-in-out; }
 
 .folio-overlay a:hover {
-  background-color: #db2429;
-  border-color: #db2429; }
+  background-color: #008EB0;
+  border-color: #008EB0; }
 
 .folio-overlay a.folio-link {
   top: -150px;
@@ -10582,8 +10887,8 @@ h2.tagline {
   border-color: transparent transparent transparent #db2429; }
 
 /*************************
-********Twitter CSS*******
-**************************/
+ ********Twitter CSS*******
+ **************************/
 #twitter {
   background-image: url(url("/assets/twitter-bg.jpg?cb=a5366b577b06851ea5f6a7fd8e3c0c44"));
   font-size: 16px;
@@ -10825,8 +11130,8 @@ h2.tagline {
   margin-right: 8px; }
 
 /*************************
-*****Pricing Table CSS****
-**************************/
+ *****Pricing Table CSS****
+ **************************/
 .single-table {
   background-color: #fff;
   color: #1e1e1e;
@@ -11043,9 +11348,10 @@ textarea.form-control {
   color: #fff; }
 
 /*************************
-*******Preloader CSS*********
-**************************/
+ *******Preloader CSS*********
+ **************************/
 .preloader {
+  display: none;
   position: fixed;
   top: 0px;
   left: 0px;
