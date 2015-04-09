@@ -18,11 +18,13 @@ layout: default
           %span.icon-bar
         %a.navbar-brand{:href => "index.html"}
           %img.img-responsive{:alt => "logo", :src => "{% asset_path logo_icon.png %}"}
-          %h1 LOCKSTEP
+          %h1
+            %span.lockstep LOCKSTEP
+            %span.labs LABS
       .collapse.navbar-collapse
         %ul.nav.navbar-nav.navbar-right
           %li.scroll.active
-            %a{:href => "#main-carousel"} Home
+            %a{:href => "#main-home-section"} Home
           -# %li.scroll
           -#   %a{:href => "#about-us"} About Us
           -# %li.scroll
@@ -36,74 +38,60 @@ layout: default
           -# %li.scroll
           -#   %a{:href => "#blog"} Blog
           %li.scroll
-            %a{:href => "#contact-us"} Contact
-.container
-  #main-home-section
-    -# %div.logo-pieces
-    -#   %img(src="{% asset_path logo_icon_top.png %}" class="top-piece")
-    -#   %img(src="{% asset_path logo_icon_bottom.png %}" class="bottom-piece")
-    %h1.main-logo-text
-      %span.lockstep LOCKSTEP
-      %span.labs LABS
-
-    %h2.tagline-title
-    %h2.tagline
-      We build custom web applications.
+            -# %a{:href => "#contact-us"} Contact
+#main-home-section
+  .container
+    .home-section-text
+      %h1
+        %span.text-thin We Build
+        %br
+        %span.text-blue Custom Web Applications
+        %br
+        %span.text-thin That Meet
+        %br
+        %span.text-blue Your Business Objectives
     %a.smooth-scroll{"data-scroll" => "", :href => "#portfolio"}
       .mouse-icon
         .wheel
         %i.fa.fa-angle-down
+    -# %div.logo-pieces
+    -#   %img(src="{% asset_path logo_icon_top.png %}" class="top-piece")
+    -#   %img(src="{% asset_path logo_icon_bottom.png %}" class="bottom-piece")
+    -# %h1.main-logo-text
+    -#   %span.lockstep LOCKSTEP
+    -#   %span.labs LABS
 
--# #main-carousel
--#   #home-carousel.carousel.slide.carousel-fade{"data-ride" => "carousel"}
--#     .carousel-inner
--#       .item.active
--#         .carousel-caption
-          -# %h3 We build
-          -# %h2
-          -#   %span Custom Web Applications
-          -# %p
-          -#   You have a brilliant idea.
-          -#   <br />
-          -#   We take pride in crafting fast and
-          -#   beautiful applications.
-          -#   <br />
-          -#   Let's build something great together.
-/ /#main-carousel
--# %section#about-us.padding-top.off-white
--#   .container.text-center
--#     .row.section-title
--#       .col-sm-8.col-sm-offset-2
--#         %h2 About Us
--#         %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam
--#     .bout-us-image
--#       %img.img-responsive{:alt => "", :src => "{% asset_path about-us/devices.png %}"}
--#     .row
--#       .col-md-3.col-sm-6.about-content
--#         .about-icon
--#           %i.fa.fa-users
--#         .about-text
--#           %h3 Creative Team
--#           %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
--#       .col-md-3.col-sm-6.about-content
--#         .about-icon
--#           %i.fa.fa-rocket
--#         .about-text
--#           %h3 Unique Design
--#           %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
--#       .col-md-3.col-sm-6.about-content
--#         .about-icon
--#           %i.fa.fa-envelope
--#         .about-text
--#           %h3 24/7 Support
--#           %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
--#       .col-md-3.col-sm-6.about-content
--#         .about-icon
--#           %i.fa.fa-shield
--#         .about-text
--#           %h3 Great Security
--#           %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
--# / /#about us
+#brief-about-section
+  .container
+    .row.text-center.section-title
+      .col-sm-8.col-sm-offset-2
+        %h2 Lockstep in a nutshell...
+    .row.text-center
+      %p
+        We are a small team of passionate technologists. We partner with our
+        clients to
+        = succeed ',' do
+          %b build
+        %b nurture
+        and
+        %b scale
+        web and mobile solutions.
+    %img.img-responsive{:alt => "in_a_nutshell", :src => "{% asset_path nutshell.png %}"}
+
+#handcrafted
+  .container
+    .row
+      %h1 Our Values, Our Craft
+      %p
+        Our team values people over tools, quality over speed and effective
+        communication over raw skill. But our service is more than building
+        high-quality products; our priority is being responsive to you
+        so that you can be responsive to your market. Shoot us an email and get a
+        taste for our obsessive committment to timely, efficient dialogue.
+#backdrop
+#overlay
+
+/ /#about us
 -# #promo-one.parallax-section
 -#   .parallax-content
 -#     .color-overlay
@@ -266,12 +254,50 @@ layout: default
 -#               .panel-body
 -#                 %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
 -# / /#why-octopus
-%section#portfolio.padding-top.padding-bottom.off-white
+%section#portfolio
   .container
     .row.text-center.section-title
       .col-sm-8.col-sm-offset-2
-        %h2 Our Work
-        %p 
+        %h2 Case Studies
+        %hr
+    .row.casestudy.text-center
+      .container
+        .row
+          .col-sm-10.col-sm-offset-1
+            %h2.casestudy-title RideCache
+    .casestudy-image
+      %img.img-responsive{:alt => "", :src => "{% asset_path features/ridecache_devices.png %}"}
+    .row
+      .col-sm-6
+        %p
+          We've worked with the RideCache team to turn their prototype and wireframes from a
+          concept into a scalable, mobile-ready web application. RideCache is poised to become the one-stop shop for
+          maintaining and sharing information about your car collections, whether you have a garage full of antiques or a single weekend racer.
+
+      .col-sm-6
+        %p
+          Maintaining a tight iteration loop and following best-practice Agile methodology
+          we've iterated through numerous sprints since the initial build, adding features and
+          responding rapidly to user requests. The application boasts a clean, responsive
+          interface that leverages AngularJS to give the users a highly interactive, "single-page" feel.
+
+    .row
+      .col-sm-12
+        %h4 Technologies
+        %ul.list-unstyled.tech-stack
+          %li.ruby-on-rails
+            %i.fa.fa-diamond
+            Ruby on Rails
+          %li.grape-api
+            %i.fa.braces {}
+            Grape API
+          %li.postgresql
+            %i.fa.fa-database
+            PostgreSQL
+          %li.angularjs
+            %i.fa.fa-angularjs
+            AngularJS
+
     .portfolio-wrapper
       %ul.portfolio-filter.text-center
         %li
@@ -718,5 +744,5 @@ layout: default
       &copy; 2015
       %a{:href => "/"} Lockstep Labs Ltd.
       All rights reserved.
-  %a.to-top{"data-scroll" => "", :href => "#main-carousel"}
+  %a.to-top{"data-scroll" => "", :href => "#main-home-section"}
     %i.fa.fa-angle-up

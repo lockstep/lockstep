@@ -1,12 +1,22 @@
 jQuery(function($) {'use strict',
   //Preloader
   $(window).load(function(){
-    $('.preloader').fadeOut('fast',function(){$(this).remove();});
+    // $('.preloader').fadeOut('fast',function(){$(this).remove();});
     // $('.carousel-caption').addClass('animated fadeInDown');
-    $('.lockstep').addClass('animated fadeInLeft');
     $('.labs').addClass('animated fadeInRight');
-    $('.logo-pieces .bottom-piece').addClass('animated fadeInRight');
-    $('.logo-pieces .top-piece').addClass('animated rollIn');
+    // $('.logo-pieces .bottom-piece').addClass('animated fadeInRight');
+    // $('.logo-pieces .top-piece').addClass('animated rollIn');
+  });
+  // Initial section height
+  var slideHeight = $(window).height();
+  // $('#home-carousel .item').css('height',slideHeight);
+
+  // $(window).resize(function(){'use strict',
+  //   $('#home-carousel .item').css('height',slideHeight);
+  // });
+  $('#main-home-section').css('height',slideHeight);
+  $(window).resize(function(){'use strict',
+    $('#main-home-section').css('height',slideHeight);
   });
 
   //Parallax Scrolling
@@ -37,6 +47,12 @@ jQuery(function($) {'use strict',
 
   $(window).scroll(function(event) {
     Scroll();
+    var $overlay = $('#overlay');
+    var winTop = $(window).scrollTop();
+    var $values = $('#handcrafted h1');
+    var valuesTop = $values.offset().top;
+    var offsetRatio = Math.pow(1 - Math.abs(valuesTop - winTop) / valuesTop, 2);
+    if(offsetRatio < 0.7) $overlay.css('opacity', offsetRatio);
   });
 
   $('.navbar-collapse ul li a').click(function() {
@@ -52,7 +68,6 @@ jQuery(function($) {'use strict',
     var rangeTop    =   200;
     var rangeBottom =   500;
     $('.navbar-collapse').find('.scroll a').each(function(){
-      console.log(this);
       contentTop.push( $( $(this).attr('href') ).offset().top);
       contentBottom.push( $( $(this).attr('href') ).offset().top + $( $(this).attr('href') ).height() );
     })
@@ -66,17 +81,7 @@ jQuery(function($) {'use strict',
 
   };
 
-  // Slider Height
-  var slideHeight = $(window).height();
-  // $('#home-carousel .item').css('height',slideHeight);
-
-  // $(window).resize(function(){'use strict',
-  //   $('#home-carousel .item').css('height',slideHeight);
-  // });
-  $('#main-home-section').css('height',slideHeight);
-  $(window).resize(function(){'use strict',
-    $('#main-home-section').css('height',slideHeight);
-  });
+  // 
 
   //accordion
   $('#accordion-two .panel-default .panel-heading').on('click',function(){'use strict',
