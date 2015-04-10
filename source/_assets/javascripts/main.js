@@ -126,82 +126,82 @@ jQuery(function($) {'use strict',
   smoothScroll.init();
 
   // Google Map Customization
-  (function(){
-
-    var map;
-
-    map = new GMaps({
-      el: '#gmap',
-      lat: 13.745546,
-      lng: 100.5624,
-      scrollwheel:false,
-      zoom: 16,
-      zoomControl : true,
-      panControl : false,
-      streetViewControl : false,
-      mapTypeControl: false,
-      overviewMapControl: false,
-      clickable: false
-    });
-
-    var image = '';
-    map.addMarker({
-      lat: 13.745546,
-      lng: 100.5624,
-      icon: image,
-      animation: google.maps.Animation.DROP,
-      verticalAlign: 'bottom',
-      horizontalAlign: 'center',
-      backgroundColor: '#d3cfcf',
-    });
-
-
-    var styles = [
-
-    {
-      "featureType": "road",
-      "stylers": [
-      { "color": "#ffffff" }
-      ]
-    },{
-      "featureType": "water",
-      "stylers": [
-      { "color": "#ffb0b2" }
-      ]
-    },{
-      "featureType": "landscape",
-      "stylers": [
-      { "color": "#f5ecec" }
-      ]
-    },{
-      "elementType": "labels.text.fill",
-      "stylers": [
-      { "color": "#d3cfcf" }
-      ]
-    },{
-      "featureType": "poi",
-      "stylers": [
-      { "color": "#f4c2c3" }
-      ]
-    },{
-      "elementType": "labels.text",
-      "stylers": [
-      { "saturation": 1 },
-      { "weight": 0.1 },
-      { "color": "#000000" }
-      ]
-    }
-
-    ];
-
-    map.addStyle({
-      styledMapName:"Styled Map",
-      styles: styles,
-      mapTypeId: "map_style"
-    });
-
-    map.setStyle("map_style");
-  }());
+  // (function(){
+  //
+  //   var map;
+  //
+  //   map = new GMaps({
+  //     el: '#gmap',
+  //     lat: 13.745546,
+  //     lng: 100.5624,
+  //     scrollwheel:false,
+  //     zoom: 16,
+  //     zoomControl : true,
+  //     panControl : false,
+  //     streetViewControl : false,
+  //     mapTypeControl: false,
+  //     overviewMapControl: false,
+  //     clickable: false
+  //   });
+  //
+  //   var image = '';
+  //   map.addMarker({
+  //     lat: 13.745546,
+  //     lng: 100.5624,
+  //     icon: image,
+  //     animation: google.maps.Animation.DROP,
+  //     verticalAlign: 'bottom',
+  //     horizontalAlign: 'center',
+  //     backgroundColor: '#d3cfcf',
+  //   });
+  //
+  //
+  //   var styles = [
+  //
+  //   {
+  //     "featureType": "road",
+  //     "stylers": [
+  //     { "color": "#ffffff" }
+  //     ]
+  //   },{
+  //     "featureType": "water",
+  //     "stylers": [
+  //     { "color": "#ffb0b2" }
+  //     ]
+  //   },{
+  //     "featureType": "landscape",
+  //     "stylers": [
+  //     { "color": "#f5ecec" }
+  //     ]
+  //   },{
+  //     "elementType": "labels.text.fill",
+  //     "stylers": [
+  //     { "color": "#d3cfcf" }
+  //     ]
+  //   },{
+  //     "featureType": "poi",
+  //     "stylers": [
+  //     { "color": "#f4c2c3" }
+  //     ]
+  //   },{
+  //     "elementType": "labels.text",
+  //     "stylers": [
+  //     { "saturation": 1 },
+  //     { "weight": 0.1 },
+  //     { "color": "#000000" }
+  //     ]
+  //   }
+  //
+  //   ];
+  //
+  //   map.addStyle({
+  //     styledMapName:"Styled Map",
+  //     styles: styles,
+  //     mapTypeId: "map_style"
+  //   });
+  //
+  //   map.setStyle("map_style");
+  // }());
 
   // Send message
   $('#send-message').click(function(evt) {

@@ -84,7 +84,7 @@ layout: default
       %h1 Our Values, Our Craft
       %p
         Our team values people over tools, quality over speed and effective
-        communication over raw skill. But our service is more than building
+        communication over technical skill. But our service is more than building
         high-quality products; our priority is being responsive to you
         so that you can be responsive to your market. Shoot us an email and get a
         taste for our obsessive committment to timely, efficient dialogue.
@@ -297,26 +297,127 @@ layout: default
           %li.angularjs
             %i.fa.fa-angularjs
             AngularJS
+          %li.html5
+            %i.fa.fa-html5
+            HTML5
+          %li.css3
+            %i.fa.fa-css3
+            CSS3
 
+    .row.casestudy.text-center
+      .container
+        .row
+          .col-sm-10.col-sm-offset-1
+            %h2.casestudy-title TrustBooks
+    .casestudy-image
+      %img.img-responsive{:alt => "", :src => "{% asset_path features/trustbooks_devices.png %}"}
+    .row
+      .col-sm-6
+        %p
+          Only two things scare lawyers: Trust accounting and other lawyers. This exciting
+          SaaS solution makes trust accounting dead simple, and ensures that lawyers
+          stay compliant with their State Bar without hiring expensive specialists. TrustBooks
+          has built-in controls to ensure firms stay on track while managing all of the necessary
+          workflows, from printing checks to reconciling accounts. Think of QuickBooks
+          without the headache.
+
+      .col-sm-6
+        %p
+          Our priorities during the Version 1 build were simplicity and security. Since
+          accounting tools are intrinsically complex we followed a rigorous "front first"
+          approach to test workflows before any backend functionality was added.
+          And given the sensitive nature of the legal market we took extra precautions against
+          malicious use. TrustBooks users can be confident that their data is being
+          protected by best practice architecture and best-in-class infrastructure
+          providers.
+    .row
+      .col-sm-12
+        %h4 Technologies
+        %ul.list-unstyled.tech-stack
+          %li.ruby-on-rails
+            %i.fa.fa-diamond
+            Ruby on Rails
+          %li.postgresql
+            %i.fa.fa-database
+            PostgreSQL
+          %li.jquery
+            %i.fa.fa-jquery
+            jQuery
+          %li.html5
+            %i.fa.fa-html5
+            HTML5
+          %li.css3
+            %i.fa.fa-css3
+            CSS3
+
+    .row.casestudy.text-center
+      .container
+        .row
+          .col-sm-10.col-sm-offset-1
+            %h2.casestudy-title Noozible
+    .casestudy-image
+      %img.img-responsive{:alt => "", :src => "{% asset_path features/noozible_devices.png %}"}
+    .row
+      .col-sm-6
+        %p
+          We don't know what the future of journalism looks like, but it probably isn't
+          bundles of paper being hurdled at your door by passing cyclists.
+          Instead our bet is on Noozible: News that is "curated, shared and discussed by and
+          with your friends, unfiltered by traditional media." The Noozible team
+          is giving serious news enthusiast the means to create and share their own
+          "noozpapers" in this news-based social network.
+
+      .col-sm-6
+        %p
+          Our strategy with Noozible was fast product execution to get core features
+          into the hands of beta testers as soon as possible. Simple workflows
+          and minimalist design lets the main draw of Noozible
+          shine through: The user-generated news stories. We've worked with the Noozible team
+          from day 1 to implement key functionality in a way that allows careful
+          measurement of engagement metrics so they can tackle the challenging
+          consumer media sector with confidence.
+
+    .row
+      .col-sm-12
+        %h4 Technologies
+        %ul.list-unstyled.tech-stack
+          %li.ruby-on-rails
+            %i.fa.fa-diamond
+            Ruby on Rails
+          %li.postgresql
+            %i.fa.fa-database
+            PostgreSQL
+          %li.jquery
+            %i.fa.fa-jquery
+            jQuery
+          %li.html5
+            %i.fa.fa-html5
+            HTML5
+          %li.css3
+            %i.fa.fa-css3
+            CSS3
+%section#past-work
+  .container
+    .row.text-center.section-title
+      .col-sm-8.col-sm-offset-2
+        %h2 Open Source and Other Projects
     .portfolio-wrapper
       %ul.portfolio-filter.text-center
         %li
           %a.active{"data-filter" => "*", :href => "#"} Show All
         %li
-          %a{"data-filter" => ".full", :href => "#"} Full Stack
+          %a{"data-filter" => ".full", :href => "#"} Projects
         %li
           %a{"data-filter" => ".open-source", :href => "#"} Open Source
-        %li
-          %a{"data-filter" => ".design", :href => "#"} Design
-        %li
-          %a{"data-filter" => ".other", :href => "#"} Other
       / /#portfolio-filter
       .row.portfolio-items
         .col-sm-4.col-md-3.portfolio-item.full
           .portfolio-content
             %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/infohounds.jpg %}"}
               .folio-overlay
-                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/infohounds.jpg %}", :title => "We have designed and built a fully customized data analytics platform from scratch in Ruby on Rails. You can see the final product at InfoHounds.com, but the real power of our solution is all under the hood."}
+                %a.folio-detail{"data-gallery" => "prettyPhoto",
+                  :href => "{% asset_path portfolio/ih_infographic-thumb.png %}",
+                  :title => "InfoHounds is a data service for the mortgage industry. Lockstep was born out of the core InfoHounds technology team, and we continue to maintain the service and play a key role in its technical strategy."}
                   %i.fa.fa-plus
         .col-sm-4.col-md-3.portfolio-item.full
           .portfolio-content
@@ -334,31 +435,25 @@ layout: default
           .portfolio-content
             %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/pacethis-thumb.jpg %}"}
               .folio-overlay
-                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/pacethis.png %}", :title => "PaceThis is a running analytics platform that enables serious athletes to track, analyze, and plan their workouts in preparation for events (e.g. marathons). Runners with Garmin GPS watches can import their workouts directly into the site, and are instantly provided with a map of their run as well as charts/graphs analyzing their performance."}
+                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/pacethis.png %}", :title => "PaceThis was a running analytics platform that enabled serious athletes to track, analyze, and plan their workouts in preparation for events (e.g. marathons). We built the beta version, allowing runners with Garmin GPS watches to import their workouts directly into the site and see resulting maps and metrics."}
                   %i.fa.fa-plus
-        .col-sm-4.col-md-3.portfolio-item.full.open-source
+        .col-sm-4.col-md-3.portfolio-item.open-source
           .portfolio-content
             %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/stackchat-thumb.jpg %}"}
               .folio-overlay
-                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/stackchat.png %}", :title => "We built this fully real-time chat extension as a fun side project. Stack Overflow is the largest community Q&A site for developers, and this extension allows SO users to chat about the questions and answers via a slide-out panel in their Chrome browser. The front end is built entirely in AngularJS."}
+                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/stackchat.png %}", :title => "We built this fully real-time chat extension as a fun side project. Stack Overflow is the largest community Q&A site for developers, and this allows users to chat about the questions and answers via a slide-out panel in their Chrome browser. The extension is powered by Firebase and AngularJS. Check it out on GitHub at lockstep/stackchat."}
                   %i.fa.fa-plus
-        .col-sm-4.col-md-3.portfolio-item.full.open-source
+        .col-sm-4.col-md-3.portfolio-item.open-source
           .portfolio-content
             %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/node_boilerplate.jpg %}"}
               .folio-overlay
-                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/node_boilerplate.jpg %}", :title => "Many developers have used our Node boilerplate code as a starting point for their Node.js projects."}
+                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/node_boilerplate.jpg %}", :title => "Many developers have used our Node boilerplate code as a starting point for their Node.js projects. You can find it on GitHub at hiattp/express3-mongodb-bootstrap-demo."}
                   %i.fa.fa-plus
-        .col-sm-4.col-md-3.portfolio-item.other
+        .col-sm-4.col-md-3.portfolio-item.full
           .portfolio-content
             %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/imanifold-thumb.jpg %}"}
               .folio-overlay
                 %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/imanifold.png %}", :title => "This client needed a custom server that receives JSON data from a mobile application, converts the information into a nicely designed PDF report, and emails the report to the end customer. The web stack we used is Rails 4, and the PDF generation was accomplished with Prawn. Note: We were not responsible for the design of the template. Image used with permission."}
-                  %i.fa.fa-plus
-        .col-sm-4.col-md-3.portfolio-item.design
-          .portfolio-content
-            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/ih_infographic-thumb.png %}"}
-              .folio-overlay
-                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/ih_infographic.png %}", :title => "We designed this infographic for InfoHounds in order to explain the service as part of a broader a marketing campaign effort."}
                   %i.fa.fa-plus
 / /#portfolio
 -# #testimonial.parallax-section
@@ -725,10 +820,8 @@ layout: default
                 .col-xs-2.icon
                   %i.fa.fa-map-marker
                 .col-xs-10
-                  219 Asoke Towers <br />
-                  Sukhumvit 21 (Soi Asoke) <br />
-                  Khlongtoey Nua, Wattana <br />
-                  Bangkok 10110 Thailand <br />
+                  1923 Bragg St Suite 140-2353<br />
+                  Sanford, NC 27330<br />
             %li
               .row
                 .col-xs-2.icon
@@ -736,7 +829,7 @@ layout: default
                 .col-xs-10
                   %a{:href => "#"} info@locksteplabs.com
 / /#contact-us
-#gmap
+-# #gmap
 / /#gmap
 %footer#footer
   .container.text-center

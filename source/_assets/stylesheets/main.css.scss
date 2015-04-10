@@ -748,6 +748,7 @@ h1, h2, h3, h4, h5, h6 {
 
 ul.tech-stack {
   margin-top: 20px;
+  margin-bottom: 80px;
   li {
     display: inline-block;
     padding: 10px 20px;
@@ -779,6 +780,18 @@ ul.tech-stack {
   background-color: #e62a39;
 }
 
+.html5 {
+  background-color: #e44d26;
+}
+
+.css3 {
+  background-color: #33a9dc;
+}
+
+.jquery {
+  background-color: #146bb2;
+}
+
 .fa-angularjs {
   background: asset-url('angular-icon.png');
   background-size: 20px;
@@ -788,10 +801,25 @@ ul.tech-stack {
   position: relative;
   top: 2px;
 }
+
+.fa-jquery {
+  background: asset-url('jquery-icon.png');
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
+  margin-bottom: -3px;
+  position: relative;
+  top: 2px;
+}
+
 .braces {
   position: relative;
   top: -1px;
   font-weight: 700;
+}
+
+#past-work {
+  background-color: #F4F4F4;
 }
 
 .portfolio-filter li {
@@ -812,6 +840,10 @@ ul.tech-stack {
   font-weight:400;
   color:$dark-blue;
   border:1px solid #e6e6e6;
+}
+
+.portfolio-wrapper {
+  padding-bottom: 20px;
 }
 
 .portfolio-filter li a:hover, 
@@ -880,9 +912,8 @@ ul.tech-stack {
 
 .folio-overlay a.folio-detail {
   bottom:-150px;
-  right:75px;
-  margin-bottom:-25px;
-  margin-left:10px;
+  left:50%;
+  margin-left:-15px;
 }
 
 .portfolio-content:hover .folio-overlay a.folio-link{
@@ -892,6 +923,7 @@ ul.tech-stack {
 
 .portfolio-content:hover .folio-overlay a.folio-detail{
   bottom:50%;
+  left: 50%;
   opacity:1;
 }
 
@@ -1523,7 +1555,7 @@ span.price {
 ===========================*/
 
 #contact-us {
-  background-image: url(asset-url('contact-bg.jpg'));
+  background-image: asset-url('contact-bg.jpg');
   text-transform:inherit;
 }
 
@@ -1548,11 +1580,11 @@ textarea.form-control {
 
 .form-control:focus {
   box-shadow: none;
-  border-color:#db2429;
+  border-color: $light-blue;
 }
 
 .btn.btn-submit {
-  background-color: #db2429;
+  background-color: $light-blue;
   border-radius: 0;
   display: block;
   font-weight: 600;
@@ -1588,7 +1620,7 @@ textarea.form-control {
 }
 
 .contact-info ul li i {
-  background-color: #db2429;
+  background-color: $light-green;
   height: 35px;
   line-height: 35px;
   margin-right: 5px;
@@ -1668,7 +1700,7 @@ textarea.form-control {
 
 #footer a {
   font-weight:700;
-  color:#db2429
+  color: $light-green;
 }
 
 #footer a.to-top {
@@ -1678,16 +1710,16 @@ textarea.form-control {
   height:48px;
   width:48px;
   line-height:48px;
+  font-weight: 700;
   font-size:18px;
-  background-color:#db2429;
+  background-color: $light-green;
   border-radius:5px;
   text-align:center;
   color:#fff;
 }
 
-#footer a.to-top:hover, 
-.btn.btn-submit:hover {
-  background-color:#ba2024;
+#footer a.to-top:hover {
+  background-color: $dark-green;
   color:#fff;
 }
 
