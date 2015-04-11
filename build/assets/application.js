@@ -2981,7 +2981,7 @@ function initCanvas()
 jQuery(function($) {'use strict',
   //Preloader
   $(window).load(function(){
-    // $('.preloader').fadeOut('fast',function(){$(this).remove();});
+    $('.preloader').fadeOut('fast',function(){$(this).remove();});
     // $('.carousel-caption').addClass('animated fadeInDown');
     $('.labs').addClass('animated fadeInRight');
     // $('.logo-pieces .bottom-piece').addClass('animated fadeInRight');
