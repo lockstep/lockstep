@@ -9981,7 +9981,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600; }
 
 .text-green {
-  color: #70B862; }
+  color: #27B67C; }
 
 .text-blue {
   color: #008EB0; }
@@ -10076,7 +10076,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #brief-about-section {
   width: 100%;
-  background-color: #70B862;
+  background-color: #27B67C;
   text-align: center;
   color: white;
   padding-top: 30px;
@@ -10255,7 +10255,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   margin-left: 6px;
   margin-top: 38px;
-  color: #70B862; }
+  color: #27B67C; }
 
 .mouse-icon .wheel,
 .mouse-icon .fa-angle-down {
@@ -11290,7 +11290,7 @@ textarea.form-control {
   font-size: 18px; }
 
 .contact-info ul li i {
-  background-color: #70B862;
+  background-color: #27B67C;
   height: 35px;
   line-height: 35px;
   margin-right: 5px;
@@ -11357,7 +11357,7 @@ textarea.form-control {
 
 #footer a {
   font-weight: 700;
-  color: #70B862; }
+  color: #27B67C; }
 
 #footer a.to-top {
   position: absolute;
@@ -11368,7 +11368,7 @@ textarea.form-control {
   line-height: 48px;
   font-weight: 700;
   font-size: 18px;
-  background-color: #70B862;
+  background-color: #27B67C;
   border-radius: 5px;
   text-align: center;
   color: #fff; }
