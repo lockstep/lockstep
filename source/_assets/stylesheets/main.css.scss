@@ -167,10 +167,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home-section-text {
-  padding-top: 180px;
+  padding-top: 140px;
   text-align: center;
   h1 {
     line-height: 1.5em;
+  }
+  .tech-list {
+    font-size: 18px;
+    color: #777;
+  }
+  hr {
+    margin: 40px;
   }
 }
 

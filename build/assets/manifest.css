@@ -10064,10 +10064,15 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white; }
 
 .home-section-text {
-  padding-top: 180px;
+  padding-top: 140px;
   text-align: center; }
   .home-section-text h1 {
     line-height: 1.5em; }
+  .home-section-text .tech-list {
+    font-size: 18px;
+    color: #777; }
+  .home-section-text hr {
+    margin: 40px; }
 
 #brief-about-section {
   width: 100%;
