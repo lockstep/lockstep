@@ -129,12 +129,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-toggle {
-  border:1px solid #df392e;
-  margin-top:15px;
+  border: 1px solid $light-green;
+  margin-top:10px;
 }
 
 .navbar-toggle .icon-bar {
-  background-color: #df392e;
+  background-color: $light-green;
 }
 
 .btn-primary {
@@ -158,6 +158,13 @@ h1, h2, h3, h4, h5, h6 {
 /*========================
 ========Home CSS==========
 ==========================*/
+
+.technologies {
+  margin-top: 30px;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 300;
+}
 
 #main-home-section {
   width: 100%;
@@ -187,7 +194,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   color: white;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px;
   p {
     font-size: 26px;
   }
@@ -202,8 +209,7 @@ h1, h2, h3, h4, h5, h6 {
 #handcrafted {
   width: 100%;
   position: relative;
-  padding-top: 225px;
-  padding-bottom: 100px;
+  padding: 225px 30px 100px;
   color: white;
   h1 {
     padding: 0px;
@@ -760,7 +766,7 @@ ul.tech-stack {
     display: inline-block;
     padding: 10px 20px;
     padding-right: 16px;
-    margin-right: 7px;
+    margin: 7px 7px 0 0;
     font-weight: 500;
     color: white;
 

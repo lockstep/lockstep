@@ -18,7 +18,7 @@ layout: default
           %span.icon-bar
         %a.navbar-brand{:href => "index.html"}
           %img.img-responsive{:alt => "logo", :src => "{% asset_path logo_icon.png %}"}
-          %h1
+          %h1.hidden-xs
             %span.lockstep LOCKSTEP
             %span.labs LABS
       .collapse.navbar-collapse
@@ -38,7 +38,8 @@ layout: default
           -# %li.scroll
           -#   %a{:href => "#blog"} Blog
           %li.scroll
-            -# %a{:href => "#contact-us"} Contact
+            %a{:href => "#contact-us"} Contact
+          %li.scroll
 #main-home-section
   .container
     .home-section-text
@@ -51,7 +52,10 @@ layout: default
         -# %br
         -# %span.text-blue Your Business Objectives
       %hr
-      .row
+      .row.visible-xs
+        .technologies
+          %span#typewriter
+      .row.hidden-xs
         .col-sm-4
           %ul.tech-list
             %li Ruby on Rails

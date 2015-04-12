@@ -100,14 +100,8 @@
 	.parallax-content {
 		padding-top:85px;
 	}
-	/*Navigation*/
-	.navbar-brand {
-		height: 65px;
-		padding-left: 15px;
-		padding-top: 0;
-	}
 	#navigation .navbar-right li a {
-		font-size: 12px;
+		font-size: 16px;
 		font-weight: 400;
 		line-height: 12px;
 	}

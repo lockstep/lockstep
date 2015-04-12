@@ -36,6 +36,33 @@ jQuery(function($) {'use strict',
 
   parallaxInit();
 
+  //Type effect
+  $("#typewriter").typed({
+    strings: [
+      "Ruby on Rails",
+      "Node.js",
+      "Ionic",
+      "PostgreSQL",
+      "MySQL",
+      "MongoDB",
+      "AngularJS",
+      "ReactJS",
+      "jQuery",
+      "Bootstrap",
+      "HTML5",
+      "CSS3",
+      "RSpec",
+      "Capybara",
+      "Jasmine",
+      "Git",
+      "Vim",
+      "AWS"
+    ],
+    typeSpeed: 35,
+    backDelay: 800,
+    loop: true
+  });
+
   // Navigation Scroll	
   // $(window).on('scroll', function(){
   //   if( $(window).scrollTop() > window.innerHeight){
