@@ -11269,17 +11269,11 @@ span.price {
 =======Contact us CSS======
 ===========================*/
 #contact-us {
-  background-image: url("/assets/contact-bg.jpg?cb=6ceb2bb3ce1181fd0b81b2464cd4eb4c");
-  text-transform: inherit; }
-
-#contact-us .parallax-content {
-  padding-bottom: 85px;
-  padding-top: 95px; }
+  background-color: #008EB0;
+  color: white; }
 
 .form-control {
-  background-color: transparent;
-  background-image: none;
-  border: 1px solid #6a6a6a;
+  border: 1px solid #FFF;
   border-radius: 0;
   height: 48px; }
 
@@ -11289,16 +11283,19 @@ textarea.form-control {
 
 .form-control:focus {
   box-shadow: none;
-  border-color: #008EB0; }
+  border-color: #2B3B41; }
 
 .btn.btn-submit {
-  background-color: #008EB0;
+  background-color: #27B67C;
   border-radius: 0;
   display: block;
   font-weight: 600;
   margin-top: 47px;
   padding: 15px;
   width: 100%; }
+  .btn.btn-submit:hover {
+    color: white;
+    background-color: #26a974; }
 
 .form-group {
   margin-bottom: 30px; }
@@ -11389,7 +11386,7 @@ textarea.form-control {
 
 #footer a {
   font-weight: 700;
-  color: #27B67C; }
+  color: #008EB0; }
 
 #footer a.to-top {
   position: absolute;
@@ -11406,7 +11403,7 @@ textarea.form-control {
   color: #fff; }
 
 #footer a.to-top:hover {
-  background-color: #2D5E31;
+  background-color: #26a974;
   color: #fff; }
 
 /*************************
