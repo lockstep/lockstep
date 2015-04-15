@@ -1587,6 +1587,12 @@ span.price {
   height: 48px;
 }
 
+#contact-us .alert-success {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: $light-blue;
+}
+
 textarea.form-control {
   height:215px;
   resize:none;
@@ -1605,11 +1611,13 @@ textarea.form-control {
   margin-top: 47px;
   padding: 15px;
   width: 100%;
+  color: white;
   &:hover {
     color: white;
     background-color: #26a974;
   }
 }
+
 
 .form-group {
   margin-bottom: 30px;

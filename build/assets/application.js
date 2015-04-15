@@ -3621,13 +3621,13 @@ jQuery(function($) {'use strict',
 
     Parse.Cloud.run('sendEmail', data, {
       success: function(object) {
-        mailResult.text('Message was sent. Thank you.');
+        mailResult.text("Thanks! We'll be in touch shortly.");
         mailResult.addClass('alert-succes');
         mailResult.removeClass('alert-danger');
         mailResult.removeClass('hidden');
       },
       error: function(object, error) {
-        mailResult.text('There was an error. Please try again');
+        mailResult.text('There was an error. Please try again.');
         mailResult.removeClass('alert-succes');
         mailResult.addClass('alert-danger');
         mailResult.removeClass('hidden');
