@@ -16,7 +16,7 @@ layout: default
           %span.icon-bar
           %span.icon-bar
           %span.icon-bar
-        %a.navbar-brand{:href => "index.html"}
+        %a.navbar-brand{:href => "/"}
           %img.img-responsive{:alt => "logo", :src => "{% asset_path logo_icon.png %}"}
           %h1.hidden-xs
             %span.lockstep LOCKSTEP
@@ -83,10 +83,11 @@ layout: default
             %li Vim
             %li AWS
 
-    %a.smooth-scroll{"data-scroll" => "", :href => "#portfolio"}
-      .mouse-icon
-        .wheel
-        %i.fa.fa-angle-down
+    .hidden-xs
+      %a.smooth-scroll{"data-scroll" => "", :href => "#brief-about-section"}
+        .mouse-icon
+          .wheel
+          %i.fa.fa-angle-down
     -# %div.logo-pieces
     -#   %img(src="{% asset_path logo_icon_top.png %}" class="top-piece")
     -#   %img(src="{% asset_path logo_icon_bottom.png %}" class="bottom-piece")
@@ -117,10 +118,10 @@ layout: default
       %h1 Our Values, Our Craft
       %p
         Our team values people over tools, quality over speed and effective
-        communication over technical skill. But our service is more than building
-        high-quality products; our priority is being responsive to you
-        so that you can be responsive to your market. Shoot us an email and get a
-        taste for our obsessive committment to timely, efficient dialogue.
+        communication over technical skill. We have lots of experience launching
+        innovative products so we help our clients navigate the early product
+        life cycle with best-practice product development strategies.
+
 #backdrop
 #overlay
 
@@ -814,15 +815,24 @@ layout: default
 -#                   3 Comments
 -#             %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 -#
-%section#contact-us.parallax-section
-  .parallax-content
-    .color-overlay
-    .container
-      .row.text-center.section-title
-        .col-sm-8.col-sm-offset-2
-          %h2 Contact Us
-          %p Let's talk about how we can help your next project succeed.
-      .col-sm-6
+-# %section#contact-us.parallax-section
+-#   .parallax-content
+-#     .color-overlay
+-#     .container
+-#       .row.text-center.section-title
+-#         .col-sm-8.col-sm-offset-2
+-#           %h2 Contact Us
+-#           %p Let's talk about how we can help your next project succeed.
+%section#contact-us
+  .container
+    .row.text-center.section-title
+      .col-sm-8.col-sm-offset-2
+        %h2 Contact Us
+        %p
+          Let's chat about your next project. We'll respond within one business
+          day to set up a call.
+    .row.text-center.section-title
+      .col-sm-7
         %form#contact-form{:name => "contact-form"}
           #mail-result.alert.alert-success.hidden message
           .row
@@ -838,37 +848,27 @@ layout: default
             %textarea#message-content.form-control{:name => "message", :placeholder => "Message", :required => "required", :rows => "4"}
           .form-group
             %button.btn.btn-submit{id: 'send-message', :type => "submit"} Send Message
-      .col-sm-6
+      .col-sm-5
         .contact-info
-          %h3 Contact Info
+          %h3 Lockstep Labs
           %ul
             %li
               .row
-                .col-xs-2.icon
-                  %i.fa.fa-phone
-                .col-xs-10.data
+                .col-xs-12
+                  1923 Bragg Street
+                  %br
+                  Suite 140-2353
+                  %br
+                  Sanford, NC 27330
+            %li
+              .row
+                .col-xs-12
                   Phone: 908 442 8875
-            %li
-              .row
-                .col-xs-2.icon
-                  %i.fa.fa-map-marker
-                .col-xs-10
-                  1923 Bragg St Suite 140-2353<br />
-                  Sanford, NC 27330<br />
-            %li
-              .row
-                .col-xs-2.icon
-                  %i.fa.fa-envelope
-                .col-xs-10
-                  %a{:href => "#"} info@locksteplabs.com
-/ /#contact-us
--# #gmap
-/ /#gmap
+                  %br
+                  info@locksteplabs.com
 %footer#footer
   .container.text-center
     %p
-      &copy; 2015
-      %a{:href => "/"} Lockstep Labs Ltd.
-      All rights reserved.
+      &copy; 2015 Lockstep Labs, Inc.
   %a.to-top{"data-scroll" => "", :href => "#main-home-section"}
     %i.fa.fa-angle-up

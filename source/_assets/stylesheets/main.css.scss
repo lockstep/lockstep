@@ -1568,19 +1568,20 @@ span.price {
 ===========================*/
 
 #contact-us {
-  background-image: asset-url('contact-bg.jpg');
-  text-transform:inherit;
+  // background-image: asset-url('contact-bg.jpg');
+  background-color: $light-blue;
+  color: white;
 }
 
-#contact-us .parallax-content {
-  padding-bottom: 85px;
-  padding-top: 95px;
+#contact-us .container {
+  // padding-bottom: 85px;
+  // padding-top: 95px;
 }
 
 .form-control {
-  background-color: transparent;
-  background-image: none;
-  border: 1px solid #6a6a6a;
+  // background-color: transparent;
+  // background-image: none;
+  border: 1px solid #FFF;
   border-radius: 0;
 
   height: 48px;
@@ -1593,17 +1594,21 @@ textarea.form-control {
 
 .form-control:focus {
   box-shadow: none;
-  border-color: $light-blue;
+  border-color: $dark-blue;
 }
 
 .btn.btn-submit {
-  background-color: $light-blue;
+  background-color: $light-green;
   border-radius: 0;
   display: block;
   font-weight: 600;
   margin-top: 47px;
   padding: 15px;
   width: 100%;
+  &:hover {
+    color: white;
+    background-color: #26a974;
+  }
 }
 
 .form-group {
@@ -1713,7 +1718,7 @@ textarea.form-control {
 
 #footer a {
   font-weight:700;
-  color: $light-green;
+  color: $light-blue;
 }
 
 #footer a.to-top {
@@ -1732,7 +1737,7 @@ textarea.form-control {
 }
 
 #footer a.to-top:hover {
-  background-color: $dark-green;
+  background-color: #26a974;
   color:#fff;
 }
 
