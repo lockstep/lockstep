@@ -11277,6 +11277,11 @@ span.price {
   border-radius: 0;
   height: 48px; }
 
+#contact-us .alert-success {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #008EB0; }
+
 textarea.form-control {
   height: 215px;
   resize: none; }
@@ -11292,7 +11297,8 @@ textarea.form-control {
   font-weight: 600;
   margin-top: 47px;
   padding: 15px;
-  width: 100%; }
+  width: 100%;
+  color: white; }
   .btn.btn-submit:hover {
     color: white;
     background-color: #26a974; }
