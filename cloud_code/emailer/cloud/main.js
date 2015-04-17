@@ -1,6 +1,6 @@
 Parse.Cloud.define("sendEmail", function(request, response) {
   var Mandrill = require('mandrill');
-  Mandrill.initialize('T4TOqBjwNL4oxSpgwnJVGA');
+  Mandrill.initialize('');
 
   var name = request.params.name;
   var email = request.params.email;
