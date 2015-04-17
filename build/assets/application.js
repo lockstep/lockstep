@@ -3610,7 +3610,7 @@ jQuery(function($) {'use strict',
     var subject = $('#message-subject').val();
     var message = $('#message-content').val();
 
-    Parse.initialize("2o9NghZoiPZpSKodLml3VNn4lHFJWNO8KvXFGhZR", "HEAoZeztGbvI3Kruk0dufrqR20kyNaaujYWT9r79");
+    Parse.initialize("oypIBNT5o3X6GzxsHq6YYFb8AwzUS54GpAjR5grJ", "njlddkeF48mz3XvD6smGS0mhjKbOLDjU8m5gUpFU");
 
     var data = {
       name: name,
