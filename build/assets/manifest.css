@@ -10109,18 +10109,18 @@ h1, h2, h3, h4, h5, h6 {
 
 #brief-about-section {
   width: 100%;
-  background-color: #27B67C;
+  background-color: white;
   text-align: center;
-  color: white;
-  padding-top: 30px;
-  padding: 30px; }
-  #brief-about-section p {
-    font-size: 26px; }
-  #brief-about-section img {
-    margin: auto;
-    margin-top: 25px;
+  color: #777;
+  padding: 30px;
+  padding-top: 0px; }
+  #brief-about-section p.about-subtext {
+    margin-top: 18px;
     margin-bottom: 15px;
-    height: 40px; }
+    font-size: 27px; }
+
+.team-members {
+  margin-top: 40px; }
 
 #handcrafted {
   width: 100%;
@@ -10130,7 +10130,7 @@ h1, h2, h3, h4, h5, h6 {
   #handcrafted h1 {
     padding: 0px; }
   #handcrafted p {
-    font-size: 1.3em; }
+    font-size: 27px; }
 
 #backdrop {
   background: url("/assets/features/handwritten.jpg?cb=df4487b3b2d33f71a6dcded7b1bcfcbb") center center no-repeat;
@@ -10822,16 +10822,13 @@ ul.tech-stack {
 /*=========================
 ======Team Member CSS======
 ===========================*/
+.member {
+  padding: 30px; }
+
 .member-info {
   font-size: 12px;
   color: #2B3B41;
   font-weight: 300; }
-
-.member-info h4 {
-  font-size: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin-top: 35px; }
 
 .member-social {
   margin-top: 35px; }
@@ -10865,6 +10862,12 @@ ul.tech-stack {
 .member-social li a.dribbble:hover {
   background-color: #ea4c89; }
 
+.member h4 {
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 20px; }
+
 .member .member-image {
   position: relative;
   overflow: hidden; }
@@ -10875,7 +10878,8 @@ ul.tech-stack {
   bottom: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #27B67C;
+  border-radius: 50%;
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -10896,15 +10900,32 @@ ul.tech-stack {
   position: absolute;
   text-align: center;
   top: 50%;
-  opacity: 0; }
+  opacity: 0;
+  height: 50px;
+  width: 50px; }
+
+.member-overlay p {
+  color: white;
+  font-weight: 500;
+  height: 0;
+  width: 0;
+  left: 50%;
+  margin-left: -35px;
+  margin-top: -25px;
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+  font-size: 15px; }
 
 .member:hover .member-overlay {
+  cursor: default;
   opacity: 1; }
 
 .member:hover .member-overlay a,
+.member:hover .member-overlay p,
 .blog-content:hover .more-link a {
   height: 50px;
-  width: 50px;
+  width: 70px;
   opacity: 1; }
 
 /*=========================
