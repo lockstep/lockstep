@@ -195,6 +195,106 @@ layout: default
                 Rails
           %h4 King
 
+#featured-client
+  .container
+    .row
+      .col-sm-12
+        .section-label-divider
+    .row
+      .col-sm-4.col-sm-offset-4
+        .section-label Featured Client
+    .row.logo
+      .col-sm-6.col-sm-offset-3
+        %img.img-responsive{alt: "Move Loot", src: "{% asset_path portfolio/move_loot_flat.png %}"}
+    .row
+      .col-sm-12
+        %p.text-center.intro-text
+          Backed by Y Combinator, First Round and top VC firms, Move Loot is
+          quickly changing the way we buy and sell furniture.
+          For a quick overview of their service check out:
+    .row.press-logos
+      .col-xs-3.col-sm-2.col-sm-offset-2
+        .logo-container
+          %a.logo{ href: 'http://www.bloomberg.com/news/articles/2015-06-18/couch-wars-the-startup-trying-to-corner-the-used-furniture-market', target: '_blank' }
+            %img.img-responsive{alt: 'Bloomberg Business', src: "{% asset_path press/bloomberg_business_bw.png%}"}
+      .col-xs-3.col-sm-2
+        .logo-container
+          %a.logo{href: 'http://www.businessinsider.com/move-loot-wants-to-replace-ikea-and-craigslist-2015-10', target: '_blank'}
+            %img.img-responsive{alt: 'Business Insider', src: "{% asset_path press/business_insider_bw.png%}"}
+      .col-xs-3.col-sm-2
+        .logo-container
+          %a.logo{href: 'http://techcrunch.com/2014/06/09/move-loot-raises-2-8m-seed-round-to-expand-its-online-furniture-consignment-store/', target: '_blank'}
+            %img.img-responsive{alt: 'Tech Crunch', src: "{% asset_path press/techcrunch_bw.png%}"}
+      .col-xs-3.col-sm-2
+        .logo-container
+          %a.logo{href: 'http://www.forbes.com/sites/jeffbercovici/2014/06/27/moving-used-furniture-into-the-sharing-economy', target: '_blank'}
+            %img.img-responsive{alt: 'Forbes', src: "{% asset_path press/forbes_bw.png%}"}
+
+  .intro
+    .container
+      .row
+        .col-sm-12
+          %h2 The easiest way to buy and sell furniture. Ever.
+  .container.main
+    .row
+      .col-sm-12
+        %h1.text-center
+          Our Move Loot Projects
+        %p.text-center
+          Lockstep teams have worked closely with
+          Move Loot's core development group on a variety of ambitious
+          initiatives, including an integrated inventory management application
+          and a custom logistics system that powers Move Loot's complex
+          distribution network. Lockstep actively supports existing
+          Move Loot infrastructure, including their marketing systems and the
+          core Marketplace application.
+    .row.projects
+      .col-sm-12.project
+        .row
+          .col-sm-6
+            %img.img-responsive{alt: 'Trade', src: "{% asset_path portfolio/trade.png%}"}
+          .col-sm-6
+            %h1 Trade
+            %h4 Modern Inventory Management
+            %p
+              Trade is a fully integrated, modern inventory management
+              solution that ties directly into the highly trafficked Move Loot
+              Marketplace. Furniture vendors from small consignment shops
+              to national retailers leverage Trade to track in-house
+              supply and channel sales through Move Loot's extensive buyer
+              network.
+            %p
+              Trade is powered by some of our favorite technologies, including
+              a Ruby on Rails API and an interactive ReactJS front end.
+      .col-sm-12.project
+        .row
+          .col-sm-6
+            %img.img-responsive{alt: 'Transporter', src: "{% asset_path portfolio/transporter.png%}"}
+          .col-sm-6
+            %h1 Transporter
+            %h4 Nationwide Shipping Logistics
+            %p
+              Move Loot moves literally <i>tons</i> of furniture all over
+              the country, from sellers to warehouses to buyers
+              or the appropriate recycling facilities. This massive
+              coordination is handled smoothly with Transporter, a custom
+              logistics solution perfectly tailored to Move Loot's unique
+              needs.
+            %p
+              Transporter needs to communicate with a series of systems in
+              order to move products from A to B, including the Move Loot
+              Marketplace and one of Move Loot's proprietary mobile
+              applications. The core system is written in ruby, and the
+              front end is ReactJS coupled with Reflux (an offshoot of
+              Facebook's Flux architecture).
+    -# .row.projects
+    -#   .col-sm-6.project
+    -#     %h2.text-center Email
+    -#     %h4.text-center Customizable Templates
+    -#   .col-sm-6.project
+    -#     %h2.text-center Marketplace
+    -#     %h4.text-center On-demand Generalists
+
 #handcrafted
   .container
     .row
@@ -202,7 +302,7 @@ layout: default
       %p
         Our team values people over tools, quality over speed and effective
         communication over technical skill. We have lots of experience launching
-        innovative products so we help our clients navigate the early product
+        innovative products, so we help our clients navigate the early product
         life cycle with best-practice product development strategies.
 
 #backdrop
@@ -929,4 +1029,4 @@ layout: default
     %p
       &copy; 2015 Lockstep Labs, Inc.
   %a.to-top{"data-scroll" => "", :href => "#main-home-section"}
-    %i.fa.fa-angle-up
+    top

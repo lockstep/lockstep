@@ -3449,7 +3449,7 @@ jQuery(function($) {'use strict',
     var $values = $('#handcrafted h1');
     var valuesTop = $values.offset().top;
     var offsetRatio = Math.pow(1 - Math.abs(valuesTop - winTop) / valuesTop, 2);
-    if(offsetRatio < 0.7) $overlay.css('opacity', offsetRatio);
+    // if(offsetRatio < 0.7) $overlay.css('opacity', offsetRatio);
   });
 
   $('.navbar-collapse ul li a').click(function() {

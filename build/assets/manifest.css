@@ -5186,6 +5186,14 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+@font-face {
+  font-family: 'Tiempos Headline Bold';
+  src: url("/assets/tiempos-headline-bold.eot?cb=9ae725a8081b4116ae419b257e0a9918");
+  /* IE9 Compat Modes */
+  src: url("/assets/tiempos-headline-bold.eot?cb=9ae725a8081b4116ae419b257e0a9918?#iefix") format("embedded-opentype"), url("/assets/tiempos-headline-bold.woff?cb=e1a1c5b03556fec5089cffdb968ed564") format("woff"), url("/assets/tiempos-headline-bold.ttf?cb=043d34e8d3260298a745d7b484aea63e") format("truetype"), url("/assets/tiempos-headline-bold.svg?cb=cab5f64392cad73fa483fba3f42664fa#ee82c367a226b8d440943da87a247c1b") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700; }
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license
@@ -10113,19 +10121,102 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   color: #777;
   padding: 30px;
-  padding-top: 0px; }
+  padding-top: 0px;
+  padding-bottom: 50px; }
   #brief-about-section p.about-subtext {
     margin-top: 18px;
     margin-bottom: 15px;
     font-size: 27px; }
 
 .team-members {
-  margin-top: 40px; }
+  margin-top: 40px;
+  padding-bottom: 50px; }
+
+#featured-client {
+  position: relative;
+  background-color: white; }
+  #featured-client .section-label-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #27B67C; }
+  #featured-client .section-label {
+    position: relative;
+    top: -21px;
+    text-align: center;
+    background-color: #27B67C;
+    padding: 10px;
+    color: white;
+    font-weight: bold; }
+  #featured-client .logo {
+    margin: 20px 0px; }
+  #featured-client .intro-text {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: -10px; }
+  #featured-client .press-logos {
+    margin-bottom: 30px;
+    line-height: 100px; }
+    #featured-client .press-logos .logo-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 100%; }
+      #featured-client .press-logos .logo-container .logo {
+        position: absolute;
+        width: 100%;
+        height: 100%; }
+        #featured-client .press-logos .logo-container .logo img {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          max-height: 100%;
+          max-width: 100%; }
+  #featured-client .intro {
+    margin-top: 10px;
+    background: url("/assets/features/moveloot_banner1.jpg?cb=eb1d3bedc4cab8bde0e0ea89e90933fd") bottom center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 40px; }
+    #featured-client .intro h2 {
+      font-size: 40px;
+      color: white;
+      font-family: 'Tiempos Headline Bold';
+      font-weight: bold;
+      text-align: center;
+      padding-top: 65px;
+      padding-bottom: 35px; }
+  #featured-client .main {
+    background-color: white; }
+    #featured-client .main h1 {
+      padding: 30px 0px 5px;
+      font-weight: 100; }
+    #featured-client .main p.hover-detail {
+      margin-bottom: 35px; }
+    #featured-client .main .projects {
+      margin: 20px 0; }
+      #featured-client .main .projects .project {
+        background-color: #F05554;
+        padding: 30px;
+        margin-bottom: 30px;
+        color: white; }
+        #featured-client .main .projects .project img {
+          margin-bottom: 20px; }
+        #featured-client .main .projects .project h1 {
+          margin-top: 0px;
+          padding-top: 10px;
+          font-family: 'Tiempos Headline Bold';
+          margin-bottom: 5px; }
+        #featured-client .main .projects .project h4 {
+          margin: 0px 0px 20px; }
 
 #handcrafted {
   width: 100%;
   position: relative;
-  padding: 225px 30px 100px;
+  padding: 70px 30px 80px;
   color: white; }
   #handcrafted h1 {
     padding: 0px; }
@@ -10150,7 +10241,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   background-color: black;
   z-index: -1;
-  opacity: 0.0; }
+  opacity: 0.7; }
 
 /*Main Carousel CSS*/
 #main-carousel {

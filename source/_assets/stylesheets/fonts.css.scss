@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Tiempos Headline Bold';
+  src: asset-url('tiempos-headline-bold.eot'); /* IE9 Compat Modes */
+  src: asset-url('tiempos-headline-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       asset-url('tiempos-headline-bold.woff') format('woff'), /* Modern Browsers */
+       asset-url('tiempos-headline-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       asset-url('tiempos-headline-bold.svg#ee82c367a226b8d440943da87a247c1b') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  700;
+}
