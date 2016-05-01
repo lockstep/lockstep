@@ -1000,29 +1000,36 @@ layout: default
       .col-sm-12
         %h2 Contact Us
         %p
-          Let's chat about your next project. We'll respond within one business
+          Let's chat about your next project! We'll respond within one business
           day to set up a call.
     .row.text-center.section-title
-      .col-sm-7
-        %form#contact-form{:name => "contact-form"}
-          #mail-result.alert.alert-success.hidden message
-          .row
-            .col-sm-6
-              .form-group
-                %input#message-name.form-control{:name => "name", :placeholder => "Name", :required => "required", :type => "text"}
-            .col-sm-6
-              .form-group
-                %input#message-email.form-control{:name => "email", :placeholder => "Email", :required => "required", :type => "email"}
-          .form-group
-            %input#message-subject.form-control{:name => "subject", :placeholder => "Subject", :required => "required", :type => "text"}
-          .form-group
-            %textarea#message-content.form-control{:name => "message", :placeholder => "Message", :required => "required", :rows => "4"}
-          .form-group
-            %button.btn.btn-submit{id: 'send-message', :type => "submit"} Send Message
-      .col-sm-5
+      -# .col-sm-7
+      -#   %form#contact-form{:name => "contact-form"}
+      -#     #mail-result.alert.alert-success.hidden message
+      -#     .row
+      -#       .col-sm-6
+      -#         .form-group
+      -#           %input#message-name.form-control{:name => "name", :placeholder => "Name", :required => "required", :type => "text"}
+      -#       .col-sm-6
+      -#         .form-group
+      -#           %input#message-email.form-control{:name => "email", :placeholder => "Email", :required => "required", :type => "email"}
+      -#     .form-group
+      -#       %input#message-subject.form-control{:name => "subject", :placeholder => "Subject", :required => "required", :type => "text"}
+      -#     .form-group
+      -#       %textarea#message-content.form-control{:name => "message", :placeholder => "Message", :required => "required", :rows => "4"}
+      -#     .form-group
+      -#       %button.btn.btn-submit{id: 'send-message', :type => "submit"} Send Message
+      .col-sm-6.col-sm-offset-3
         .contact-info
           %h3 Lockstep Labs
           %ul
+            %li
+              .row
+                .col-xs-12
+                  info@locksteplabs.com
+                  %br
+                  Phone: 908 442 8875
+            %br
             %li
               .row
                 .col-xs-12
@@ -1031,12 +1038,8 @@ layout: default
                   Suite 2353
                   %br
                   Sanford, NC 27330
-            %li
-              .row
-                .col-xs-12
-                  Phone: 908 442 8875
-                  %br
-                  info@locksteplabs.com
+        %br
+        %br
 %footer#footer
   .container.text-center
     %p
