@@ -19,8 +19,8 @@ layout: default
         %a.navbar-brand{:href => "/"}
           %img.img-responsive{:alt => "logo", :src => "{% asset_path logo_icon.png %}"}
           %h1.hidden-xs
-            %span.lockstep LOCKSTEP
-            %span.labs LABS
+            -# %span.lockstep LOCKSTEP
+            -# %span.labs LOCKSTEP
       .collapse.navbar-collapse
         %ul.nav.navbar-nav.navbar-right
           %li.scroll.active
@@ -207,6 +207,33 @@ layout: default
                 %br
                 Rails
           %h4 King
+    %hr
+
+#are-awesome
+  .container
+    .row.logo
+      .col-sm-12.col-md-10.col-md-offset-1
+        %h1.text-center
+          Seasoned Product Management and Engineering
+          for Early and Growth-Stage Companies
+    .row
+      .col-sm-10.col-sm-offset-1
+        %p.text-center
+          Lockstep teams have partnered with companies from top accelerators including
+          Y Combinator, Techstars and Dreamit Ventures.
+    .row.press-logos
+      .col-xs-4.col-md-2.col-md-offset-3
+        .logo-container.drop-me
+          %a.logo{ href: 'https://www.ycombinator.com/', target: '_blank' }
+            %img.img-responsive{alt: 'Y Combinator', src: "{% asset_path logos/ycomb.jpg%}"}
+      .col-xs-4.col-md-2
+        .logo-container
+          %a.logo{href: 'http://www.techstars.com/', target: '_blank'}
+            %img.img-responsive{alt: 'Techstars', src: "{% asset_path logos/techstars.png %}"}
+      .col-xs-4.col-md-2
+        .logo-container.drop-me
+          %a.logo{href: 'http://www.dreamit.com/', target: '_blank'}
+            %img.img-responsive{alt: 'Dreamit', src: "{% asset_path logos/dreamit.jpg %}"}
 
 #featured-client
   .container
@@ -215,52 +242,65 @@ layout: default
         .section-label-divider
     .row
       .col-sm-4.col-sm-offset-4
-        .section-label Featured Client
-    .row.logo
-      .col-sm-6.col-sm-offset-3
-        %img.img-responsive{alt: "Move Loot", src: "{% asset_path portfolio/move_loot_flat.png %}"}
+        .section-label Recent Projects
+    %br
+    .row.projects
+      .col-sm-4
+        %img.img-responsive{alt: 'Bungalow', src: "{% asset_path portfolio/bungalow_devices.png %}"}
+        %h3.text-center Bungalow Insurance
+        %p.text-center
+          Bungalow is making renters insurance dead simple for the next
+          generator of millennial renters. No calls to insurance reps necessary,
+          just a seamless web or mobile workflow.
+      .col-sm-4
+        %img.img-responsive{alt: 'Plutocrat', src: "{% asset_path portfolio/plutocrat.png %}"}
+        %h3.text-center Plutocrat
+        %p.text-center
+          Plutocrat is a native iOS/Android game. Think high-stakes King
+          of the Hill, where the objective is to top the leaderboard by
+          literally buying your competitors out of the game.
+      .col-sm-4
+        %img.img-responsive{alt: 'The Montessori Company', src: "{% asset_path portfolio/tmc_device.png %}"}
+        %h3.text-center The Montessori Company
+        %p.text-center
+          TMC creates beautiful, hand-illustrated materials for Montessori
+          environments. We built a custom E-commerce solution with sophisticated
+          analytical tools critical to addressing this niche market.
+
     .row
-      .col-sm-12
-        %p.text-center.intro-text
-          Backed by Y Combinator, First Round and top VC firms, Move Loot is
-          quickly changing the way we buy and sell furniture.
-          For a quick overview of their service check out:
-    .row.press-logos
-      .col-xs-3.col-sm-2.col-sm-offset-2
-        .logo-container
-          %a.logo{ href: 'http://www.bloomberg.com/news/articles/2015-06-18/couch-wars-the-startup-trying-to-corner-the-used-furniture-market', target: '_blank' }
-            %img.img-responsive{alt: 'Bloomberg Business', src: "{% asset_path press/bloomberg_business_bw.png%}"}
-      .col-xs-3.col-sm-2
-        .logo-container
-          %a.logo{href: 'http://www.businessinsider.com/move-loot-wants-to-replace-ikea-and-craigslist-2015-10', target: '_blank'}
-            %img.img-responsive{alt: 'Business Insider', src: "{% asset_path press/business_insider_bw.png%}"}
-      .col-xs-3.col-sm-2
-        .logo-container
-          %a.logo{href: 'http://techcrunch.com/2014/06/09/move-loot-raises-2-8m-seed-round-to-expand-its-online-furniture-consignment-store/', target: '_blank'}
-            %img.img-responsive{alt: 'Tech Crunch', src: "{% asset_path press/techcrunch_bw.png%}"}
-      .col-xs-3.col-sm-2
-        .logo-container
-          %a.logo{href: 'http://www.forbes.com/sites/jeffbercovici/2014/06/27/moving-used-furniture-into-the-sharing-economy', target: '_blank'}
-            %img.img-responsive{alt: 'Forbes', src: "{% asset_path press/forbes_bw.png%}"}
+      .col-sm-12.testimonial
+        .wrapper
+          %p
+            Paul and his team offer the unique combination of outstanding
+            capabilities, extensive startup experience, and affordable rates
+            that make his firm perfect for a new venture. Whether you work with
+            Lockstep as your primary developer or to supplement in-house resources,
+            his firm is exactly the type of 'unfair advantage' that can mean
+            the difference between success and failure.
+          %p Tom Austin, Bungalow Co-Founder
 
   .intro
     .container
       .row
         .col-sm-12
-          %h2 The easiest way to buy and sell furniture. Ever.
+          %h2 The easiest way to buy and sell furniture.
+
   .container.main
     .row
       .col-sm-12
         %h1.text-center
-          Our Move Loot Projects
+          Move Loot: Special Projects and Team Extension
         %p.text-center
-          Lockstep teams have worked closely with
+          Lockstep teams worked closely with
           Move Loot's core development group on a variety of ambitious
           initiatives, including an integrated inventory management application
-          and a custom logistics system that powers Move Loot's complex
-          distribution network. Lockstep actively supports existing
+          for furniture retailers and a custom logistics system that powered
+          Move Loot's complex distribution network. Lockstep also supported legacy
           Move Loot infrastructure, including their marketing systems and the
           core Marketplace application.
+        %p.text-center
+          Move Loot ceased operations in June 2016 but we are happy
+          to demo snapshots of these projects by request.
     .row.projects
       .col-sm-12.project
         .row
@@ -270,14 +310,14 @@ layout: default
             %h1 Trade
             %h4 Modern Inventory Management
             %p
-              Trade is a fully integrated, modern inventory management
-              solution that ties directly into the highly trafficked Move Loot
+              Trade was a fully integrated, modern inventory management
+              solution that tied directly into the highly trafficked Move Loot
               Marketplace. Furniture vendors from small consignment shops
-              to national retailers leverage Trade to track in-house
+              to national retailers leveraged Trade to track in-house
               supply and channel sales through Move Loot's extensive buyer
               network.
             %p
-              Trade is powered by some of our favorite technologies, including
+              Trade was powered by some of our favorite technologies, including
               a Ruby on Rails API and an interactive ReactJS front end.
       .col-sm-12.project
         .row
@@ -287,18 +327,18 @@ layout: default
             %h1 Transporter
             %h4 Nationwide Shipping Logistics
             %p
-              Move Loot moves literally <i>tons</i> of furniture all over
+              Move Loot moved literally <i>tons</i> of furniture all over
               the country, from sellers to warehouses to buyers
-              or the appropriate recycling facilities. This massive
-              coordination is handled smoothly with Transporter, a custom
+              or the appropriate recycling facilities. Their massive
+              coordination effort was handled smoothly with Transporter, a custom
               logistics solution perfectly tailored to Move Loot's unique
               needs.
             %p
-              Transporter needs to communicate with a series of systems in
+              Transporter communicated with a series of systems in
               order to move products from A to B, including the Move Loot
               Marketplace and one of Move Loot's proprietary mobile
-              applications. The core system is written in Ruby, and the
-              front end is ReactJS coupled with Reflux (an offshoot of
+              applications. The core system was written in Ruby and the
+              front end was ReactJS coupled with Reflux (an offshoot of
               Facebook's Flux architecture).
     -# .row.projects
     -#   .col-sm-6.project
@@ -592,20 +632,22 @@ layout: default
         %p
           We don't know what the future of journalism looks like, but it probably isn't
           bundles of paper being hurled at your door by passing cyclists.
-          Instead our bet is on Noozible: News that is "curated, shared and discussed by and
+          Instead our bet was on Noozible: News that was "curated, shared and discussed by and
           with your friends, unfiltered by traditional media." The Noozible team
-          is giving serious news enthusiasts the means to create and share their own
+          gave serious news enthusiasts the means to create and share their own
           "noozpapers" in a news-based social network.
 
       .col-sm-6
         %p
           Our strategy with Noozible was fast product execution to get core features
           into the hands of beta testers as soon as possible. Simple workflows
-          and minimalist design lets the main draw of Noozible
-          shine through: The user-generated news stories. We've worked with the Noozible team
-          from day one to implement key functionality in a way that allows careful
-          measurement of engagement metrics so they can tackle the challenging
-          consumer media sector with confidence.
+          and minimalist design let the main draw of Noozible
+          shine through: User-generated news stories. We worked with the Noozible team
+          from day one to implement core value features for the MVP and
+          usage analytics tools that collected rich engagement data.
+          Ultimately these data informed the decision to discontinue after the pilot
+          by carefully measuring KPIs against user acquisition cost
+          and lifetime value analyses.
 
     .row
       .col-sm-12
@@ -626,65 +668,65 @@ layout: default
           %li.css3
             %i.fa.fa-css3
             CSS3
-%section#past-work
-  .container
-    .row.text-center.section-title
-      .col-sm-8.col-sm-offset-2
-        %h2 Open Source and Other Projects
-    .portfolio-wrapper
-      %ul.portfolio-filter.text-center
-        %li
-          %a.active{"data-filter" => "*", :href => "#"} Show All
-        %li
-          %a{"data-filter" => ".full", :href => "#"} Projects
-        %li
-          %a{"data-filter" => ".open-source", :href => "#"} Open Source
-      / /#portfolio-filter
-      .row.portfolio-items
-        .col-sm-4.col-md-3.portfolio-item.full
-          .portfolio-content
-            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/infohounds.jpg %}"}
-              .folio-overlay
-                %a.folio-detail{"data-gallery" => "prettyPhoto",
-                  :href => "{% asset_path portfolio/ih_infographic-thumb.png %}",
-                  :title => "InfoHounds is a data service for the mortgage industry. Lockstep was born out of the core InfoHounds technology team, and we continue to maintain the service and play a key role in its technical strategy."}
-                  %i.fa.fa-plus
-        .col-sm-4.col-md-3.portfolio-item.full
-          .portfolio-content
-            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/cisco-thumb.jpg %}"}
-              .folio-overlay
-                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/cisco.png %}", :title => "One of Cisco's latest web products is an interface that allows users to set up various configurations of Cisco hardware (routers, switches, etc) in a drag-and-drop GUI, then run and interface with real hardware that spins up according to the user's design. This lets the user test (and teach) various configurations without having to purchase the actual devices. We helped build the drag-and-drop GUI, increased their test coverage and built performance optimization tools into the deployment process."}
-                  %i.fa.fa-plus
-        .col-sm-4.col-md-3.portfolio-item.full
-          .portfolio-content
-            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/upshare-thumb.png %}"}
-              .folio-overlay
-                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/upshare.png %}", :title => "Upshare is an innovative social sharing rewards platform. They process a TON of data for their content partners, so we dropped into their existing team to help them query and display key metrics on a highly interactive dashboard. We also helped them tackle scalability issues in their API and improved their test coverage."}
-                  %i.fa.fa-plus
-        .col-sm-4.col-md-3.portfolio-item.full
-          .portfolio-content
-            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/pacethis-thumb.jpg %}"}
-              .folio-overlay
-                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/pacethis.png %}", :title => "PaceThis was a running analytics platform that enabled serious athletes to track, analyze, and plan their workouts in preparation for events (e.g. marathons). We built the beta version, allowing runners with Garmin GPS watches to import their workouts directly into the site and see resulting maps and metrics."}
-                  %i.fa.fa-plus
-        .col-sm-4.col-md-3.portfolio-item.open-source
-          .portfolio-content
-            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/stackchat-thumb.jpg %}"}
-              .folio-overlay
-                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/stackchat.png %}", :title => "We built this fully real-time chat extension as a fun side project. Stack Overflow is the largest community Q&A site for developers, and this allows users to chat about the questions and answers via a slide-out panel in their Chrome browser. The extension is powered by Firebase and AngularJS. Check it out on GitHub at lockstep/stackchat."}
-                  %i.fa.fa-plus
-        .col-sm-4.col-md-3.portfolio-item.open-source
-          .portfolio-content
-            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/node_boilerplate.jpg %}"}
-              .folio-overlay
-                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/node_boilerplate.jpg %}", :title => "Many developers have used our Node boilerplate code as a starting point for their Node.js projects. You can find it on GitHub at hiattp/express3-mongodb-bootstrap-demo."}
-                  %i.fa.fa-plus
-        .col-sm-4.col-md-3.portfolio-item.full
-          .portfolio-content
-            %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/imanifold-thumb.jpg %}"}
-              .folio-overlay
-                %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/imanifold.png %}", :title => "This client needed a custom server that receives JSON data from a mobile application, converts the information into a nicely designed PDF report, and emails the report to the end customer. The web stack we used is Rails 4, and the PDF generation was accomplished with Prawn. Note: We were not responsible for the design of the template. Image used with permission."}
-                  %i.fa.fa-plus
+-# %section#past-work
+-#   .container
+-#     .row.text-center.section-title
+-#       .col-sm-8.col-sm-offset-2
+-#         %h2 Open Source and Other Projects
+-#     .portfolio-wrapper
+-#       %ul.portfolio-filter.text-center
+-#         %li
+-#           %a.active{"data-filter" => "*", :href => "#"} Show All
+-#         %li
+-#           %a{"data-filter" => ".full", :href => "#"} Projects
+-#         %li
+-#           %a{"data-filter" => ".open-source", :href => "#"} Open Source
+-#       / /#portfolio-filter
+-#       .row.portfolio-items
+-#         .col-sm-4.col-md-3.portfolio-item.full
+-#           .portfolio-content
+-#             %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/infohounds.jpg %}"}
+-#               .folio-overlay
+-#                 %a.folio-detail{"data-gallery" => "prettyPhoto",
+-#                   :href => "{% asset_path portfolio/ih_infographic-thumb.png %}",
+-#                   :title => "InfoHounds is a data service for the mortgage industry. Lockstep was born out of the core InfoHounds technology team, and we continue to maintain the service and play a key role in its technical strategy."}
+-#                   %i.fa.fa-plus
+-#         .col-sm-4.col-md-3.portfolio-item.full
+-#           .portfolio-content
+-#             %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/cisco-thumb.jpg %}"}
+-#               .folio-overlay
+        -#         %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/cisco.png %}", :title => "One of Cisco's latest web products is an interface that allows users to set up various configurations of Cisco hardware (routers, switches, etc) in a drag-and-drop GUI, then run and interface with real hardware that spins up according to the user's design. This lets the user test (and teach) various configurations without having to purchase the actual devices. We helped build the drag-and-drop GUI, increased their test coverage and built performance optimization tools into the deployment process."}
+        -#           %i.fa.fa-plus
+        -# .col-sm-4.col-md-3.portfolio-item.full
+        -#   .portfolio-content
+        -#     %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/upshare-thumb.png %}"}
+        -#       .folio-overlay
+        -#         %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/upshare.png %}", :title => "Upshare is an innovative social sharing rewards platform. They process a TON of data for their content partners, so we dropped into their existing team to help them query and display key metrics on a highly interactive dashboard. We also helped them tackle scalability issues in their API and improved their test coverage."}
+        -#           %i.fa.fa-plus
+        -# .col-sm-4.col-md-3.portfolio-item.full
+        -#   .portfolio-content
+        -#     %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/pacethis-thumb.jpg %}"}
+        -#       .folio-overlay
+        -#         %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/pacethis.png %}", :title => "PaceThis was a running analytics platform that enabled serious athletes to track, analyze, and plan their workouts in preparation for events (e.g. marathons). We built the beta version, allowing runners with Garmin GPS watches to import their workouts directly into the site and see resulting maps and metrics."}
+        -#           %i.fa.fa-plus
+        -# .col-sm-4.col-md-3.portfolio-item.open-source
+        -#   .portfolio-content
+        -#     %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/stackchat-thumb.jpg %}"}
+        -#       .folio-overlay
+        -#         %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/stackchat.png %}", :title => "We built this fully real-time chat extension as a fun side project. Stack Overflow is the largest community Q&A site for developers, and this allows users to chat about the questions and answers via a slide-out panel in their Chrome browser. The extension is powered by Firebase and AngularJS. Check it out on GitHub at lockstep/stackchat."}
+        -#           %i.fa.fa-plus
+        -# .col-sm-4.col-md-3.portfolio-item.open-source
+        -#   .portfolio-content
+        -#     %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/node_boilerplate.jpg %}"}
+        -#       .folio-overlay
+        -#         %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/node_boilerplate.jpg %}", :title => "Many developers have used our Node boilerplate code as a starting point for their Node.js projects. You can find it on GitHub at hiattp/express3-mongodb-bootstrap-demo."}
+        -#           %i.fa.fa-plus
+        -# .col-sm-4.col-md-3.portfolio-item.full
+        -#   .portfolio-content
+        -#     %img.img-responsive{:alt => "", :src => "{% asset_path portfolio/imanifold-thumb.jpg %}"}
+        -#       .folio-overlay
+        -#         %a.folio-detail{"data-gallery" => "prettyPhoto", :href => "{% asset_path portfolio/imanifold.png %}", :title => "This client needed a custom server that receives JSON data from a mobile application, converts the information into a nicely designed PDF report, and emails the report to the end customer. The web stack we used is Rails 4, and the PDF generation was accomplished with Prawn. Note: We were not responsible for the design of the template. Image used with permission."}
+        -#           %i.fa.fa-plus
 / /#portfolio
 -# #testimonial.parallax-section
 -#   .parallax-content

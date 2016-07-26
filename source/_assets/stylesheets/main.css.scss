@@ -195,7 +195,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #777;
   padding: 30px;
   padding-top: 0px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+
 
   p.about-subtext {
     margin-top: 18px;
@@ -209,9 +210,48 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 50px;
 }
 
+#are-awesome {
+  background-color: white;
+  padding-bottom: 100px;
+  .press-logos {
+    margin-top: 40px;
+  }
+  .drop-me {
+    position: relative;
+    top: 20px;
+  }
+  h1 {
+    font-weight: 300;
+    line-height: 45px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 22px;
+    color: gray;
+  }
+}
+
 #featured-client {
   position: relative;
   background-color: white;
+  .projects {
+    h3 {
+      font-weight: 300;
+    }
+    p {
+      margin-bottom: 40px;
+    }
+  }
+  .testimonial {
+    .wrapper {
+      border-left: solid 2px #EEE;
+      padding-left: 20px;
+    }
+    p {
+      font-size: 22px;
+      color: gray;
+    }
+  }
   .section-label-divider {
     width: 100%;
     height: 1px;
@@ -261,7 +301,7 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
   .intro {
-    margin-top: 10px;
+    margin-top: 40px;
     background: asset-url('features/moveloot_banner1.jpg') bottom center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -563,6 +603,8 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     top: 7px;
     .lockstep {
+      color: #555;
+      font-weight: 300;
     }
     .labs {
       color: $light-blue;
