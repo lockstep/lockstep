@@ -10129,8 +10129,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 27px; }
 
 .team-members {
-  margin-top: 40px;
-  padding-bottom: 50px; }
+  margin-top: 30px;
+  margin-bottom: 20px; }
+  .team-members .member-image {
+    display: inline-block;
+    width: 60px; }
+
+.left-right .col-xs-12 {
+  padding: 10px; }
 
 #are-awesome {
   background-color: white;
