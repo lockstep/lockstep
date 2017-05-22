@@ -713,9 +713,6 @@ h1, h2, h3, h4, h5, h6 {
 ==parallax promo-One CSS===
 ===========================*/
 
-#promo-one  {
-  background-image: url(asset-url('promotions/promo-one-bg.jpg'));
-}
 
 .parallax-section .container {
   position:relative;
@@ -732,7 +729,6 @@ h1, h2, h3, h4, h5, h6 {
 ===========================*/
 
 #promo-two {
-  background-image: url(asset-url('promotions/promo-two-bg.jpg'));
   margin-top:40px;
 }
 
@@ -1115,7 +1111,6 @@ ul.tech-stack {
 ===========================*/
 
 #testimonial {
-  background-image: url(asset-path('testimonial/testimonial-bg.jpg'));
   font-size:16px;
   font-weight:300;
   text-transform:inherit
@@ -1366,7 +1361,6 @@ ul.tech-stack {
  ********Twitter CSS*******
  **************************/
 #twitter {
-  background-image: url(asset-url('twitter-bg.jpg'));
   font-size: 16px;
   font-weight: 300;	
   text-transform: inherit;

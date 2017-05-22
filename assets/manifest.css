@@ -10423,8 +10423,6 @@ h1, h2, h3, h4, h5, h6 {
 /*=========================
 ==parallax promo-One CSS===
 ===========================*/
-#promo-one {
-  background-image: url(url("/assets/promotions/promo-one-bg.jpg?cb=53b78d12c06dd10f688a6b9ea3caddd1")); }
 
 .parallax-section .container {
   position: relative;
@@ -10973,7 +10971,6 @@ ul.tech-stack {
  ********Twitter CSS*******
  **************************/
 #twitter {
-  background-image: url(url("/assets/twitter-bg.jpg?cb=8587b27616461d88800731e98b2224d6"));
   font-size: 16px;
   font-weight: 300;
   text-transform: inherit; }
