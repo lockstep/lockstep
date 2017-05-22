@@ -10207,7 +10207,7 @@ h1, h2, h3, h4, h5, h6 {
           max-width: 100%; }
   #featured-client .intro {
     margin-top: 40px;
-    background: url("/assets/features/moveloot_banner1.jpg?cb=eb1d3bedc4cab8bde0e0ea89e90933fd") bottom center no-repeat;
+    background: url("/assets/features/moveloot_banner1.jpg?cb=d040783234a15cdcafab19776e15950e") bottom center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -10256,7 +10256,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 27px; }
 
 #backdrop {
-  background: url("/assets/features/handwritten.jpg?cb=df4487b3b2d33f71a6dcded7b1bcfcbb") center center no-repeat;
+  background: url("/assets/features/handwritten.jpg?cb=3a763330377548cdae668d6e48b7cee5") center center no-repeat;
   background-size: cover;
   position: fixed;
   top: 0px;
@@ -10549,9 +10549,6 @@ h1, h2, h3, h4, h5, h6 {
 /*=========================
 ==parallax promo-One CSS===
 ===========================*/
-#promo-one {
-  background-image: url(url("/assets/promotions/promo-one-bg.jpg?cb=53b78d12c06dd10f688a6b9ea3caddd1")); }
-
 .parallax-section .container {
   position: relative;
   z-index: 5; }
@@ -10564,7 +10561,6 @@ h1, h2, h3, h4, h5, h6 {
 ==parallax promo-two CSS===
 ===========================*/
 #promo-two {
-  background-image: url(url("/assets/promotions/promo-two-bg.jpg?cb=b08fe84c07e1d817e9d6d3ab5d64b234"));
   margin-top: 40px; }
 
 #promo-two .parallax-content {
@@ -10763,7 +10759,7 @@ ul.tech-stack {
   top: 2px; }
 
 .fa-jquery {
-  background: url("/assets/jquery-icon.png?cb=8982a8bd9b30a1c4e4f2628da4147b8e");
+  background: url("/assets/jquery-icon.png?cb=c6ebb16cc01d7056c185bacdb0a6eb67");
   background-size: 20px;
   width: 20px;
   height: 20px;
@@ -10885,7 +10881,6 @@ ul.tech-stack {
 =====Testimonials CSS======
 ===========================*/
 #testimonial {
-  background-image: url("/assets/testimonial/testimonial-bg.jpg?cb=c10fe803de375973967f42ff8cbb8cad");
   font-size: 16px;
   font-weight: 300;
   text-transform: inherit; }
@@ -11099,7 +11094,6 @@ ul.tech-stack {
  ********Twitter CSS*******
  **************************/
 #twitter {
-  background-image: url(url("/assets/twitter-bg.jpg?cb=8587b27616461d88800731e98b2224d6"));
   font-size: 16px;
   font-weight: 300;
   text-transform: inherit; }
