@@ -230,38 +230,38 @@ jQuery(function($) {'use strict',
   // }());
 
   // Send message
-  $('#send-message').click(function(evt) {
-    evt.preventDefault();
-    var mailResult = $('#mail-result');
-    mailResult.addClass('hidden');
-    var name = $('#message-name').val();
-    var email = $('#message-email').val();
-    var subject = $('#message-subject').val();
-    var message = $('#message-content').val();
-
-    Parse.initialize("oypIBNT5o3X6GzxsHq6YYFb8AwzUS54GpAjR5grJ", "njlddkeF48mz3XvD6smGS0mhjKbOLDjU8m5gUpFU");
-
-    var data = {
-      name: name,
-      email: email,
-      subject: subject,
-      message: message
-    }
-
-    Parse.Cloud.run('sendEmail', data, {
-      success: function(object) {
-        mailResult.text("Thanks! We'll be in touch shortly.");
-        mailResult.addClass('alert-succes');
-        mailResult.removeClass('alert-danger');
-        mailResult.removeClass('hidden');
-      },
-      error: function(object, error) {
-        mailResult.text('There was an error. Please try again.');
-        mailResult.removeClass('alert-succes');
-        mailResult.addClass('alert-danger');
-        mailResult.removeClass('hidden');
-      }
-    });
-  });
+  // $('#send-message').click(function(evt) {
+  //   evt.preventDefault();
+  //   var mailResult = $('#mail-result');
+  //   mailResult.addClass('hidden');
+  //   var name = $('#message-name').val();
+  //   var email = $('#message-email').val();
+  //   var subject = $('#message-subject').val();
+  //   var message = $('#message-content').val();
+  //
+  //   Parse.initialize("oypIBNT5o3X6GzxsHq6YYFb8AwzUS54GpAjR5grJ", "njlddkeF48mz3XvD6smGS0mhjKbOLDjU8m5gUpFU");
+  //
+  //   var data = {
+  //     name: name,
+  //     email: email,
+  //     subject: subject,
+  //     message: message
+  //   }
+  //
+  //   Parse.Cloud.run('sendEmail', data, {
+  //     success: function(object) {
+  //       mailResult.text("Thanks! We'll be in touch shortly.");
+  //       mailResult.addClass('alert-succes');
+  //       mailResult.removeClass('alert-danger');
+  //       mailResult.removeClass('hidden');
+  //     },
+  //     error: function(object, error) {
+  //       mailResult.text('There was an error. Please try again.');
+  //       mailResult.removeClass('alert-succes');
+  //       mailResult.addClass('alert-danger');
+  //       mailResult.removeClass('hidden');
+  //     }
+  //   });
+  // });
 
 });
